@@ -273,6 +273,40 @@ details.more summary::before{content:"+ "}
 details.more[open] summary::before{content:"− "}
 details.more[open] summary{margin-bottom:8px}
 .aside{color:var(--muted);font-style:italic;max-width:62ch}
+
+.prob{gap:10px}
+.prob-q{font-family:var(--display);font-weight:700;font-size:1.25rem;line-height:1.2;color:var(--ink)}
+.prob-proof{font-size:.9rem;color:var(--teal);font-weight:600;border-left:3px solid var(--accent);padding-left:10px}
+.b2b-tags{display:flex;flex-wrap:wrap;gap:8px}
+.b2b-tags span{border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.9rem;background:var(--surface)}
+.b2b-list{display:grid;gap:12px}
+.b2b-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:4px 24px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px}
+.b2b-row h3{font-size:1.25rem;grid-row:span 2}
+.b2b-need{color:var(--muted);font-style:italic}
+@media (max-width:760px){.b2b-row{grid-template-columns:minmax(0,1fr)}.b2b-row h3{grid-row:auto}}
+.yts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.yt{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
+.yt-thumb{display:block;position:relative;width:100%;aspect-ratio:16/9;border:0;padding:0;cursor:pointer;background:#000;overflow:hidden}
+.yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.yt-thumb:hover img{transform:scale(1.04)}
+.yt-play{position:absolute;inset:0;margin:auto;width:64px;height:44px;border-radius:12px;background:#FF0033;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+.yt-play::after{content:"";position:absolute;left:26px;top:13px;border-left:16px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent}
+.yt iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
+.yt figcaption{padding:12px 14px;display:grid;gap:6px}
+.yt figcaption .tag{justify-self:start}
+/* motion */
+.method,.flow li,.reel,.yt,.b2b-row,.stat,.btn{transition:transform .25s ease,box-shadow .25s ease}
+.method:hover,.flow li:hover,.reel:hover,.yt:hover,.b2b-row:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.btn:hover{transform:translateY(-2px)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero>*{animation:rise .7s ease both}
+.hero>*:nth-child(2){animation-delay:.08s}.hero>*:nth-child(3){animation-delay:.16s}.hero>*:nth-child(4){animation-delay:.24s}.hero>*:nth-child(5){animation-delay:.32s}.hero>*:nth-child(6){animation-delay:.4s}.hero>*:nth-child(7){animation-delay:.48s}
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@keyframes sweep{from{background-size:0 100%}to{background-size:100% 100%}}
+.js .sec-head .mark{background:linear-gradient(var(--accent),var(--accent)) no-repeat 0 72%/0 34%}
+.js .sec-head.in .mark{transition:background-size .7s ease .2s;background-size:100% 34%}
+@media (prefers-reduced-motion:reduce){.hero>*{animation:none}.js .reveal{opacity:1;transform:none;transition:none}.method:hover,.flow li:hover,.reel:hover,.yt:hover,.b2b-row:hover,.btn:hover{transform:none}.js .sec-head .mark{background-size:100% 34%}}
 </style>
 
 <div class="wrap">
@@ -280,8 +314,8 @@ details.more[open] summary{margin-bottom:8px}
 <header class="hero">
   <p class="eyebrow">Portfolio · Delhi NCR, India</p>
   <h1>Aaniket Kumar Pandey</h1>
-  <p class="role">Content Strategist · Content Marketing <span>· Social Media · Video Scripts · Technical Content Writer · Copywriter</span></p>
-  <p class="intro">I make content people stop for, and I check whether it actually worked. For nearly 4 years I’ve planned content calendars, written reels, captions, ad copy and website copy, and built communities around brands, from enterprise tech at <b>Times Internet</b> to sports content for <b>Signal</b>, a sports prediction app.</p>
+  <p class="role">Content Strategist <span>· Social Media · Content Marketing · Copywriter</span></p>
+  <p class="intro">I help brands turn what they want to say into content people <b>stop for, understand and act on</b>. Nearly 4 years across <b>B2B tech</b> (Times Internet, agency clients) and <b>consumer apps</b>, from LinkedIn and long-form to reels and creator campaigns.</p>
   <div class="links">
     <a class="btn primary" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">Resume</a>
@@ -292,17 +326,17 @@ details.more[open] summary{margin-bottom:8px}
     <span class="copied" id="copied" hidden>Copied</span>
   </div>
   <div class="board" role="list">
-    <div class="stat" role="listitem"><b>5</b><span>platforms managed: Instagram, YouTube, Snapchat, WhatsApp and Telegram</span></div>
-    <div class="stat" role="listitem"><b>45K</b><span>views on Guess the Player: Kapil Dev, a quiz reel I came up with and scripted</span></div>
-    <div class="stat" role="listitem"><b>80K → 300K+</b><span>monthly website visits for TechGig, driven by SEO content</span></div>
-    <div class="stat" role="listitem"><b>107K</b><span>views on my best-performing article</span></div>
+    <div class="stat" role="listitem"><b data-count="3.87" data-dec="2" data-suffix="M">3.87M</b><span>Instagram views in four months at Signal</span></div>
+    <div class="stat" role="listitem"><b>80K → 300K+</b><span>monthly visits for TechGig, driven by SEO content</span></div>
+    <div class="stat" role="listitem"><b data-count="10" data-suffix="+">10+</b><span>B2B and B2C agency clients, from fintech to edtech</span></div>
+    <div class="stat" role="listitem"><b data-count="4120" data-comma="1">4,120</b><span>app installs from a 45+ creator campaign</span></div>
   </div>
   <nav class="jump" aria-label="Jump to section">
     <a href="#about">Who I am</a>
-    <a href="#what">What I do</a>
+    <a href="#what">Problems I solve</a>
     <a href="#process">How I work</a>
+    <a href="#b2b">B2B work</a>
     <a href="#strategies">Strategies</a>
-    <a href="#strategy">SEO playbook</a>
     <a href="#work">My work</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
@@ -317,21 +351,17 @@ details.more[open] summary{margin-bottom:8px}
   </div>
   <div class="two">
     <div class="about-text">
-      <p>I’m a content strategist and copywriter from Delhi NCR. For nearly four years I’ve made content for apps, media platforms and brands, from enterprise tech at Times Internet to sports content for Signal.</p>
-      <p>I started out coordinating academic content at Evelyn Learning, then moved into content and SEO at Times Internet, working on TechGig and the Qureka apps. Later I wrote campaigns and LinkedIn strategy for agency clients at OutSpark. Most recently I ran social media for Signal, a sports prediction app.</p>
-      <p>What ties it together: I find what an audience actually cares about, say it simply, and check the numbers to see if it worked.</p>
+      <p>I’m a content strategist from Delhi NCR. I started in content and SEO at <b>Times Internet</b> (TechGig and the Qureka apps), wrote LinkedIn and campaign content for agency clients at <b>OutSpark</b>, and most recently ran social media for <b>Signal</b>, a sports prediction app.</p>
+      <p>My approach is simple: find what the audience actually cares about, say it clearly, and check the numbers to see if it worked.</p>
     </div>
     <div class="panel">
       <h3>Quick facts</h3>
       <ul>
-        <li>Based in Delhi NCR</li>
         <li>Nearly 4 years across B2B and B2C</li>
-        <li>Managed content for 4+ brands at the same time</li>
-        <li>Writes for blog, website, email and social</li>
-        <li>Explains technical topics in plain English</li>
-        <li>Writes in English and Hinglish</li>
-        <li>Worked across agency, startup and platform teams</li>
-        <li>Open to social media, content strategy, content writing and copywriting roles</li>
+        <li>Agency, startup and platform teams</li>
+        <li>Content for 4+ brands at the same time</li>
+        <li>Blog, website, email, social and video</li>
+        <li>English and Hinglish</li>
       </ul>
     </div>
   </div>
@@ -341,16 +371,16 @@ details.more[open] summary{margin-bottom:8px}
 <section id="what">
   <div class="sec-head">
     <p class="eyebrow">What I do</p>
-    <h2>Six things I’m <span class="mark">good at</span></h2>
-    <p class="lede">Each one links to real work further down the page.</p>
+    <h2>Problems I <span class="mark">solve</span></h2>
+    <p class="lede">Six problems brands bring to content teams, how I solve each one, and the proof.</p>
   </div>
   <div class="methods">
-    <div class="method"><h4>Content strategy</h4><p>Deciding what to make and why: who it’s for, the content pillars, the formats, and the number each post is judged by.</p><a class="fit-link" href="#strategies">See the strategies I follow →</a></div>
-    <div class="method"><h4>Social media management</h4><p>Monthly calendars and daily posting across Instagram, YouTube, Snapchat, WhatsApp and Telegram, plus the communities around them.</p><a class="fit-link" href="#process">See how I work →</a></div>
-    <div class="method"><h4>Video scripts, short and long</h4><p>Reels, explainers and webinar scripts, from 30-second clips to a 45-minute session, each built around a strong hook.</p><a class="fit-link" href="#reels">See my reels →</a></div>
-    <div class="method"><h4>Copywriting</h4><p>Captions, ad copy and website copy, written in the brand’s voice and around the reader’s doubts.</p><a class="fit-link" href="#adcopy">See my ad copy →</a></div>
-    <div class="method"><h4>Creator campaigns</h4><p>Shortlisting, briefing and tracking creators, down to installs per link.</p><a class="fit-link" href="#influencers">See creator campaigns →</a></div>
-    <div class="method"><h4>Content marketing</h4><p>Blog, website, email and social content that builds awareness and brings in the right readers, including technical topics in plain English, written for search and tracked to results.</p><a class="fit-link" href="#articles">See my articles →</a></div>
+    <div class="method prob"><p class="prob-q">“Nobody stops scrolling.”</p><p>Hooks, reels and formats people can play along with: quizzes, debates, tributes.</p><p class="prob-proof">3.87M Instagram views in four months</p><a class="fit-link" href="#reels">See my reels →</a></div>
+    <div class="method prob"><p class="prob-q">“We post a lot, but there’s no plan.”</p><p>Content pillars, a monthly calendar, and one idea reshaped for each platform.</p><p class="prob-proof">Calendars for 4+ brands at once</p><a class="fit-link" href="#process">See how I work →</a></div>
+    <div class="method prob"><p class="prob-q">“Our product is hard to explain.”</p><p>Plain-English articles and copy that make technical topics easy to read.</p><p class="prob-proof">TechGig grew from 80K to 300K+ visits</p><a class="fit-link" href="#articles">See my articles →</a></div>
+    <div class="method prob"><p class="prob-q">“Content gets likes, not results.”</p><p>Copy built around the reader’s doubts, with a clear next step, tracked to the result.</p><p class="prob-proof">4,120 installs from tracked creator links</p><a class="fit-link" href="#adcopy">See my ad copy →</a></div>
+    <div class="method prob"><p class="prob-q">“We need reach beyond our own page.”</p><p>Creator campaigns: shortlist, brief, track, then put more behind what works.</p><p class="prob-proof">45+ creators, 81 tracked links</p><a class="fit-link" href="#influencers">See creator campaigns →</a></div>
+    <div class="method prob"><p class="prob-q">“Our B2B buyers don’t trust us yet.”</p><p>LinkedIn content, webinars and partner campaigns that build credibility first.</p><p class="prob-proof">Campaigns that helped onboard GitHub, IBM and Gartner</p><a class="fit-link" href="#b2b">See my B2B work →</a></div>
   </div>
   <p class="aside">Off the clock, I’m also good at having my best ideas in the shower, losing them by the time I find my phone, and writing 15 headlines just to pick the first one.</p>
 </section>
@@ -360,17 +390,33 @@ details.more[open] summary{margin-bottom:8px}
   <div class="sec-head">
     <p class="eyebrow">My workflow</p>
     <h2>How I <span class="mark">work</span></h2>
-    <p class="lede">The six steps I follow every month, from spotting a moment to learning from the numbers.</p>
+    <p class="lede">Six steps, every month.</p>
   </div>
-
   <ol class="flow">
-    <li><h3>Know what's coming</h3><p>I keep a calendar of matches, birthdays, records and award nights, and watch what's trending on sports and meme pages. That way the content is ready before the moment arrives.</p><p class="eg"><b>Example:</b> Ballon d'Or night was on the calendar weeks ahead, so a 3-episode series was ready to post.</p></li>
-    <li><h3>Pick the right format</h3><p>Every moment becomes something people can join in: a quiz, a debate, a tribute or a meme. People share what they can play along with.</p><p class="eg"><b>Example:</b> Kapil Dev's legacy became a Guess the Player quiz, which got 45K views.</p></li>
-    <li><h3>Plan the month</h3><p>A day-by-day content calendar across Instagram, YouTube, Snapchat, WhatsApp and Telegram. One good idea is reused in the right shape for each platform.</p><p class="eg"><b>Example:</b> one reel goes out as an Instagram Reel, a YouTube Short and a Snapchat Spotlight, with a poll on WhatsApp and Telegram.</p></li>
-    <li><h3>Write the hook first</h3><p>The first two seconds decide if anyone watches. Every script has a strong opening, a reason to keep watching, a payoff and a question to end on. Every fact gets checked.</p><p class="eg"><b>Example hook:</b> "Iss saal ka Ballon d'Or koi bhi jeete, magar aap khush nahi hone wale."</p></li>
-    <li><h3>Brief the team clearly</h3><p>Designers and editors get one clear brief per post: the goal, the script, on-screen text, caption, hashtags and who owns it. Clear briefs mean fewer revisions and on-time posts.</p><p class="eg"><b>Example:</b> each entry in my monthly content doc is a ready-to-shoot brief.</p></li>
-    <li><h3>Track, learn, repeat</h3><p>Views, reach, comments and shares go into a tracker. What works gets more space next month, and what doesn't gets dropped.</p><p class="eg"><b>Example:</b> quizzes and topical moments did best, so they got more slots.</p></li>
+    <li><h3>Spot the moment</h3><p>I track what’s coming and what’s trending, so content is ready before the moment arrives.</p></li>
+    <li><h3>Pick the format</h3><p>Every moment becomes something people can join: a quiz, a debate, a tribute or a meme.</p></li>
+    <li><h3>Plan the month</h3><p>A day-by-day calendar across platforms, with one idea reshaped for each.</p></li>
+    <li><h3>Write the hook first</h3><p>The first two seconds decide if anyone watches, so the hook comes first. Every fact gets checked.</p></li>
+    <li><h3>Brief the team</h3><p>Designers and editors get one clear brief per post, so there are fewer revisions.</p></li>
+    <li><h3>Track and improve</h3><p>Results go into a tracker. What works gets more space next month.</p></li>
   </ol>
+</section>
+
+<!-- ================= B2B ================= -->
+<section id="b2b">
+  <div class="sec-head">
+    <p class="eyebrow">B2B experience</p>
+    <h2>What B2B content <span class="mark">needs</span></h2>
+    <p class="lede">B2B content isn’t about going viral. It’s about earning trust with people who take time to decide. Here’s what that takes, and where I’ve done it.</p>
+  </div>
+  <div class="b2b-tags"><span>TechGig</span><span>GitHub</span><span>IBM</span><span>Gartner</span><span>Qureka Global</span><span>Fintech and edtech clients</span></div>
+  <div class="b2b-list">
+    <div class="b2b-row"><h3>Trust before the sale</h3><p class="b2b-need">B2B buyers want to learn from you before they buy from you.</p><p>I scripted podcasts and webinars with industry leaders for TechGig’s Leaders’ Circle, and wrote the campaign copy that helped onboard partners like GitHub, IBM and Gartner.</p></div>
+    <div class="b2b-row"><h3>Clarity for complex products</h3><p class="b2b-need">If the reader can’t follow it, they won’t buy it.</p><p>I wrote daily articles on AI, new tools and tech hiring for TechGig, and B2B website content for Qureka Global’s publisher audience, all in plain English.</p></div>
+    <div class="b2b-row"><h3>LinkedIn as the main channel</h3><p class="b2b-need">In B2B, LinkedIn is where decision-makers read.</p><p>At OutSpark I built LinkedIn content strategies, profile copy and posts for 10+ B2B and B2C clients in fintech, edtech and other fields, each in its own voice.</p></div>
+    <div class="b2b-row"><h3>Content for every stage</h3><p class="b2b-need">Awareness, consideration and decision each need different content.</p><p>I plan by funnel stage: articles and posts for awareness, webinars and newsletters for consideration, and clear calls to action for decision.</p></div>
+    <div class="b2b-row"><h3>Proof, not just posts</h3><p class="b2b-need">B2B content has to show it moved something.</p><p>I track what each piece does, from traffic (TechGig 80K to 300K+) to newsletter opens tested with A/B subject lines.</p></div>
+  </div>
 </section>
 
 <!-- ================= STRATEGIES ================= -->
@@ -534,6 +580,7 @@ details.more[open] summary{margin-bottom:8px}
   </div>
   <nav class="jump" aria-label="Jump to work">
     <a href="#reels">Reels &amp; scripts</a>
+    <a href="#podcast">Podcast episodes</a>
     <a href="#captions">Captions</a>
     <a href="#adcopy">Ad copy</a>
     <a href="#influencers">Creator campaigns</a>
@@ -776,6 +823,38 @@ CAPTION: Serial winner. Clutch player. Always an entertainer. Happy Birthday, @h
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- ================= PODCAST ================= -->
+<section id="podcast">
+  <div class="sec-head">
+    <p class="eyebrow">Signal · Brand collaboration · YouTube</p>
+    <h2>Podcast <span class="mark">episodes</span></h2>
+    <p class="lede">Long-form episodes of the AB de Villiers 360 podcast with Dale Steyn that I worked on as part of Signal’s brand collaboration. Tap a thumbnail to play.</p>
+  </div>
+  <div class="yts">
+    <figure class="yt">
+      <button class="yt-thumb" type="button" data-id="SdJQiqmyz2U" aria-label="Play “Cricket Needs Passion”">
+        <img src="https://i.ytimg.com/vi/SdJQiqmyz2U/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <figcaption><span class="tag">Episode 4</span><b>“Cricket Needs Passion”</b></figcaption>
+    </figure>
+    <figure class="yt">
+      <button class="yt-thumb" type="button" data-id="mKmrmV_Jrww" aria-label="Play Who Could Join RCB in the Playoffs?">
+        <img src="https://i.ytimg.com/vi/mKmrmV_Jrww/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <figcaption><span class="tag">Episode 6</span><b>Who Could Join RCB in the Playoffs?</b></figcaption>
+    </figure>
+    <figure class="yt">
+      <button class="yt-thumb" type="button" data-id="I5WJE1CmOCk" aria-label="Play Can Anyone Stop RCB?">
+        <img src="https://i.ytimg.com/vi/I5WJE1CmOCk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <span class="yt-play" aria-hidden="true"></span>
+      </button>
+      <figcaption><span class="tag">Episode 7</span><b>Can Anyone Stop RCB?</b></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -1214,4 +1293,31 @@ wire('copy-email','copied');wire('copy-email-2','copied-2');
 document.querySelectorAll('video').forEach(function(v){
   v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()})});
 });
+</script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.sec-head,.method,.flow li,.reel,.yt,.b2b-row,.panel,.shot,.adcase,.row');
+  els.forEach(function(e){e.classList.add('reveal')});
+  if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});}
+  else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});}
+  document.querySelectorAll('[data-count]').forEach(function(b){
+    var end=parseFloat(b.dataset.count),dec=+(b.dataset.dec||0),suf=b.dataset.suffix||'',comma=b.dataset.comma;
+    var fmt=function(v){var t=v.toFixed(dec);if(comma)t=Math.round(v).toLocaleString('en-IN');return t+suf};
+    if(reduce){b.textContent=fmt(end);return}
+    var t0=null;b.textContent=fmt(0);
+    function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/1400,1);b.textContent=fmt(end*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)}
+    setTimeout(function(){requestAnimationFrame(step)},500);
+  });
+  document.querySelectorAll('.yt-thumb').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var f=document.createElement('iframe');
+      f.src='https://www.youtube-nocookie.com/embed/'+btn.dataset.id+'?autoplay=1&rel=0';
+      f.title=btn.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;
+      btn.replaceWith(f);
+    });
+  });
+})();
 </script>
