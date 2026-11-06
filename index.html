@@ -280,10 +280,19 @@ details.more[open] summary{margin-bottom:8px}
 .b2b-tags{display:flex;flex-wrap:wrap;gap:8px}
 .b2b-tags span{border:1.5px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.9rem;background:var(--surface)}
 .b2b-list{display:grid;gap:12px}
-.b2b-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:4px 24px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px}
-.b2b-row h3{font-size:1.25rem;grid-row:span 2}
+.b2b-row{display:grid;gap:4px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px}
+.b2b-row h4{font-family:var(--display);font-size:1.15rem;margin:0}
 .b2b-need{color:var(--muted);font-style:italic}
-@media (max-width:760px){.b2b-row{grid-template-columns:minmax(0,1fr)}.b2b-row h3{grid-row:auto}}
+.aud-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.aud-col{display:grid;gap:12px;align-content:start}
+.aud-title{font-size:2rem;line-height:1}
+.aud-sub{color:var(--muted);margin-top:-6px}
+.aud-col:nth-child(2) .b2b-row{border-left-color:var(--teal)}
+.aud-both{background:var(--ink);color:var(--surface);border-radius:10px;padding:16px 20px}
+.aud-both b{color:var(--accent)}
+.hero .intro:not(.intro-2){font-size:clamp(1.2rem,2.2vw,1.45rem);line-height:1.35;max-width:36ch}
+.hero .intro-2{font-size:1rem;color:var(--muted);margin-top:-6px}
+@media (max-width:760px){.aud-grid{grid-template-columns:minmax(0,1fr)}}
 .yts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
 .yt{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
 .yt-thumb{display:block;position:relative;width:100%;aspect-ratio:16/9;border:0;padding:0;cursor:pointer;background:#000;overflow:hidden}
@@ -315,7 +324,8 @@ details.more[open] summary{margin-bottom:8px}
   <p class="eyebrow">Portfolio · Delhi NCR, India</p>
   <h1>Aaniket Kumar Pandey</h1>
   <p class="role">Content Strategist <span>· Social Media · Content Marketing · Copywriter</span></p>
-  <p class="intro">I help brands turn what they want to say into content people <b>stop for, understand and act on</b>. Nearly 4 years across <b>B2B tech</b> (Times Internet, agency clients) and <b>consumer apps</b>, from LinkedIn and long-form to reels and creator campaigns.</p>
+  <p class="intro">Hi, I’m Aaniket. I make content that people <b>notice, understand and act on</b>.</p>
+  <p class="intro intro-2">For nearly 4 years I’ve done this for <b>B2B and B2C brands</b>: tech articles and LinkedIn content at Times Internet and for agency clients, and reels, scripts and creator campaigns for consumer apps like Signal. I plan it, write it, and check the numbers to see what worked.</p>
   <div class="links">
     <a class="btn primary" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">Resume</a>
@@ -335,7 +345,7 @@ details.more[open] summary{margin-bottom:8px}
     <a href="#about">Who I am</a>
     <a href="#what">Problems I solve</a>
     <a href="#process">How I work</a>
-    <a href="#b2b">B2B work</a>
+    <a href="#audiences">B2B &amp; B2C</a>
     <a href="#strategies">Strategies</a>
     <a href="#work">My work</a>
     <a href="#skills">Skills</a>
@@ -380,7 +390,7 @@ details.more[open] summary{margin-bottom:8px}
     <div class="method prob"><p class="prob-q">“Our product is hard to explain.”</p><p>Plain-English articles and copy that make technical topics easy to read.</p><p class="prob-proof">TechGig grew from 80K to 300K+ visits</p><a class="fit-link" href="#articles">See my articles →</a></div>
     <div class="method prob"><p class="prob-q">“Content gets likes, not results.”</p><p>Copy built around the reader’s doubts, with a clear next step, tracked to the result.</p><p class="prob-proof">4,120 installs from tracked creator links</p><a class="fit-link" href="#adcopy">See my ad copy →</a></div>
     <div class="method prob"><p class="prob-q">“We need reach beyond our own page.”</p><p>Creator campaigns: shortlist, brief, track, then put more behind what works.</p><p class="prob-proof">45+ creators, 81 tracked links</p><a class="fit-link" href="#influencers">See creator campaigns →</a></div>
-    <div class="method prob"><p class="prob-q">“Our B2B buyers don’t trust us yet.”</p><p>LinkedIn content, webinars and partner campaigns that build credibility first.</p><p class="prob-proof">Campaigns that helped onboard GitHub, IBM and Gartner</p><a class="fit-link" href="#b2b">See my B2B work →</a></div>
+    <div class="method prob"><p class="prob-q">“Our audience doesn’t connect with us.”</p><p>I change the voice, channel and proof for who’s reading: decision-makers on LinkedIn, everyday users on reels.</p><p class="prob-proof">B2B and B2C work across 10+ clients</p><a class="fit-link" href="#audiences">See how I adapt →</a></div>
   </div>
   <p class="aside">Off the clock, I’m also good at having my best ideas in the shower, losing them by the time I find my phone, and writing 15 headlines just to pick the first one.</p>
 </section>
@@ -402,21 +412,28 @@ details.more[open] summary{margin-bottom:8px}
   </ol>
 </section>
 
-<!-- ================= B2B ================= -->
-<section id="b2b">
+<!-- ================= AUDIENCES ================= -->
+<section id="audiences">
   <div class="sec-head">
-    <p class="eyebrow">B2B experience</p>
-    <h2>What B2B content <span class="mark">needs</span></h2>
-    <p class="lede">B2B content isn’t about going viral. It’s about earning trust with people who take time to decide. Here’s what that takes, and where I’ve done it.</p>
+    <p class="eyebrow">B2B and B2C</p>
+    <h2>Different audiences, <span class="mark">different content</span></h2>
+    <p class="lede">A CTO reading on LinkedIn and a fan scrolling reels want very different things. Here’s what each needs, and where I’ve delivered it.</p>
   </div>
-  <div class="b2b-tags"><span>TechGig</span><span>GitHub</span><span>IBM</span><span>Gartner</span><span>Qureka Global</span><span>Fintech and edtech clients</span></div>
-  <div class="b2b-list">
-    <div class="b2b-row"><h3>Trust before the sale</h3><p class="b2b-need">B2B buyers want to learn from you before they buy from you.</p><p>I scripted podcasts and webinars with industry leaders for TechGig’s Leaders’ Circle, and wrote the campaign copy that helped onboard partners like GitHub, IBM and Gartner.</p></div>
-    <div class="b2b-row"><h3>Clarity for complex products</h3><p class="b2b-need">If the reader can’t follow it, they won’t buy it.</p><p>I wrote daily articles on AI, new tools and tech hiring for TechGig, and B2B website content for Qureka Global’s publisher audience, all in plain English.</p></div>
-    <div class="b2b-row"><h3>LinkedIn as the main channel</h3><p class="b2b-need">In B2B, LinkedIn is where decision-makers read.</p><p>At OutSpark I built LinkedIn content strategies, profile copy and posts for 10+ B2B and B2C clients in fintech, edtech and other fields, each in its own voice.</p></div>
-    <div class="b2b-row"><h3>Content for every stage</h3><p class="b2b-need">Awareness, consideration and decision each need different content.</p><p>I plan by funnel stage: articles and posts for awareness, webinars and newsletters for consideration, and clear calls to action for decision.</p></div>
-    <div class="b2b-row"><h3>Proof, not just posts</h3><p class="b2b-need">B2B content has to show it moved something.</p><p>I track what each piece does, from traffic (TechGig 80K to 300K+) to newsletter opens tested with A/B subject lines.</p></div>
+  <div class="aud-grid">
+    <div class="aud-col">
+      <h3 class="aud-title">B2B</h3><p class="aud-sub">For business buyers and decision-makers</p>
+      <div class="b2b-row"><h4>Trust before the sale</h4><p class="b2b-need">Business buyers want to learn from you before they buy from you.</p><p>Podcasts and webinars with industry leaders for TechGig’s Leaders’ Circle, and campaign copy that helped onboard partners like GitHub, IBM and Gartner.</p></div>
+      <div class="b2b-row"><h4>Clear, useful content</h4><p class="b2b-need">If the reader can’t follow it, they won’t act on it.</p><p>Daily articles on AI, tools and tech hiring for TechGig, and website content for Qureka Global’s publisher audience, all in plain English.</p></div>
+      <div class="b2b-row"><h4>LinkedIn done right</h4><p class="b2b-need">It’s where decision-makers read.</p><p>LinkedIn strategies, profile copy and posts for agency clients at OutSpark, each in the client’s own voice.</p></div>
+    </div>
+    <div class="aud-col">
+      <h3 class="aud-title">B2C</h3><p class="aud-sub">For everyday users and fans</p>
+      <div class="b2b-row"><h4>Stop the scroll</h4><p class="b2b-need">People decide in two seconds.</p><p>Hook-first reels and formats people can play along with: quizzes, debates and tributes. 3.87M Instagram views in four months at Signal.</p></div>
+      <div class="b2b-row"><h4>Speak their language</h4><p class="b2b-need">Content has to feel like it’s from one of them.</p><p>Captions and scripts in English and Hinglish, written around the moments fans already care about.</p></div>
+      <div class="b2b-row"><h4>Turn attention into action</h4><p class="b2b-need">Likes are nice. Installs are better.</p><p>Creator campaigns with 45+ creators and 81 tracked links that brought in 4,120 app installs.</p></div>
+    </div>
   </div>
+  <p class="aud-both"><b>What both need:</b> a clear plan, content mapped to where the reader is in their journey, and results tracked so the next piece is better.</p>
 </section>
 
 <!-- ================= STRATEGIES ================= -->
@@ -1168,8 +1185,8 @@ CAPTION: Serial winner. Clutch player. Always an entertainer. Happy Birthday, @h
 <section id="campaigns">
   <div class="sec-head">
     <p class="eyebrow">Times Internet · TechGig &amp; OutSpark · 2023–2026</p>
-    <h2>Campaigns <span class="mark">&amp; B2B</span></h2>
-    <p class="lede">B2B campaigns, scripts and PR for TechGig, and LinkedIn strategy for agency clients at OutSpark.</p>
+    <h2>Campaigns <span class="mark">&amp; brand work</span></h2>
+    <p class="lede">Campaigns, scripts and PR for TechGig, and LinkedIn strategy for agency clients at OutSpark.</p>
   </div>
   <div class="list">
     <div class="row"><a class="t" href="https://techgig.com/leader-circle" target="_blank" rel="noopener">TechGig Leaders' Circle campaign</a><span class="n">B2B</span><p class="d">Campaign copy that helped onboard partners including GitHub, IBM and Gartner.</p></div>
