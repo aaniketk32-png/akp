@@ -2,89 +2,99 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aqualogica Content Pitch</title>
-<meta name="description" content="A spec content strategy for Aqualogica by Aaniket Kumar Pandey, made for the Content Strategist role in Honasa's D2C team.">
+<title>Aaniket for Honasa</title>
+<meta name="description" content="What Aaniket Kumar Pandey would do as a Content Strategist in Honasa's D2C team.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Carlito:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 :root{
-  --bg:#EEF6F5;--surface:#FFFFFF;--ink:#10232A;--muted:#52666B;--line:#D2E2E1;
-  --sun:#F4C21F;--sun-soft:#FFF3C4;--aqua:#147C82;--aqua-soft:#DDF0EF;
+  --bg:#F2F6F1;--surface:#FFFFFF;--ink:#13241C;--muted:#55665D;--line:#D6E0D7;
+  --sun:#F4C21F;--sun-soft:#FFF4C7;--leaf:#2E7D4F;--leaf-soft:#E2F1E7;
   --display:Cambria,"Caladea",Georgia,serif;
   --body:Calibri,"Carlito","Segoe UI",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0D1A1D;--surface:#142629;--ink:#E6F1F1;--muted:#9AB0B2;--line:#264043;
-  --sun:#F4C21F;--sun-soft:#3A3315;--aqua:#6FD0CF;--aqua-soft:#17363A;color-scheme:dark}}
+  --bg:#0F1913;--surface:#16231C;--ink:#E6F0E9;--muted:#9BAEA2;--line:#29392F;
+  --sun:#F4C21F;--sun-soft:#3A3416;--leaf:#7FD1A0;--leaf-soft:#1C3326;color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0D1A1D;--surface:#142629;--ink:#E6F1F1;--muted:#9AB0B2;--line:#264043;
-  --sun:#F4C21F;--sun-soft:#3A3315;--aqua:#6FD0CF;--aqua-soft:#17363A;color-scheme:dark}
+  --bg:#0F1913;--surface:#16231C;--ink:#E6F0E9;--muted:#9BAEA2;--line:#29392F;
+  --sun:#F4C21F;--sun-soft:#3A3416;--leaf:#7FD1A0;--leaf-soft:#1C3326;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
 h1,h2,h3,h4{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance}
 p{margin:0}
-a{color:var(--aqua)}
-section{padding:56px 0;border-top:1px solid var(--line)}
+a{color:var(--leaf)}
+section.wrap{padding:56px 16px;border-top:1px solid var(--line)}
 .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-h2{font-size:clamp(1.8rem,4.6vw,2.7rem);text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:clamp(1.8rem,4.6vw,2.6rem);text-transform:uppercase;letter-spacing:.01em}
 .mark{background:linear-gradient(var(--sun),var(--sun)) no-repeat 0 78%/100% 34%}
 .lede{color:var(--muted);max-width:62ch;margin-top:12px}
 .sec-head{margin-bottom:26px}
 
 /* hero */
-.hero{padding:56px 0 48px;position:relative;overflow:hidden}
-.sun{position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;
-  background:radial-gradient(circle at 40% 40%,#FFE27A,var(--sun) 60%,#F0A30A);box-shadow:0 0 0 22px rgba(244,194,31,.18),0 0 0 48px rgba(244,194,31,.09);
-  animation:float 6s ease-in-out infinite}
-@keyframes float{50%{transform:translateY(12px) rotate(8deg)}}
-.hero>*:not(.sun){position:relative}
-.note{display:inline-block;background:var(--aqua-soft);color:var(--aqua);font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:18px}
-.hero h1{font-size:clamp(2.6rem,8vw,5rem);text-transform:uppercase;max-width:14ch}
-.hero .sub{font-size:clamp(1.1rem,2.4vw,1.35rem);margin-top:16px;max-width:52ch}
-.hero .by{color:var(--muted);margin-top:10px}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.hero.wrap{padding:60px 16px 52px;position:relative;overflow:hidden}
+.blob{position:absolute;right:-80px;top:-80px;width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle at 40% 40%,#FFE27A,var(--sun) 55%,transparent 72%);opacity:.75;animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(14px)}}
+.hero>*:not(.blob){position:relative}
+.note{display:inline-block;background:var(--leaf-soft);color:var(--leaf);font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);max-width:16ch}
+.hero .sub{font-size:clamp(1.1rem,2.4vw,1.3rem);margin-top:18px;max-width:58ch}
+.hero .sub+.sub{font-size:1rem;color:var(--muted);margin-top:10px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
 .btn{display:inline-flex;align-items:center;font-weight:700;font-size:.95rem;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);padding:9px 16px;border-radius:999px;transition:transform .2s}
 .btn:hover{transform:translateY(-2px)}
 .btn.solid{background:var(--ink);color:var(--bg)}
 
-/* brief grid */
-.brief{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;transition:transform .25s,box-shadow .25s}
 .card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
-.card .k{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--aqua);font-weight:700}
-.card h3{font-size:1.2rem;margin:6px 0 6px}
-.bigidea{background:var(--ink);color:var(--bg);border-radius:14px;padding:24px;margin-top:14px}
-.bigidea .k{color:var(--sun);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
-.bigidea p.line{font-family:var(--display);font-weight:700;font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.15;margin:8px 0}
+.card .k{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf);font-weight:700}
+.card h3{font-size:1.25rem;margin:6px 0}
+.card.warn{border-top:4px solid var(--sun)}
+.card.good{border-top:4px solid var(--leaf)}
 
-/* shift */
-.shift{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:stretch}
-.shift .arrow{align-self:center;font-size:2rem;color:var(--sun);font-weight:700}
-.shift .card p+p{margin-top:8px}
-.co{margin-top:14px;border-left:4px solid var(--sun);background:var(--surface);padding:14px 18px;border-radius:0 12px 12px 0;font-family:var(--display);font-size:1.15rem}
+/* funnel strip */
+.funnel{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:16px}
+.funnel div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.9rem;text-align:center}
+.funnel b{display:block;font-family:var(--display);font-size:1rem}
+.funnel .ok{border-bottom:4px solid var(--leaf)}
+.funnel .gap{border-bottom:4px solid var(--sun);background:var(--sun-soft)}
 
-/* ladder */
-.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;counter-reset:l}
-.ladder .card{border-top:4px solid var(--aqua)}
-.ladder .card:nth-child(4){border-top-color:var(--sun)}
+/* idea */
+.idea{background:var(--ink);color:var(--bg);border-radius:16px;padding:28px}
+.idea .k{color:var(--sun);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.idea .line{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;margin:10px 0 14px}
+.shift{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin-top:18px}
+.shift div{border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:14px 16px}
+.shift .arrow{border:0;font-size:1.8rem;color:var(--sun);font-weight:700;padding:0}
+.shift small{display:block;color:var(--sun);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.72rem;margin-bottom:4px}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li:last-child{grid-column:1/-1}}
+@media (max-width:560px){.steps{grid-template-columns:minmax(0,1fr)}}
+.steps li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:6px;align-content:start;transition:transform .25s,box-shadow .25s}
+.steps li:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.steps .n{font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--sun);line-height:1}
+.steps h3{font-size:1.15rem}
 
 /* cohorts */
-.cohorts{display:grid;gap:12px}
-.cohort{display:grid;grid-template-columns:200px 1fr;gap:6px 22px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-.cohort h3{font-size:1.2rem}
-.stage{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--sun-soft);color:var(--ink);margin-top:6px}
-.cohort ul{margin:6px 0 0;padding-left:18px;color:var(--muted)}
+.cohorts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.stage{display:inline-block;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--sun-soft);color:var(--ink);margin:6px 0 8px}
+.card ul{margin:6px 0 0;padding-left:18px;color:var(--muted)}
 
 /* scripts */
 .scripts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .script{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.script header{padding:18px 20px;background:var(--aqua-soft)}
+.script header{padding:18px 20px;background:var(--leaf-soft)}
 .script header h3{font-size:1.35rem}
 .script header p{color:var(--muted);font-size:.92rem;margin-top:4px}
 .beat{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:12px 20px;border-top:1px solid var(--line)}
-.beat .t{font-weight:700;color:var(--aqua);font-size:.85rem;padding-top:2px}
+.beat .t{font-weight:700;color:var(--leaf);font-size:.85rem;padding-top:2px}
 .beat .say{font-family:var(--display);font-size:1.05rem}
 .beat .shot{color:var(--muted);font-size:.88rem}
 .script footer{padding:14px 20px;border-top:1px solid var(--line);font-size:.92rem}
@@ -92,265 +102,213 @@ h2{font-size:clamp(1.8rem,4.6vw,2.7rem);text-transform:uppercase;letter-spacing:
 /* ads */
 .ads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .ad{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:10px;align-content:start}
-.ad .aud{font-size:.78rem;font-weight:700;color:var(--aqua);text-transform:uppercase;letter-spacing:.08em}
-.ad .visual{aspect-ratio:1/1;border-radius:10px;background:linear-gradient(160deg,var(--aqua-soft),var(--sun-soft));display:grid;place-items:center;text-align:center;padding:16px;font-family:var(--display);font-weight:700;font-size:1.25rem;line-height:1.15}
+.ad .aud{font-size:.78rem;font-weight:700;color:var(--leaf);text-transform:uppercase;letter-spacing:.08em}
+.ad .visual{aspect-ratio:1/1;border-radius:10px;background:linear-gradient(160deg,var(--leaf-soft),var(--sun-soft));display:grid;place-items:center;text-align:center;padding:16px;font-family:var(--display);font-weight:700;font-size:1.25rem;line-height:1.15}
 .ad .primary{font-size:.95rem}
 .ad .hl{font-weight:700}
 .ad .cta{justify-self:start;background:var(--ink);color:var(--bg);font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:6px}
 
-/* test */
-.test{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.test ol{margin:8px 0 0;padding-left:20px}
-.test li+li{margin-top:6px}
-table{width:100%;border-collapse:collapse;font-size:.95rem}
-td,th{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+/* whatsapp */
+.chat{max-width:560px;display:grid;gap:12px}
+.msg{background:var(--surface);border:1px solid var(--line);border-radius:4px 14px 14px 14px;padding:12px 16px;position:relative}
+.msg .when{font-size:.75rem;font-weight:700;color:var(--leaf);letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px}
+.msg .btnline{display:inline-block;margin-top:8px;font-weight:700;font-size:.85rem;color:var(--leaf);border:1px solid var(--leaf);border-radius:999px;padding:2px 12px}
+.flow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:start}
 
-.eq{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px;font-family:var(--display);font-weight:700}
-.eq span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
-.eq span.on{background:var(--sun);border-color:var(--sun);color:#10232A}
-.eq i{font-style:normal;color:var(--muted)}
-.ideacheck{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
-.ideacheck div{border-top:2px solid var(--sun);padding-top:8px;display:grid;gap:2px;font-size:.95rem}
-.ideacheck b{color:var(--sun)}
-.tablewrap{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow-x:auto}
-.ptable td span{color:var(--muted);font-size:.88rem}
-.ptable tr.core td{background:var(--sun-soft)}
-.ptable td,.ptable th{padding:12px 14px}
-@media (max-width:860px){.ideacheck{grid-template-columns:minmax(0,1fr)}.ptable{min-width:620px}}
-section.wrap{padding:56px 16px}
-.hero.wrap{padding:56px 16px 48px}
-footer.end.wrap{padding:48px 16px 64px}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+td,th{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .fine{color:var(--muted);font-size:.85rem;margin-top:14px}
-footer.end{padding:48px 0 64px;border-top:1px solid var(--line)}
+footer.end.wrap{padding:52px 16px 64px;border-top:1px solid var(--line)}
 footer.end h2{font-size:clamp(1.6rem,4vw,2.3rem)}
 
 @media (max-width:860px){
-  .ladder{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .scripts,.ads,.test{grid-template-columns:minmax(0,1fr)}
-  .cohort{grid-template-columns:minmax(0,1fr)}
+  .scripts,.ads,.cohorts,.flow{grid-template-columns:minmax(0,1fr)}
+  .funnel{grid-template-columns:minmax(0,1fr)}.funnel div{display:flex;justify-content:space-between;text-align:left}.funnel b{display:inline}
   .shift{grid-template-columns:minmax(0,1fr)}
   .shift .arrow{transform:rotate(90deg);justify-self:center}
-  .sun{width:170px;height:170px;right:-50px;top:-50px}
+  .blob{width:200px;height:200px;right:-70px;top:-70px}
 }
 .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .js .reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.sun{animation:none}.js .reveal{opacity:1;transform:none;transition:none}.card:hover,.btn:hover{transform:none}}
+@media (prefers-reduced-motion:reduce){.blob{animation:none}.js .reveal{opacity:1;transform:none;transition:none}.card:hover,.steps li:hover,.btn:hover{transform:none}}
 </style>
 <body>
 
 <header class="hero wrap">
-  <div class="sun" aria-hidden="true"></div>
-  <span class="note">Spec work · made for the Content Strategist role, Honasa D2C</span>
-  <h1>Mr. Sun doesn’t check your plans.</h1>
-  <p class="sub">A content idea for <b>Aqualogica</b>: how I’d turn “sunscreen for outdoor days” into “sunscreen every day”, with content cohorts, reel scripts and Meta ads.</p>
-  <p class="by">By Aaniket Kumar Pandey · Content Strategist &amp; Copywriter</p>
+  <div class="blob" aria-hidden="true"></div>
+  <span class="note">Made for the Content Strategist role · Honasa D2C team</span>
+  <h1>Hi, I’m Aaniket. Here’s what I’d do for Honasa.</h1>
+  <p class="sub">I’m a content strategist and copywriter with nearly 4 years in agency and in-house teams. I plan content, write scripts and ads, and track them all the way to sales.</p>
+  <p class="sub">I did my homework on Honasa, found one problem worth solving, and built sample content for it. It takes about 3 minutes to read.</p>
   <div class="btns">
-    <a class="btn solid" href="#scripts">Jump to the scripts</a>
-    <a class="btn" href="https://aaniketk32-png.github.io/akp/">See my portfolio</a>
-    <a class="btn" href="mailto:aaniketk32@gmail.com">Email me</a>
+    <a class="btn solid" href="#plan">See my plan</a>
+    <a class="btn" href="#samples">Jump to samples</a>
+    <a class="btn" href="https://aaniketk32-png.github.io/akp/">My portfolio</a>
   </div>
 </header>
 
-<section class="wrap" id="brief">
+<section class="wrap" id="homework">
   <div class="sec-head">
-    <p class="eyebrow">01 · Brand objective</p>
-    <h2>Start with the <span class="mark">objective</span></h2>
-    <p class="lede">Aqualogica’s own campaign already says it well: for years, sun protection has felt like a hassle. Plenty of young people own a sunscreen. The problem is how often they use it.</p>
+    <p class="eyebrow">01 · What I understood</p>
+    <h2>Honasa, in <span class="mark">four lines</span></h2>
   </div>
-  <div class="brief">
-    <div class="card reveal"><p class="k">Brand objective</p><h3>Grow how often people use it</h3><p>Turn occasional users into daily users by building new everyday occasions, not just chasing new buyers.</p></div>
-    <div class="card reveal"><p class="k">Core audience</p><h3>The Weekend Sunscreeners</h3><p>18–26, college or first job, metro India. They own a sunscreen but only use it for trips, beach plans and long days out.</p></div>
+  <div class="grid">
+    <div class="card good reveal"><p class="k">The goal</p><h3>₹2,392 Cr → ₹5,500 Cr</h3><p>Honasa wants to more than double revenue by FY31, led by Mamaearth and The Derma Co.</p></div>
+    <div class="card good reveal"><p class="k">What it does best</p><h3>Getting people to try</h3><p>Huge creator reach, ₹99 packs, quick commerce and a growing offline presence make the first purchase easy.</p></div>
+    <div class="card warn reveal"><p class="k">Where it leaks</p><h3>Getting them back</h3><p>Shoppers have many brands one swipe away. Many buy once, then reorder wherever is fastest, or try something new.</p></div>
+    <div class="card warn reveal"><p class="k">The D2C opening</p><h3>Own site is the smallest channel</h3><p>In Honasa’s FY31 plan, D2C (its own website and app) is the smallest channel. That’s the D2C team’s chance to grow.</p></div>
   </div>
-  <div class="eq reveal" aria-label="Growth equation">
-    <span>Market</span><i>×</i><span>Penetration</span><i>×</i><span class="on">Frequency</span><i>×</i><span class="on">Amount per use</span><i>=</i><span>Brand size</span>
+  <div class="funnel reveal" aria-label="Funnel health">
+    <div class="ok"><b>Awareness</b>Strong</div>
+    <div class="gap"><b>Consideration</b>Needs more proof</div>
+    <div class="ok"><b>First try</b>Strong</div>
+    <div class="gap"><b>Repeat</b>Weak spot</div>
+    <div class="gap"><b>Loyalty</b>Weak spot</div>
   </div>
-  <p class="fine" style="margin-top:8px">Of the four levers, I’d pull two. <b>Frequency:</b> more days of use. <b>Amount per use:</b> applying enough for real protection, with the “two-finger rule” built into the creative. Both grow sales from people who already know the brand.</p>
-  <div class="bigidea reveal">
+</section>
+
+<section class="wrap" id="plan">
+  <div class="sec-head">
+    <p class="eyebrow">02 · My idea</p>
+    <h2>One problem, <span class="mark">one idea</span></h2>
+    <p class="lede">The problem I’d solve: a first-time buyer who doesn’t come back to the brand’s own site.</p>
+  </div>
+  <div class="idea reveal">
     <p class="k">The big idea</p>
-    <p class="line">The sun doesn’t check your plans. Your sunscreen shouldn’t either.</p>
-    <p>It builds on Aqualogica’s existing Mr. Sun character from <i>Feels So Light, Shields So Right</i>. Instead of a one-off film, Mr. Sun becomes a recurring social character who finds you on every “normal” day: the window seat, the balcony chai, the auto ride.</p>
-    <div class="ideacheck">
-      <div><b>Essence</b><span>Sun protection is an everyday thing, not a trip thing.</span></div>
-      <div><b>Resolves the barrier</b><span>“I’m home today” and “it feels heavy”.</span></div>
-      <div><b>Memorable</b><span>A character people can recognise and tag their friends in.</span></div>
+    <p class="line">Your routine lives here.</p>
+    <p>Other apps sell you a product. The brand’s own site remembers your skin, your routine and when you’ll run out. That’s a reason to come back that no marketplace can copy.</p>
+    <div class="shift">
+      <div><small>Today they think</small>“I’ll buy it wherever it’s fastest.”</div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div><small>We want them to think</small>“The brand’s site knows my routine. I reorder there.”</div>
     </div>
   </div>
 </section>
 
-<section class="wrap" id="persona">
+<section class="wrap" id="how">
   <div class="sec-head">
-    <p class="eyebrow">02 · Segmentation and targeting</p>
-    <h2>Who we <span class="mark">delight</span>, who we please</h2>
-    <p class="lede">I split the audience by need and moment, not just age, then picked the segment that is both big and winnable for a light, dewy sunscreen.</p>
+    <p class="eyebrow">03 · What I’ll do as your content strategist</p>
+    <h2>Five things I’ll <span class="mark">own</span></h2>
   </div>
-  <div class="tablewrap reveal">
-  <table class="ptable">
-    <tr><th>Persona</th><th>Triggers</th><th>Barriers</th><th>Role</th></tr>
-    <tr class="core"><td><b>Weekend Sunscreeners</b><br><span>18–26, own a sunscreen, use it on trip days</span></td><td>Tan lines after a trip, “you look tired”, skincare reels</td><td>“I’m home today”, heavy feel, reapplying over makeup</td><td><span class="stage">Core: delight</span></td></tr>
-    <tr><td><b>Never-Sunscreeners</b><br><span>18–24, no sunscreen habit yet</span></td><td>A friend’s routine, a first tan or breakout</td><td>“It’s for girls”, “it’s for beaches”, price</td><td>Please: future category growth</td></tr>
-    <tr><td><b>Routine Loyalists</b><br><span>22–30, daily users of another brand</span></td><td>A better texture or a new launch</td><td>“Mine works fine”</td><td>Please: brand switching</td></tr>
-  </table>
-  </div>
-  <div class="brief" style="margin-top:14px">
-    <div class="card reveal"><p class="k">Why this segment</p><h3>Big and winnable</h3><p>A large group, already in the category and already aware of Aqualogica, with a barrier that the product’s texture can actually solve.</p></div>
-    <div class="card reveal"><p class="k">Positioning</p><h3>The sunscreen you forget you’re wearing</h3><p>For young Indians who skip sunscreen on “normal” days, Aqualogica is the SPF that feels light enough to wear every day.</p></div>
-  </div>
+  <ol class="steps">
+    <li class="reveal"><span class="n">01</span><h3>Know the buyer</h3><p>Dig into reviews, comments and data to find why first-time buyers leave, and what would bring them back.</p></li>
+    <li class="reveal"><span class="n">02</span><h3>Say one clear thing</h3><p>Every brand gets one message per audience. For D2C: “Your routine lives here.”</p></li>
+    <li class="reveal"><span class="n">03</span><h3>Content for every stage</h3><p>Content cohorts that take someone from first order to second order to regular customer.</p></li>
+    <li class="reveal"><span class="n">04</span><h3>Scripts and ads that sell</h3><p>Short-form scripts, performance ads for Meta and Google, and WhatsApp and email copy, written with designers and editors.</p></li>
+    <li class="reveal"><span class="n">05</span><h3>Track, learn, scale</h3><p>Watch repeat rate, site orders and RoAS every week. Put more money behind what works, and cut what doesn’t.</p></li>
+  </ol>
 </section>
 
-<section class="wrap" id="shift">
+<section class="wrap" id="samples">
   <div class="sec-head">
-    <p class="eyebrow">03 · Communication challenge</p>
-    <h2>From “trip only” to <span class="mark">“every day”</span></h2>
-  </div>
-  <div class="shift">
-    <div class="card reveal"><p class="k">Today</p><p><b>They think:</b> “Sunscreen is for outdoor plans.”</p><p><b>They do:</b> Apply it on trip days, skip it the rest of the week.</p></div>
-    <div class="arrow" aria-hidden="true">→</div>
-    <div class="card reveal"><p class="k">Where we want them</p><p><b>They think:</b> “It’s so light, I don’t even notice it.”</p><p><b>They do:</b> Put it on every morning, like brushing their teeth.</p></div>
-  </div>
-  <p class="co reveal">“I want to convince Weekend Sunscreeners that Aqualogica feels so light, wearing it every day is easier than skipping it.”</p>
-</section>
-
-<section class="wrap" id="ladder">
-  <div class="sec-head">
-    <p class="eyebrow">04 · Brand solution: benefit ladder</p>
-    <h2>From features to <span class="mark">feelings</span></h2>
-  </div>
-  <div class="ladder">
-    <div class="card reveal"><p class="k">Feature</p><h3>Lightweight, dewy SPF 50</h3><p>A water-light texture made for Indian heat.</p></div>
-    <div class="card reveal"><p class="k">Practical benefit</p><h3>You forget it’s on</h3><p>No heavy feel, easy to layer under makeup, quick to reapply.</p></div>
-    <div class="card reveal"><p class="k">Emotional benefit</p><h3>Effortless confidence</h3><p>Looking fresh at 4 PM without thinking about it.</p></div>
-    <div class="card reveal"><p class="k">Reason to believe</p><h3>Proof, not promises</h3><p>Texture close-ups, real creator wear tests, and expert answers on common questions.</p></div>
-  </div>
-</section>
-
-<section class="wrap" id="cohorts">
-  <div class="sec-head">
-    <p class="eyebrow">05 · Content cohorts</p>
-    <h2>Five series, one <span class="mark">funnel</span></h2>
-    <p class="lede">Each series has one job and one stage of the journey, so we always know what a post is for and how to judge it.</p>
+    <p class="eyebrow">04 · Samples</p>
+    <h2>Content <span class="mark">cohorts</span></h2>
+    <p class="lede">Four series, each with one job. I’ve used Mamaearth as the example, since it’s the biggest brand and has its own site.</p>
   </div>
   <div class="cohorts">
-    <div class="cohort reveal"><div><h3>Mr. Sun Finds You</h3><span class="stage">Awareness</span></div><div><p>A comedy series in which Mr. Sun shows up on everyday “indoor” days.</p><ul><li>Mr. Sun at the window seat in the office</li><li>Mr. Sun at your cousin’s day wedding</li><li>Mr. Sun on the metro platform</li></ul></div></div>
-    <div class="cohort reveal"><div><h3>15-Second Skin Questions</h3><span class="stage">Consideration</span></div><div><p>Quick answers to the questions people actually Google, reviewed by the brand’s skin experts.</p><ul><li>Do I need sunscreen if I’m home all day?</li><li>How much is enough for the face?</li><li>Can I reapply over makeup?</li></ul></div></div>
-    <div class="cohort reveal"><div><h3>Get Ready, For Real</h3><span class="stage">Consideration → First try</span></div><div><p>Creators and customers showing real skin and real routines, with no filters on the texture shot.</p><ul><li>30-second morning routine</li><li>Midday reapply check in Delhi heat</li><li>Wear test from 9 AM to 6 PM</li></ul></div></div>
-    <div class="cohort reveal"><div><h3>Which Plus Are You?</h3><span class="stage">Conversion</span></div><div><p>An Instagram quiz and Story polls that match a skin concern to the right range, such as Radiance+, Detan+ or Barrier+, with a shop link at the end.</p><ul><li>“Post-trip tan or everyday dullness?”</li><li>Carousel: one concern, one product, one reason</li></ul></div></div>
-    <div class="cohort reveal"><div><h3>The 1 PM Reapply Club</h3><span class="stage">Repeat → Loyalty</span></div><div><p>WhatsApp and Story reminders at reapply time, with streaks and community shout-outs that keep the habit going.</p><ul><li>“It’s 1 PM. Mr. Sun is at his strongest. You know what to do.”</li><li>Monthly “30-day streak” feature for followers</li></ul></div></div>
+    <div class="card reveal"><h3>Find Your Routine</h3><span class="stage">First order</span><p>A 60-second skin quiz on the site, promoted with reels and Story polls.</p><ul><li>“Oily, dry or confused? Take the quiz.”</li><li>Creators take the quiz live and react to their result</li></ul></div>
+    <div class="card reveal"><h3>How To Use It Right</h3><span class="stage">Days 1–7</span><p>Short how-to content so the first product actually works, and people see results.</p><ul><li>“How much face wash is enough?”</li><li>“Morning vs night: what goes first?”</li></ul></div>
+    <div class="card reveal"><h3>Real Results, Real People</h3><span class="stage">Days 7–21</span><p>Customer stories and wear tests that build trust with proof instead of hype.</p><ul><li>30-day diary from real buyers</li><li>Reviews turned into carousel posts</li></ul></div>
+    <div class="card reveal"><h3>Running Low?</h3><span class="stage">Days 21–30 · reorder</span><p>Refill reminders and “complete your routine” ideas, with a one-tap reorder on the brand’s site.</p><ul><li>WhatsApp reminder before the bottle runs out</li><li>“You loved the face wash. Meet its best friend.”</li></ul></div>
   </div>
 </section>
 
 <section class="wrap" id="scripts">
   <div class="sec-head">
-    <p class="eyebrow">06 · Creatives: reel scripts</p>
+    <p class="eyebrow">05 · Samples</p>
     <h2>Two reels, ready to <span class="mark">shoot</span></h2>
-    <p class="lede">Script one I can shoot myself on a phone. Script two plays on a format I know well from sports content: live commentary.</p>
+    <p class="lede">The first one I’d shoot myself on a phone. The second is creator-led.</p>
   </div>
   <div class="scripts">
     <article class="script reveal">
-      <header><h3>“Ghar pe hi hoon”</h3><p>Series: Mr. Sun Finds You · 20 sec · Hinglish · Shot on phone</p></header>
-      <div class="beat"><span class="t">0–2s</span><div><p class="say">“Aaj toh ghar pe hi hoon. Sunscreen ki kya zaroorat?”</p><p class="shot">Talking to camera from bed. Super: <i>Famous last words.</i></p></div></div>
-      <div class="beat"><span class="t">2–6s</span><div><p class="say">Mr. Sun (VO): “Window seat? Thank you, bhai.”</p><p class="shot">Working on a laptop next to the window, sunlight right on the face.</p></div></div>
-      <div class="beat"><span class="t">6–10s</span><div><p class="say">Mr. Sun: “Balcony chai? Main bhi aata hoon.”</p><p class="shot">Balcony, chai in hand, squinting.</p></div></div>
-      <div class="beat"><span class="t">10–13s</span><div><p class="say">Mr. Sun: “Delivery lene neeche? Ab toh pakka.”</p><p class="shot">Running down to the gate in slippers.</p></div></div>
-      <div class="beat"><span class="t">13–18s</span><div><p class="say">Mr. Sun: “Arre… ye kya laga liya?”</p><p class="shot">Next morning: two fingers of Glow+ Dewy Sunscreen, blended in seconds. Texture close-up.</p></div></div>
-      <div class="beat"><span class="t">18–20s</span><div><p class="say">“So light, you’ll wear it on ‘ghar pe hi hoon’ days too.”</p><p class="shot">End card with product and SPF 50.</p></div></div>
-      <footer><b>Caption:</b> Mr. Sun found me 3 times today and I didn’t even leave the house ☀️ Where did he find you? 👇</footer>
+      <header><h3>“11 PM restock panic”</h3><p>Funny, relatable · 20 sec · Hinglish · I can shoot this</p></header>
+      <div class="beat"><span class="t">0–2s</span><div><p class="say">“Face wash khatam. Raat ke 11 baje. Ab kya?”</p><p class="shot">Shaking an empty tube at the camera, bathroom light.</p></div></div>
+      <div class="beat"><span class="t">2–7s</span><div><p class="say">“Kaunsa wala tha? Green? Orange? Vitamin C ya ubtan?”</p><p class="shot">Scrolling through 4 shopping apps, getting more confused.</p></div></div>
+      <div class="beat"><span class="t">7–11s</span><div><p class="say">“Mummy ko phone karun? Nahi, woh bolegi besan laga le.”</p><p class="shot">Cut to imagined mom, deadpan. Quick laugh beat.</p></div></div>
+      <div class="beat"><span class="t">11–16s</span><div><p class="say">“Arre, brand ki site pe toh routine saved hai. One tap. Done.”</p><p class="shot">Screen recording: “Reorder your routine”, one tap, order placed.</p></div></div>
+      <div class="beat"><span class="t">16–20s</span><div><p class="say">“Meri skin ko mummy ke baad sirf ye yaad rakhta hai.”</p><p class="shot">End card: <i>Your routine lives here.</i></p></div></div>
+      <footer><b>Caption:</b> Who else forgets which face wash they use? 🙋‍♂️ Comment “me” and we’ll send you the quiz 👇</footer>
     </article>
     <article class="script reveal">
-      <header><h3>“Live from the dressing table”</h3><p>Series: Get Ready, For Real · 25 sec · Creator-led · Sports-commentary VO</p></header>
-      <div class="beat"><span class="t">0–3s</span><div><p class="say">“And we are LIVE from the dressing table! 8:47 AM, and she’s going for the sunscreen!”</p><p class="shot">Creator at the mirror, scoreboard-style overlay.</p></div></div>
-      <div class="beat"><span class="t">3–8s</span><div><p class="say">“Two-finger rule… textbook! The coaches will be proud.”</p><p class="shot">Two lines of sunscreen on the fingers.</p></div></div>
-      <div class="beat"><span class="t">8–13s</span><div><p class="say">“She’s blending… blending… and it’s GONE. The crowd is on its feet!”</p><p class="shot">Close-up: absorbs fast, dewy finish.</p></div></div>
-      <div class="beat"><span class="t">13–19s</span><div><p class="say">“Makeup on top. Will it hold? Will it pill?… Smooth finish!”</p><p class="shot">Foundation going on over it.</p></div></div>
-      <div class="beat"><span class="t">19–25s</span><div><p class="say">“She walks out into 38 degrees. Mr. Sun is stunned in the stands.”</p><p class="shot">Door opens to bright light. End card: <i>Light enough to win every day.</i></p></div></div>
-      <footer><b>Caption:</b> Tag the friend who skips sunscreen like it’s a warm-up 🏏☀️</footer>
+      <header><h3>“Rate my routine”</h3><p>Creator-led · 25 sec · Educational with humour</p></header>
+      <div class="beat"><span class="t">0–3s</span><div><p class="say">“You sent me your skincare routines. I’m rating them. No mercy.”</p><p class="shot">Creator with a scorecard, follower DMs on screen.</p></div></div>
+      <div class="beat"><span class="t">3–9s</span><div><p class="say">“Routine 1: face wash, then… nothing. 3 out of 10. Where’s the moisturiser?”</p><p class="shot">Dramatic buzzer sound.</p></div></div>
+      <div class="beat"><span class="t">9–15s</span><div><p class="say">“Routine 2: five serums in one night. Bhai, skin hai, science lab nahi.”</p><p class="shot">Creator holding head in hands.</p></div></div>
+      <div class="beat"><span class="t">15–21s</span><div><p class="say">“Routine 3: cleanse, moisturise, sunscreen. Simple. 10 out of 10.”</p><p class="shot">Products shown in order, confetti.</p></div></div>
+      <div class="beat"><span class="t">21–25s</span><div><p class="say">“Not sure what yours should be? Take the 60-second quiz. Link in bio.”</p><p class="shot">End card with quiz screen.</p></div></div>
+      <footer><b>Caption:</b> Send us your routine. We’ll rate the next batch 😤👇</footer>
     </article>
   </div>
-  <p class="fine">All product claims (texture, finish, layering under makeup) would be checked with the product and legal teams before posting.</p>
+  <p class="fine">All product claims would be checked with the product and legal teams, and all creator content would follow ASCI guidelines.</p>
 </section>
 
 <section class="wrap" id="ads">
   <div class="sec-head">
-    <p class="eyebrow">07 · Creatives: performance ads</p>
+    <p class="eyebrow">06 · Samples</p>
     <h2>Three Meta ads, three <span class="mark">jobs</span></h2>
-    <p class="lede">One ad finds new people, one sells the everyday occasion, and one brings back people who almost bought.</p>
   </div>
   <div class="ads">
     <div class="ad reveal">
-      <p class="aud">Prospecting · 18–26, skincare interests</p>
-      <div class="visual">Sunscreen that doesn’t feel like sunscreen.</div>
-      <p class="primary">Light, dewy, SPF 50. Goes on in seconds, sits well under makeup, and doesn’t feel heavy by afternoon.</p>
-      <p class="hl">Wear it daily. Forget it’s on.</p>
+      <p class="aud">New buyers · skincare interests</p>
+      <div class="visual">Not sure what your skin needs? 60 seconds. One routine.</div>
+      <p class="primary">Stop guessing. Take a quick skin quiz and get a routine made for your skin type, from face wash to sunscreen.</p>
+      <p class="hl">Find your routine</p>
+      <span class="cta">Take the quiz</span>
+    </div>
+    <div class="ad reveal">
+      <p class="aud">First-time buyers · 21–30 days after order</p>
+      <div class="visual">Your face wash is almost done. Your routine isn’t.</div>
+      <p class="primary">Running low? Reorder in one tap, and add the moisturiser that goes with it. Your routine is saved on our site.</p>
+      <p class="hl">Reorder before you run out</p>
       <span class="cta">Shop now</span>
     </div>
     <div class="ad reveal">
-      <p class="aud">Prospecting · lookalike of past buyers</p>
-      <div class="visual">“Ghar pe hi hoon” is not a sun protection plan.</div>
-      <p class="primary">The window seat. The balcony chai. The auto to the metro. Mr. Sun finds you anyway. Keep a light SPF 50 on every day.</p>
-      <p class="hl">SPF 50 for every “just stepping out”</p>
-      <span class="cta">Shop now</span>
-    </div>
-    <div class="ad reveal">
-      <p class="aud">Retargeting · added to cart, last 7 days</p>
-      <div class="visual">Your cart misses you. Mr. Sun doesn’t.</div>
-      <p class="primary">Still thinking about it? Glow+ Dewy Sunscreen is waiting in your cart. Light enough for every day, ready before your next “quick errand”.</p>
-      <p class="hl">Come back before the tan does</p>
+      <p class="aud">Cart left behind · last 7 days</p>
+      <div class="visual">Your routine is waiting in your cart.</div>
+      <p class="primary">You picked the right products. Finish your order today, straight from the brand.</p>
+      <p class="hl">Complete your routine</p>
       <span class="cta">Complete order</span>
     </div>
   </div>
 </section>
 
-<section class="wrap" id="media">
+<section class="wrap" id="whatsapp">
   <div class="sec-head">
-    <p class="eyebrow">08 · Media plan</p>
-    <h2>Paid, owned, <span class="mark">earned</span></h2>
-    <p class="lede">Each type of media does a different job, and each one feeds the next.</p>
+    <p class="eyebrow">07 · Samples</p>
+    <h2>The first-order to <span class="mark">second-order</span> flow</h2>
+    <p class="lede">Four WhatsApp messages over 30 days, for people who opted in. Helpful first, selling last.</p>
   </div>
-  <div class="brief">
-    <div class="card reveal"><p class="k">Paid</p><h3>Meta and Google</h3><p>Reels ads and creator partnership ads for reach. Search ads on high-intent terms like “sunscreen for oily skin” or “lightweight sunscreen”, where people are ready to buy.</p></div>
-    <div class="card reveal"><p class="k">Owned</p><h3>Instagram, YouTube, WhatsApp, website</h3><p>The five series, the “Which Plus Are You?” quiz on the site, and 1 PM reapply reminders for people who opted in.</p></div>
-    <div class="card reveal"><p class="k">Earned</p><h3>Creators and customers</h3><p>A #MrSunFoundMe challenge: people duet the reel with the place Mr. Sun found them. The best entries get reposted, and that builds advocacy.</p></div>
-  </div>
-</section>
-
-<section class="wrap" id="measure">
-  <div class="sec-head">
-    <p class="eyebrow">09 · Test, learn, scale</p>
-    <h2>How I’d judge <span class="mark">what works</span></h2>
-  </div>
-  <div class="test">
-    <div class="card reveal">
-      <p class="k">Testing plan</p>
-      <ol>
-        <li>Run three hooks (humour, question, creator) against the same offer and budget.</li>
-        <li>Cut the weakest after enough spend to judge, based on hook rate and click-through.</li>
-        <li>Put more budget behind the winner, and turn top organic reels into ads with the creators.</li>
-        <li>Refresh creative every 2–3 weeks, before people get tired of it.</li>
-      </ol>
+  <div class="flow">
+    <div class="chat">
+      <div class="msg reveal"><span class="when">Day 0 · order delivered</span>Hi Riya 👋 Your face wash is here! Quick tip: a coin-sized amount is enough. Use it morning and night for best results.</div>
+      <div class="msg reveal"><span class="when">Day 7 · check-in</span>One week in! How’s your skin feeling? Reply with 😍, 🙂 or 😕 and we’ll share a tip that fits.</div>
+      <div class="msg reveal"><span class="when">Day 21 · complete the routine</span>Loving the face wash? People with your skin type pair it with our moisturiser. Here’s why it works together.<br><span class="btnline">See the routine</span></div>
+      <div class="msg reveal"><span class="when">Day 28 · refill reminder</span>Your face wash is probably running low 🫧 Your routine is saved. Reorder in one tap so you don’t miss a day.<br><span class="btnline">Reorder now</span></div>
     </div>
     <div class="card reveal">
-      <p class="k">What I’d measure at each stage</p>
+      <p class="k">How I’d measure it</p>
       <table>
-        <tr><th>Stage</th><th>Signal</th></tr>
-        <tr><td>Awareness</td><td>3-second views, reach, shares</td></tr>
-        <tr><td>Consideration</td><td>Saves, comments, quiz completions</td></tr>
-        <tr><td>Conversion</td><td>CTR, add to cart, cost per purchase, RoAS</td></tr>
-        <tr><td>Repeat</td><td>Repeat purchase when the first tube runs out</td></tr>
+        <tr><th>What</th><th>Why it matters</th></tr>
+        <tr><td>Repeat purchase rate</td><td>Are first-time buyers coming back?</td></tr>
+        <tr><td>Orders on own site</td><td>Is D2C growing its share?</td></tr>
+        <tr><td>Items per order</td><td>Are people buying routines, not single products?</td></tr>
+        <tr><td>RoAS</td><td>Is every rupee of ad spend earning back more?</td></tr>
       </table>
     </div>
   </div>
 </section>
 
 <footer class="end wrap">
-  <p class="eyebrow">Why I made this</p>
-  <h2>I’d rather show you how I think <span class="mark">than tell you.</span></h2>
-  <p class="lede">I’m a content strategist and copywriter with nearly 4 years of experience in agency and in-house teams. I’ve planned content, written scripts and tracked creator campaigns down to installs. I’d love to do the same for Honasa’s brands.</p>
+  <p class="eyebrow">Thanks for reading</p>
+  <h2>I’d rather show how I think <span class="mark">than just tell you.</span></h2>
+  <p class="lede">If this is the kind of thinking your team needs, I’d love to talk.</p>
   <div class="btns">
-    <a class="btn solid" href="https://aaniketk32-png.github.io/akp/">See my portfolio</a>
-    <a class="btn" href="mailto:aaniketk32@gmail.com">aaniketk32@gmail.com</a>
+    <a class="btn solid" href="mailto:aaniketk32@gmail.com">aaniketk32@gmail.com</a>
+    <a class="btn" href="https://aaniketk32-png.github.io/akp/">My portfolio</a>
     <a class="btn" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/">LinkedIn</a>
   </div>
-  <p class="fine">This is unofficial spec work made for a job application. It is not affiliated with or endorsed by Honasa Consumer or Aqualogica. Brand and product names belong to their owners.</p>
+  <p class="fine">Unofficial spec work made for a job application. Not affiliated with or endorsed by Honasa Consumer or its brands. Figures are from public reports up to October 2026. Brand names belong to their owners.</p>
 </footer>
 
 <script>
