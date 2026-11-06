@@ -120,6 +120,17 @@ h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:600;line-height:1.02
 .card.hi{border:2px solid var(--yellow)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
 
+.aqi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.aqi div{border-radius:12px;padding:14px;background:var(--card);border:1px solid var(--line);font-size:.93rem}
+.aqi div>b{display:block;font:600 1.08rem var(--display);margin-bottom:4px}
+.aqi .a1{border-top:6px solid #3fbf6f}.aqi .a2{border-top:6px solid var(--yellow)}.aqi .a3{border-top:6px solid #ff8a3d}.aqi .a4{border-top:6px solid var(--red)}
+.aqi b.in{display:inline;font:inherit;font-weight:800;margin:0}
+.gads{margin-top:16px;padding:16px 18px;border:1px dashed var(--line);border-radius:14px;background:var(--card);font-size:.95rem}
+.gads p{margin-top:8px}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+@media (max-width:760px){.aqi{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.aqi{grid-template-columns:minmax(0,1fr)}}
+
 /* read this first */
 .first h2{max-width:20ch}
 .map{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
@@ -266,11 +277,10 @@ tr.core td{background:rgba(255,210,63,.22)}
 <nav class="nav" aria-label="Main">
   <a class="logo" href="#top" aria-label="Aaniket, top of page">aaniket<span>FOR HONASA</span></a>
   <div class="links" role="group" aria-label="Fire slips by topic">
-    <button type="button" data-fire="homework">Homework</button>
-    <button type="button" data-fire="research">Ad research</button>
-    <button type="button" data-fire="jd">Where I help</button>
-    <button type="button" data-fire="idea">My idea</button>
-    <button type="button" data-fire="samples">Samples</button>
+    <button type="button" data-fire="honasa">Honasa today</button>
+    <button type="button" data-fire="smog">Mamaearth × smog</button>
+    <button type="button" data-fire="bblunt">BBlunt</button>
+    <button type="button" data-fire="run">How I’d run it</button>
     <button type="button" data-fire="contact">Contact</button>
   </div>
   <a class="key" href="mailto:aaniketk32@gmail.com?subject=Content%20Strategist%2C%20Honasa%20D2C">Let’s Talk ↗<small>@</small></a>
@@ -326,21 +336,6 @@ tr.core td{background:rgba(255,210,63,.22)}
   <div class="slips" id="slips"></div>
 </header>
 
-<!-- ================= READ THIS FIRST ================= -->
-<section class="sec first" id="first">
-  <p class="eyebrow"><i></i>Before you scroll</p>
-  <h2>Honasa is great at first dates. <em>I want to help with the second one.</em></h2>
-  <p class="lede">Your ads get people to try a product, and lots of them. But after that first order, many reorder from whichever app is fastest, or try the next brand in their feed. My whole pitch is about one thing: <b>bringing those first-time buyers back to the brand’s own site.</b></p>
-  <ol class="map">
-    <li><a href="#jd"><span>01</span><b>Where I help</b>What the team needs, and what I’d do</a></li>
-    <li><a href="#homework"><span>02</span><b>Homework</b>Where Honasa stands, and where the room is</a></li>
-    <li><a href="#research"><span>03</span><b>Ad research</b>Honasa vs rivals, and 3 strategies</a></li>
-    <li><a href="#idea"><span>04</span><b>My idea</b>“Your routine lives here.”</a></li>
-    <li><a href="#samples"><span>05</span><b>Samples</b>Reels, ads and a WhatsApp flow</a></li>
-  </ol>
-  <p class="fine-note">No skincare was harmed in the making of this page. A few late nights were.</p>
-</section>
-
 <aside class="detail" id="detail" aria-live="polite" aria-label="Slip detail">
   <button class="x" type="button" aria-label="Close">×</button>
   <p class="k"><i id="dSw"></i><span id="dK"></span></p>
@@ -349,313 +344,282 @@ tr.core td{background:rgba(255,210,63,.22)}
   <a class="more" id="dA" href="#"></a>
 </aside>
 
-<!-- ================= 01 JD ================= -->
-<section class="sec" id="jd">
+<!-- ================= READ THIS FIRST ================= -->
+<section class="sec first" id="first">
+  <p class="eyebrow"><i></i>Before you scroll</p>
+  <h2>Two briefs I wrote for Honasa. <em>One for this week, one for this quarter.</em></h2>
+  <p class="lede">Delhi’s AQI crossed 450 this week, so the first brief is for <b>Mamaearth</b>, built for smog season. The second is for <b>BBlunt</b>, whose hair colour relaunch is one of Honasa’s fastest-moving stories right now. Each one covers the whole job: copy, content plan, scripts, ads, numbers and a brief the team can work from.</p>
+  <ol class="map">
+    <li><a href="#honasa"><span>01</span><b>Honasa today</b>Where the brand is in 2026</a></li>
+    <li><a href="#smog"><span>02</span><b>Mamaearth × smog</b>“Routine by AQI”</a></li>
+    <li><a href="#bblunt"><span>03</span><b>BBlunt relaunch</b>“#ShiningBaby is back”</a></li>
+    <li><a href="#run"><span>04</span><b>How I’d run it</b>Testing, numbers, teamwork</a></li>
+    <li><a href="#fit"><span>05</span><b>Where it fits</b>The role, mapped to this page</a></li>
+  </ol>
+  <p class="fine-note">No skincare was harmed in the making of this page. A few late nights were.</p>
+</section>
+
+<!-- ================= 01 HONASA TODAY ================= -->
+<section class="sec" id="honasa">
   <div class="head">
-    <p class="eyebrow"><i></i>01 · Where I can help</p>
-    <h2>What the team needs. What’s there now. <em>What I’d do better.</em></h2>
-    <p class="lede">Six things a D2C content strategist owns. For each one, I looked at what Honasa does today from public reports and its own campaigns, and wrote down what I’d change in my first months.</p>
+    <p class="eyebrow"><i></i>01 · Honasa today</p>
+    <h2>Where Honasa is <em>right now</em></h2>
+    <p class="lede">A quick read before the work. Everything here comes from public reports and Instagram activity from 2026.</p>
   </div>
-  <div class="jd">
-    <div class="jdrow reveal">
-      <div class="ask"><span class="n">01</span><q>Brand copy, content strategy and content cohorts</q></div>
-      <div class="now"><span class="tagline">What’s there now</span><p>A house of brands where several sell the same thing. Mamaearth, The Derma Co and Aqualogica all sell sunscreen, so messages can blur.</p></div>
-      <div class="better"><span class="tagline">What I’d do better</span><p>Give each brand one clear line, built on what the buyer needs: <b>natural</b> (Mamaearth), <b>science</b> (The Derma Co), <b>light and fun</b> (Aqualogica). Then plan content cohorts by customer stage: first order, second order, regular, lapsed.</p><p class="done"><b>Where I’ve done this:</b> kept 4+ brand voices separate at Times Internet, and built content pillars and calendars at Signal.</p></div>
-    </div>
-    <div class="jdrow reveal">
-      <div class="ask"><span class="n">02</span><q>Campaign ideas, creative territories and brand stories</q></div>
-      <div class="now"><span class="tagline">What’s there now</span><p>Strong campaign films and creator bursts, like Aqualogica’s <i>Feels So Light, Shields So Right</i>. Most ideas are launch-led and short-lived.</p></div>
-      <div class="better"><span class="tagline">What I’d do better</span><p>Build territories that can run all year: <b>Proof, not promises</b> · <b>Routine rituals</b> · <b>Desi skin truths</b> in Hinglish humour. Plus one big D2C idea: <b>“Your routine lives here.”</b></p><p class="done"><b>Where I’ve done this:</b> recurring series at Signal, like Guess the Player and a three-part Ballon d’Or series, that people came back for.</p></div>
-    </div>
-    <div class="jdrow reveal">
-      <div class="ask"><span class="n">03</span><q>Turning consumer behaviour into content that converts</q></div>
-      <div class="now"><span class="tagline">What’s there now</span><p>Excellent at the first purchase: ₹99 packs, quick commerce and a fast-growing offline presence. Repeat buying and loyalty are the weak links.</p></div>
-      <div class="better"><span class="tagline">What I’d do better</span><p>Map triggers and barriers for each persona, then build content for the exact moments people drop off: <b>Day 7 doubt</b>, <b>Day 25 refill</b>, <b>the abandoned cart</b>.</p><p class="done"><b>Where I’ve done this:</b> tracked 81 creator links down to installs and sign-ups to find which messages actually converted.</p></div>
-    </div>
-    <div class="jdrow reveal">
-      <div class="ask"><span class="n">04</span><q>Scripts and performance ads, short and long form</q></div>
-      <div class="now"><span class="tagline">What’s there now</span><p>High creator volume. ASCI’s 2023 report named Honasa its top violator, with 187 ads, about 94% of them creator content.</p></div>
-      <div class="better"><span class="tagline">What I’d do better</span><p>Hook-first scripts built on <b>proof</b> (wear tests, ingredient explainers, real results) and written to ASCI rules from the first draft.</p><p class="done"><b>Where I’ve done this:</b> reel scripts with a hook-to-CTA framework (3.87M Instagram views), and long-form content that grew TechGig to 300K+ monthly visits.</p></div>
-    </div>
-    <div class="jdrow reveal">
-      <div class="ask"><span class="n">05</span><q>RoAS on Meta and Google</q></div>
-      <div class="now"><span class="tagline">What’s there now</span><p>Ad spend has been high, about 35% of sales in FY24. Honasa’s own plan looks for 100–150 bps of margin from more efficient channel spend.</p></div>
-      <div class="better"><span class="tagline">What I’d do better</span><p>Test 3 hooks per offer, cut the weakest fast, and retarget first-time buyers, who cost less than new ones. Use Google Search for buyers who already know what they want (“sunscreen for oily skin”). Judge <b>RoAS and repeat rate together</b>.</p><p class="done"><b>Where I’ve done this:</b> daily reporting on installs and cost per install at Signal, used to decide what to make next.</p></div>
-    </div>
-    <div class="jdrow reveal">
-      <div class="ask"><span class="n">06</span><q>Working with designers, editors and other teams</q></div>
-      <div class="now"><span class="tagline">What’s there now</span><p>Many brands, many teams and a lot of content going out fast.</p></div>
-      <div class="better"><span class="tagline">What I’d do better</span><p>A <b>one-page creative brief</b> for every piece (sample below) and a <b>weekly review</b> where we check each piece against its numbers.</p><p class="done"><b>Where I’ve done this:</b> briefed designers and video editors daily at Signal, and took agency clients from brief to final approval at OutSpark.</p></div>
-    </div>
+  <div class="grid">
+    <div class="card reveal"><span class="chip">The plan</span><h3>₹2,392 Cr → ₹5,500 Cr</h3><p>FY26 revenue to the FY31 target. Mamaearth past ₹2,000 Cr, The Derma Co past ₹1,500 Cr, and two more brands past ₹500 Cr each.</p></div>
+    <div class="card reveal"><span class="chip mint">Momentum</span><h3>Younger brands up 45%+</h3><p>In its Q2 FY27 update, Honasa expects early-30s% growth overall. The younger brands are growing faster, led by BBlunt’s hair colour relaunch.</p></div>
+    <div class="card reveal"><span class="chip pink">Reach</span><h3>About 3.2 lakh outlets</h3><p>Retail reach as of September 2026. The brand’s own sites and apps are planned at ₹400–450 Cr by FY31.</p></div>
+    <div class="card reveal"><span class="chip blue">New moves</span><h3>Trying new things</h3><p>First Indian brand to advertise on ChatGPT (Mamaearth, Sep 2026). Bought Reginald Men. Took a stake in Fang for oral care.</p></div>
+  </div>
+
+  <h3 class="sub-h">What I saw on their Instagram</h3>
+  <div class="grid">
+    <div class="card reveal"><span class="chip">Mamaearth · Sep–Oct</span><h3>Hair care, everyday creators</h3><p>Rosemary, Flaxseed and Damage Repair shampoos, plus Ubtan face wash. Mums, gym-goers, even a recipe page. Mostly English captions. Big film this year: Sreeleela on the Kiss Cam.</p></div>
+    <div class="card reveal"><span class="chip pink">BBlunt</span><h3>Frizz, shine, quick results</h3><p>Creators show blowouts, Bond Repair and the Moisture range. All in English. The relaunched hair colour doesn’t yet have a big creator push of its own.</p></div>
+    <div class="card reveal"><span class="chip mint">Across brands</span><h3>“Comment LINK” everywhere</h3><p>Thousands of people ask for links in the comments. That’s a ready-made way to send them to the brand’s own site.</p></div>
+  </div>
+
+  <h3 class="sub-h">Why these two brands</h3>
+  <div class="grid two">
+    <div class="card hi reveal"><span class="chip red">The moment</span><h3>Mamaearth</h3><p>Delhi’s AQI hit 451 on 3 November. Last December Mamaearth put anti-smog guns on six Gurugram roads for its 9th birthday. This December it turns 10.</p></div>
+    <div class="card hi reveal"><span class="chip red">The momentum</span><h3>BBlunt</h3><p>The hair colour relaunch is pulling growth, BBlunt is one of the brands Honasa wants at ₹500 Cr, and it has a past hit to bring back.</p></div>
   </div>
 </section>
 
-<!-- ================= 02 BRAND READ ================= -->
-<section class="sec" id="homework">
+<!-- ================= 02 MAMAEARTH SMOG ================= -->
+<section class="sec" id="smog">
   <div class="head">
-    <p class="eyebrow"><i></i>02 · Homework</p>
-    <h2>How I read <em>Honasa</em></h2>
-    <p class="lede">I looked at the brand five ways: what it wants to become, how it can grow, where buyers drop off, who it sells to, and who it’s up against.</p>
+    <p class="eyebrow"><i></i>02 · Brief 1 · Mamaearth</p>
+    <h2>Smog season: <em>Routine by AQI</em></h2>
+    <p class="lede">People in NCR come home with dull, gritty skin and flat hair. They’re also tired of brands using fear to sell during smog season. So this plan is useful first, and the product comes second.</p>
   </div>
 
-  <div class="grid">
-    <div class="card reveal"><span class="chip">Brand objective</span><h3>₹2,392 Cr → ₹5,500 Cr</h3><p>FY26 revenue to the FY31 target. Mamaearth past ₹2,000 Cr, The Derma Co past ₹1,500 Cr, and two more brands past ₹500 Cr each.</p></div>
-    <div class="card reveal"><span class="chip mint">Momentum</span><h3>Growth is back</h3><p>In its Q2 FY27 business update, Honasa expects early-30s% growth overall, with Mamaearth in the high teens and younger brands around the mid-40s%.</p></div>
-    <div class="card reveal"><span class="chip pink">Where it wins</span><h3>The first purchase</h3><p>Big creator reach, ₹99 packs, quick commerce, and direct outlets planned to grow from about 1.2 lakh to 3 lakh+.</p></div>
-    <div class="card reveal"><span class="chip red">The opening</span><h3>D2C is the smallest channel</h3><p>In the FY31 plan, Honasa’s own site and app (₹400–450 Cr) is the smallest of its five channels. That’s room for the D2C team to grow.</p></div>
-  </div>
-
-  <h3 class="sub-h">The growth equation</h3>
-  <div class="eq reveal"><span>Market</span><i>×</i><span>Penetration</span><i>×</i><span class="on">Frequency</span><i>×</i><span class="on">Amount per use</span><i>=</i><span>Brand size</span></div>
-  <div class="grid">
-    <div class="card reveal"><h3>Market</h3><p>Being pushed: new categories like oral care (a stake in Fang), fragrances and nutraceuticals.</p></div>
-    <div class="card reveal"><h3>Penetration</h3><p>Being pushed: offline, tier-2 towns, ₹99 packs (people new to the category), and winning users from rivals (people new to the brand).</p></div>
-    <div class="card hi reveal"><h3>Frequency</h3><p><b>Under-used.</b> Repeat buying and full routines grow sales from people who already trust the brand.</p></div>
-    <div class="card hi reveal"><h3>Amount per use</h3><p><b>Under-used.</b> Teaching the right amount, like two fingers of sunscreen, helps both results and refills.</p></div>
-  </div>
-
-  <h3 class="sub-h">Funnel check</h3>
-  <div class="funnel reveal">
-    <div class="ok"><b>Awareness</b>Strong. Huge creator and digital reach.</div>
-    <div class="mid"><b>Consideration</b>Trust gap. Hype gets questioned.</div>
-    <div class="ok"><b>Trial</b>Strong. ₹99 packs, quick commerce.</div>
-    <div class="bad"><b>Repeat</b>Weak. Reorders go wherever is fastest.</div>
-    <div class="bad"><b>Loyalty</b>Weak. “Flirty” users try new brands.</div>
-    <div class="mid"><b>Advocacy</b>Mixed. Backlash spreads fast.</div>
-  </div>
-
-  <h3 class="sub-h">Segmentation, targeting, positioning</h3>
-  <div class="tablewrap reveal">
-    <table>
-      <tr><th>Need state</th><th>What they want</th><th>Honasa brand</th><th>Role for D2C</th></tr>
-      <tr><td><b>Natural seekers</b></td><td>“Safe and gentle for me and my family”</td><td>Mamaearth</td><td>Biggest base of first-time buyers</td></tr>
-      <tr><td><b>Science seekers</b></td><td>“Show me the active and the percentage”</td><td>The Derma Co</td><td>Routines backed by proof</td></tr>
-      <tr><td><b>Gen Z glow seekers</b></td><td>“Light, fun, makes me look fresh”</td><td>Aqualogica</td><td>Quizzes and social</td></tr>
-      <tr><td><b>Grooming men</b></td><td>“Simple, no fuss”</td><td>Reginald Men</td><td>Starter kits</td></tr>
-      <tr class="core"><td><b>Target: One-Time Buyers</b>, 20–32</td><td><b>Triggers:</b> running out, seeing results, “what do you use?”<br><b>Barriers:</b> reordering on the fastest app, a new ad, “what should I buy next?”</td><td>All brands</td><td><b>Delight these.</b> A big group who already like the brand, and the easiest to win back.</td></tr>
-    </table>
-  </div>
-
-  <h3 class="sub-h">Competitive landscape</h3>
-  <div class="grid">
-    <div class="card reveal"><span class="chip blue">Positioning</span><h3>Natural vs proof</h3><p>Mamaearth’s natural, toxin-free promise was new in 2016. Challengers like Minimalist, Foxtale and Plum now win on ingredient percentages and expert voices.</p></div>
-    <div class="card reveal"><span class="chip">Pricing</span><h3>Every price point</h3><p>From ₹99 packs to premium Luminéve. Price isn’t the gap. The gap is a reason to stay.</p></div>
-    <div class="card reveal"><span class="chip pink">Ads & creators</span><h3>Reach is huge</h3><p>Creator-first marketing built the brand, but heavy volume has raised trust and compliance questions.</p></div>
-    <div class="card reveal"><span class="chip mint">Customer sentiment</span><h3>What people say</h3><p><b>What customers love:</b> affordable, easy to find, gentle.<br><b>What they complain about:</b> quality doubts, “too many ads”, claims that don’t match results.</p></div>
-  </div>
-</section>
-
-<!-- ================= 03 AD RESEARCH ================= -->
-<section class="sec" id="research">
-  <div class="head">
-    <p class="eyebrow"><i></i>03 · Ad research</p>
-    <h2>What Honasa runs. What rivals run. <em>What I’d build.</em></h2>
-    <p class="lede">I went through recent campaigns and ad libraries for Honasa’s brands and three fast-growing challengers. Here’s the short version, and the strategies I’d build from it.</p>
-  </div>
-
-  <h3 class="sub-h" style="margin-top:0">What Honasa’s ads look like today</h3>
-  <div class="grid">
-    <div class="card reveal"><span class="chip red">Celebrity films</span><h3>Famous faces, one per category</h3><p>Shilpa Shetty for Mamaearth (“Hai Proof Tabhi Mama Approved”), Sreeleela for Mamaearth hair care, Sania Mirza for The Derma Co suncare (“1 sunscreen, 2 superpowers”), Apoorva Mukhija for Aqualogica sunscreen.</p></div>
-    <div class="card reveal"><span class="chip pink">Creators</span><h3>Volume, now going regional</h3><p>Creator-first since day one. A recent influencer mandate for south-specific agencies shows the push into regional markets.</p></div>
-    <div class="card reveal"><span class="chip">Spend</span><h3>Big budgets</h3><p>₹744 Cr on marketing in FY25, and ₹206 Cr on ads in Q1 FY26 alone.</p></div>
-  </div>
-  <div class="takeaway reveal"><b>The pattern I see:</b> almost every campaign I found is built to get noticed and win a first order. Very few speak to someone who has already bought.</div>
-
-  <h3 class="sub-h">Competitor snapshot</h3>
-  <div class="tablewrap reveal">
-    <table>
-      <tr><th>Brand</th><th>How they position</th><th>How their ads look</th><th>What they win on</th><th>What I’d borrow</th></tr>
-      <tr class="core"><td><b>Mamaearth</b><br><small>Honasa</small></td><td>Natural, toxin-free, safe for family</td><td>Celebrity films, lots of creators, festive peaks</td><td>Reach and first purchase</td><td><i>The brand I’d work on</i></td></tr>
-      <tr><td><b>Minimalist</b></td><td>Honest skincare. Exact active % on the front of every bottle</td><td>Clean and clinical. Real before-and-afters. No celebrities</td><td>Trust and repeat buying, mostly through word of mouth</td><td><b>Put the proof up front</b></td></tr>
-      <tr><td><b>Foxtale</b></td><td>Between clinical and fun</td><td>Offbeat celeb collabs (Emraan Hashmi, Farah Khan), Shah Rukh Khan as ambassador, 50–150 creators per launch, colour-coded packs</td><td>Recall. You remember the yellow sunscreen</td><td><b>Make every product easy to spot and remember</b></td></tr>
-      <tr><td><b>Plum</b></td><td>“We have chemistry.” Science you can understand</td><td>Founder and formulators explain products in FAQ reels. No outside ambassadors</td><td>Credibility with Gen Z who research before buying</td><td><b>Let experts explain, in plain words</b></td></tr>
-    </table>
-  </div>
-
-  <h3 class="sub-h">Three gaps</h3>
-  <div class="grid">
-    <div class="card hi reveal"><span class="chip red">Gap 1</span><h3>Nobody owns the second order</h3><p>Every brand fights for the first purchase. The reorder goes to whichever app is fastest.</p></div>
-    <div class="card reveal"><span class="chip blue">Gap 2</span><h3>Proof lives in the ad films</h3><p>A celebrity says it works. Rivals show it working on real people, with the active and the percentage.</p></div>
-    <div class="card reveal"><span class="chip mint">Gap 3</span><h3>The brand rarely explains itself</h3><p>Challengers let founders and formulators talk. Honasa’s voice mostly comes from celebrities and creators.</p></div>
-  </div>
-
-  <h3 class="sub-h">Strategies I’d build from this</h3>
-  <div class="strat">
-    <div class="card reveal">
-      <span class="chip blue">Strategy 1 · Consideration</span><h3>Proof you can see</h3>
-      <dl>
-        <dt>Goal</dt><dd>Get people who’ve seen the ads to trust the product.</dd>
-        <dt>Who</dt><dd>Curious first-time buyers who read labels and reviews.</dd>
-        <dt>Shift</dt><dd>From “the ad says it works” to “I saw it work on someone like me.”</dd>
-        <dt>What we make</dt><dd>30-day real-buyer diaries, “what’s inside, at what %” explainers, and short in-house expert Q&amp;As.</dd>
-        <dt>Where</dt><dd><b>Paid:</b> creator partnership ads using the diaries. <b>Owned:</b> results on every product page. <b>Earned:</b> reviews turned into carousels.</dd>
-        <dt>Measure</dt><dd>Product page conversion, review volume, saves.</dd>
-      </dl>
-    </div>
-    <div class="card reveal">
-      <span class="chip mint">Strategy 2 · Usage</span><h3>Use it right</h3>
-      <dl>
-        <dt>Goal</dt><dd>Better results, and more product used.</dd>
-        <dt>Who</dt><dd>New buyers in their first 7 days.</dd>
-        <dt>Shift</dt><dd>From “a pea-sized bit is enough” to “I know exactly how much to use.”</dd>
-        <dt>What we make</dt><dd>A “How much is enough?” reel series. For suncare, it picks up the tennis idea: good defence means two full fingers of sunscreen.</dd>
-        <dt>Where</dt><dd>Reels, a QR on the pack, a Day 1 WhatsApp tip.</dd>
-        <dt>Measure</dt><dd>Days to reorder, Day 7 reviews.</dd>
-      </dl>
-    </div>
-    <div class="card hi reveal">
-      <span class="chip red">Strategy 3 · Repeat</span><h3>The second order</h3>
-      <dl>
-        <dt>Goal</dt><dd>Grow how often people buy, on the brand’s own site.</dd>
-        <dt>Who</dt><dd>One-Time Buyers, 20–32. <b>Trigger:</b> running out. <b>Barrier:</b> the fastest app.</dd>
-        <dt>Shift</dt><dd>From “I’ll buy it wherever” to “my routine lives on the brand’s site.”</dd>
-        <dt>What we make</dt><dd>Saved routines, refill reminders, routine bundles, the “11 PM restock panic” reel.</dd>
-        <dt>Where</dt><dd><b>Paid:</b> retargeting first-time buyers. <b>Owned:</b> site, app, WhatsApp. <b>Earned:</b> “gift a routine” referrals.</dd>
-        <dt>Measure</dt><dd>Repeat rate within 45 days, D2C share of reorders.</dd>
-      </dl>
-    </div>
-  </div>
-
-  <div class="loop reveal">
-    <span class="ok">Awareness<small>keep what works</small></span><i>→</i>
-    <span class="on">Consideration<small>Proof you can see</small></span><i>→</i>
-    <span class="ok">Trial<small>already strong</small></span><i>→</i>
-    <span class="on">Usage<small>Use it right</small></span><i>→</i>
-    <span class="on">Repeat<small>The second order</small></span><i>→</i>
-    <span class="on">Advocacy<small>diaries feed Strategy 1</small></span>
-  </div>
-  <p class="lede" style="margin-top:12px">Each one feeds the next. People who come back leave the reviews and diaries that bring in the next buyer.</p>
-</section>
-
-<!-- ================= 04 IDEA ================= -->
-<section class="sec" id="idea">
-  <div class="head">
-    <p class="eyebrow"><i></i>04 · My idea</p>
-    <h2>One problem. <em>One idea.</em></h2>
-    <p class="lede">The problem I’d solve first: a first-time buyer who never comes back to the brand’s own site.</p>
-  </div>
   <div class="idea reveal">
-    <p class="k">The big idea</p>
-    <p class="line">Your routine <em>lives here.</em></p>
-    <p>Other apps sell you a product. The brand’s own site remembers your skin, your routine and when you’ll run out. That’s a reason to come back that no marketplace can copy.</p>
+    <p class="k">The idea</p>
+    <p class="line">Routine <em>by AQI.</em></p>
+    <p>When the air changes, your routine changes. Small, simple tips for each AQI level, made with Delhi creators. Mamaearth is the helping hand here, not the hero.</p>
     <div class="shift">
-      <div><small>Today they think</small>“I’ll buy it wherever it’s fastest.”</div>
+      <div><small>Today they think</small>“Smog is about my lungs. My skincare can wait.”</div>
       <div class="arr" aria-hidden="true">→</div>
-      <div><small>We want them to think</small>“The brand’s site knows my routine. I reorder there.”</div>
+      <div><small>We want them to think</small>“On bad air days I clean up properly at night. Mamaearth actually shows up for Delhi.”</div>
     </div>
-    <p class="co">“I want to convince first-time buyers that buying directly from the brand gets them a routine that works for their skin.”</p>
+    <p class="co">“I want to convince 20–35s in NCR that a few small changes on smoggy days make a visible difference, and that Mamaearth is the brand that’s here for Delhi.”</p>
     <div class="ideacheck">
-      <div><b>Essence</b>A one-off order becomes a relationship.</div>
-      <div><b>Solves the barrier</b>“I’ll just buy wherever it’s fastest.”</div>
-      <div><b>Memorable</b>Four words. Works for every brand and every channel.</div>
+      <div><b>Useful first</b>Tips lead. Products follow.</div>
+      <div><b>Why now</b>AQI above 450, and Mamaearth turns 10 in December.</div>
+      <div><b>The rule</b>No fear, no health claims. A face wash never replaces a mask.</div>
     </div>
   </div>
 
-  <h3 class="sub-h">Brand solution: the benefit ladder</h3>
-  <div class="ladder">
-    <div class="card reveal"><span class="chip blue">Attributes</span><h3>What we build</h3><p>Skin quiz, routine bundles, refill reminders, loyalty points, early access, expert Q&amp;A.</p></div>
-    <div class="card reveal"><span class="chip mint">Functional</span><h3>What it does</h3><p>The right products for you, money saved, never running out.</p></div>
-    <div class="card reveal"><span class="chip pink">Emotional</span><h3>How it feels</h3><p>Looked after. Confident in your skin, without thinking about it.</p></div>
-    <div class="card reveal"><span class="chip">Reasons to believe</span><h3>Why trust it</h3><p>Verified reviews, clear ingredient lists, experts behind each brand, and results from real customers.</p></div>
-  </div>
-
-  <h3 class="sub-h">Media plan: paid, owned, earned</h3>
+  <h3 class="sub-h">Core copy</h3>
   <div class="grid">
-    <div class="card reveal"><span class="chip red">Paid</span><h3>Meta + Google</h3><p>Retarget first-time buyers with “complete your routine”. Search ads on high-intent terms. Creator partnership ads for the best organic reels.</p></div>
-    <div class="card reveal"><span class="chip mint">Owned</span><h3>Site, app, WhatsApp, Instagram</h3><p>The skin quiz, how-to content, refill reminders, and saved routines with one-tap reorder.</p></div>
-    <div class="card reveal"><span class="chip pink">Earned</span><h3>Customers + creators</h3><p>30-day result diaries, review carousels, and “gift a routine” referrals.</p></div>
+    <div class="card reveal"><span class="chip">Main line</span><h3>Routine by AQI.</h3></div>
+    <div class="card reveal"><span class="chip mint">Night line</span><h3>Bad air day? Clean up properly tonight.</h3></div>
+    <div class="card reveal"><span class="chip pink">Birthday line</span><h3>10 years of goodness. Year two of clean air.</h3></div>
+    <div class="card reveal"><span class="chip blue">Hinglish</span><h3>AQI 400 hai, routine bhi upgrade karo.</h3></div>
   </div>
-</section>
 
-<!-- ================= 04 SAMPLES ================= -->
-<section class="sec" id="samples">
-  <div class="head">
-    <p class="eyebrow"><i></i>05 · Samples</p>
-    <h2>Content cohorts, <em>first order to fan</em></h2>
-    <p class="lede">I’ve used Mamaearth as the example, since it’s the biggest brand and has its own site. The same system works for every brand.</p>
+  <h3 class="sub-h">What we post, by AQI level</h3>
+  <div class="aqi reveal">
+    <div class="a1"><b>AQI 100–200</b>Normal days. Cleanse, moisturise, sunscreen. Hazy skies still let UV through.</div>
+    <div class="a2"><b>AQI 200–300</b>Add a proper night cleanse with the Charcoal Face Wash. Wash hair a little more often.</div>
+    <div class="a3"><b>AQI 300–400</b>Cleanse twice at night, use a richer moisturiser, and wash your scalp after long days out.</div>
+    <div class="a4"><b>AQI 400+</b>Stay in when you can, mask on. Short, gentle routine. <b class="in">We pause sales posts and share tips only.</b></div>
   </div>
-  <div class="grid">
-    <div class="card reveal"><span class="chip">First order</span><h3>Find Your Routine</h3><p>A 60-second skin quiz, promoted with reels and Story polls. Creators take it live and react to their result.</p></div>
-    <div class="card reveal"><span class="chip mint">Days 1–7</span><h3>Use It Right</h3><p>Short how-to content so the first product actually works. “How much is enough?” “Morning or night?”</p></div>
-    <div class="card reveal"><span class="chip pink">Days 7–21</span><h3>Real Results</h3><p>30-day diaries from real buyers, and reviews turned into carousels.</p></div>
-    <div class="card reveal"><span class="chip blue">Days 21–30</span><h3>Running Low?</h3><p>Refill reminders, “meet its best friend” pairings, and one-tap reorder on the brand’s site.</p></div>
-  </div>
-</section>
 
-<section class="sec" id="scripts">
-  <div class="head">
-    <p class="eyebrow"><i></i>06 · Samples</p>
-    <h2>Two reels, <em>ready to shoot</em></h2>
-    <p class="lede">The first one I’d shoot myself on a phone. The second is creator-led.</p>
+  <h3 class="sub-h">Who gets what</h3>
+  <div class="tablewrap reveal">
+    <table>
+      <tr><th>Who</th><th>What they see</th><th>Where</th></tr>
+      <tr><td><b>New to Mamaearth</b>, NCR</td><td>AQI tip reels and the cotton pad test. Leads to the Charcoal Face Wash.</td><td>Reels, Meta ads</td></tr>
+      <tr><td><b>Bought once</b></td><td>A “smog night routine” message when AQI crosses 300, with one-tap reorder on mamaearth.in.</td><td>WhatsApp (opted in)</td></tr>
+      <tr><td><b>Regulars</b></td><td>Early access to the 10th birthday drops. Nominate an area for the anti-smog guns.</td><td>Site, app, Stories</td></tr>
+      <tr><td><b>Fans</b></td><td>“Comment your area.” The most-asked areas get featured in the year-two reel.</td><td>Instagram comments</td></tr>
+    </table>
   </div>
+
+  <h3 class="sub-h">Two reels, ready to shoot</h3>
   <div class="scripts">
     <article class="script reveal">
-      <header><h3>“11 PM restock panic”</h3><p>Funny, relatable · 20 sec · Hinglish · I can shoot this</p></header>
-      <div class="beat"><span class="t">0–2s</span><div><p class="say">“Face wash khatam. Raat ke 11 baje. Ab kya?”</p><p class="shot">Shaking an empty tube at the camera, bathroom light.</p></div></div>
-      <div class="beat"><span class="t">2–7s</span><div><p class="say">“Kaunsa wala tha? Green? Orange? Vitamin C ya ubtan?”</p><p class="shot">Scrolling through 4 shopping apps, getting more confused.</p></div></div>
-      <div class="beat"><span class="t">7–11s</span><div><p class="say">“Mummy ko phone karun? Nahi, woh bolegi besan laga le.”</p><p class="shot">Cut to imagined mom, deadpan. Quick laugh beat.</p></div></div>
-      <div class="beat"><span class="t">11–16s</span><div><p class="say">“Arre, brand ki site pe toh routine saved hai. One tap. Done.”</p><p class="shot">Screen recording: “Reorder your routine”, one tap, order placed.</p></div></div>
-      <div class="beat"><span class="t">16–20s</span><div><p class="say">“Mummy ke baad, meri skin ko sirf ye yaad rakhta hai.”</p><p class="shot">End card: <i>Your routine lives here.</i></p></div></div>
-      <footer><b>Caption:</b> Who else forgets which face wash they use? 🙋‍♂️ Comment “me” and we’ll send you the quiz 👇</footer>
+      <header><h3>“The cotton pad test”</h3><p>Funny, useful · 18 sec · Hinglish · I’d shoot this myself</p></header>
+      <div class="beat"><span class="t">0–3s</span><div><p class="say">“Delhi mein 8 ghante bitaye. Ab dekhte hain chehre pe kitni Delhi aayi hai.”</p><p class="shot">Walking in, bag dropped, straight to the mirror.</p></div></div>
+      <div class="beat"><span class="t">3–8s</span><div><p class="say">“Bhai, yeh toh ITO ka AQI hai.”</p><p class="shot">Wipes face with a cotton pad, holds it up to the camera.</p></div></div>
+      <div class="beat"><span class="t">8–14s</span><div><p class="say">“Smog wale din, raat ko proper face wash. Phir moisturiser. Bas.”</p><p class="shot">Charcoal Face Wash, then moisturiser. Quick cuts.</p></div></div>
+      <div class="beat"><span class="t">14–18s</span><div><p class="say">“Mask pehno, purifier chalao, aur raat ka face wash mat bhoolo.”</p><p class="shot">End card: <i>Routine by AQI.</i></p></div></div>
+      <footer><b>Caption:</b> Aaj aapka cotton pad kaisa dikha? 😶‍🌫️ Drop your area’s AQI below 👇</footer>
     </article>
     <article class="script reveal">
-      <header><h3>“Rate my routine”</h3><p>Creator-led · 25 sec · Useful, with humour</p></header>
-      <div class="beat"><span class="t">0–3s</span><div><p class="say">“You sent me your skincare routines. I’m rating them. No mercy.”</p><p class="shot">Creator with a scorecard, follower DMs on screen.</p></div></div>
-      <div class="beat"><span class="t">3–9s</span><div><p class="say">“Routine 1: face wash, then… nothing. 3 out of 10.”</p><p class="shot">Dramatic buzzer sound.</p></div></div>
-      <div class="beat"><span class="t">9–15s</span><div><p class="say">“Routine 2: five serums in one night. Bhai, skin hai, science lab nahi.”</p><p class="shot">Creator holding head in hands.</p></div></div>
-      <div class="beat"><span class="t">15–21s</span><div><p class="say">“Routine 3: cleanse, moisturise, sunscreen. Simple. 10 out of 10.”</p><p class="shot">Products shown in order, confetti.</p></div></div>
-      <div class="beat"><span class="t">21–25s</span><div><p class="say">“Not sure what yours should be? 60-second quiz. Link in bio.”</p><p class="shot">End card with the quiz screen.</p></div></div>
-      <footer><b>Caption:</b> Send us your routine. We’ll rate the next batch 😤👇</footer>
+      <header><h3>“Comment your area”</h3><p>Brand film for the 10th birthday · 25 sec</p></header>
+      <div class="beat"><span class="t">0–4s</span><div><p class="say">“Last December, we put anti-smog guns on six Gurugram roads.”</p><p class="shot">Real footage from Golf Course Road and MG Road.</p></div></div>
+      <div class="beat"><span class="t">4–10s</span><div><p class="say">“This December, we turn 10. So we’re doing it again.”</p><p class="shot">Birthday candle blown out. The smoke drifts away.</p></div></div>
+      <div class="beat"><span class="t">10–17s</span><div><p class="say">“This time, you pick where.”</p><p class="shot">Map of NCR with pins dropping in.</p></div></div>
+      <div class="beat"><span class="t">17–25s</span><div><p class="say">“Comment your area. We’re reading every one.”</p><p class="shot">End card: <i>10 years of goodness. Year two of clean air.</i></p></div></div>
+      <footer><b>Caption:</b> Which area needs it most? Comment below 👇 #RoutineByAQI</footer>
     </article>
   </div>
-  <p class="fine">All product claims would be checked with the product and legal teams, and all creator content would follow ASCI guidelines.</p>
-</section>
+  <div class="card reveal" style="margin-top:16px"><span class="chip blue">Long form</span><h3>“Delhi smog and your skin: a simple guide”</h3><p>One article and one 6-minute video answering what people actually search for and ask AI tools: “Does pollution affect skin?”, “How to wash your face after a smoggy day”, “Is sunscreen needed when it’s hazy?”. Written plainly, so it can show up in Google results and AI answers. That matters now that Mamaearth is already advertising inside ChatGPT.</p></div>
 
-<section class="sec" id="ads">
-  <div class="head">
-    <p class="eyebrow"><i></i>07 · Samples</p>
-    <h2>Three Meta ads, <em>three jobs</em></h2>
-    <p class="lede">One finds new buyers, one brings first-time buyers back, and one rescues abandoned carts.</p>
-  </div>
+  <h3 class="sub-h">Ads</h3>
   <div class="ads">
-    <div class="ad reveal"><p class="aud">New buyers · skincare interests</p><div class="visual">Not sure what your skin needs? 60 seconds. One routine.</div><p>Stop guessing. Take a quick skin quiz and get a routine made for your skin type, from face wash to sunscreen.</p><p class="hl">Find your routine</p><span class="cta">Take the quiz</span></div>
-    <div class="ad reveal"><p class="aud">First-time buyers · 21–30 days after order</p><div class="visual">Your face wash is almost done. Your routine isn’t.</div><p>Running low? Reorder in one tap, and add the moisturiser that goes with it. Your routine is saved on our site.</p><p class="hl">Reorder before you run out</p><span class="cta">Shop now</span></div>
-    <div class="ad reveal"><p class="aud">Cart left behind · last 7 days</p><div class="visual">Your routine is waiting in your cart.</div><p>You picked the right products. Finish your order today, straight from the brand.</p><p class="hl">Complete your routine</p><span class="cta">Complete order</span></div>
+    <div class="ad reveal"><p class="aud">New buyers · NCR · 20–35</p><div class="visual">AQI 400. Your skin noticed.</div><p>Long day out in the smog? Give your skin a proper clean tonight. Charcoal Face Wash for oil control.</p><p class="hl">Bad air day? Clean up tonight.</p><span class="cta">Shop now</span></div>
+    <div class="ad reveal"><p class="aud">Bought once · 21–30 days ago</p><div class="visual">Running low before the next smoggy week?</div><p>Your face wash is almost done. Reorder in one tap on mamaearth.in.</p><p class="hl">Reorder in one tap</p><span class="cta">Reorder</span></div>
+    <div class="ad reveal"><p class="aud">Everyone in NCR · birthday</p><div class="visual">Where should the anti-smog guns go next?</div><p>Mamaearth turns 10 in December. Tell us which area needs it most.</p><p class="hl">Year two of clean air</p><span class="cta">Learn more</span></div>
   </div>
-  <div class="grid" style="margin-top:16px">
-    <div class="card reveal"><span class="chip red">How I’d run it</span><h3>Test, cut, scale</h3><p>Run 3 hooks (humour, question, creator) against the same offer and budget. Cut the weakest once there’s enough data, scale the winner, and refresh creative every 2–3 weeks.</p></div>
-    <div class="card reveal"><span class="chip">What I’d watch</span><h3>Beyond clicks</h3><p>Hook rate and CTR for the creative. Cost per purchase and RoAS for the money. Repeat rate to check that the spend brings people back.</p></div>
+  <div class="gads reveal">
+    <span class="chip">Google Search</span>
+    <p><b>Searches:</b> face wash for pollution · how to protect skin from pollution · charcoal face wash · skincare for Delhi winter</p>
+    <p><b>Headlines:</b> Smoggy Day? Clean Up Tonight · Charcoal Face Wash | Mamaearth · Routine Tips for High AQI Days</p>
+  </div>
+  <div class="card reveal brief" style="margin-top:16px">
+    <span class="chip blue">For the design and video team</span>
+    <h3>One-page brief: Routine by AQI</h3>
+    <dl>
+      <dt>Objective</dt><dd>Be the most useful skincare brand in NCR this smog season, and grow Charcoal Face Wash orders on mamaearth.in.</dd>
+      <dt>Audience</dt><dd>20–35, NCR, out of the house most days.</dd>
+      <dt>Insight</dt><dd>They notice the grime on their skin every evening, but nobody tells them what to actually do about it.</dd>
+      <dt>One thing to say</dt><dd>Bad air day? Clean up properly tonight.</dd>
+      <dt>Proof</dt><dd>The cotton pad test, last year’s anti-smog guns, simple steps anyone can follow.</dd>
+      <dt>Mandatories</dt><dd>No fear, no health claims, mask and purifier always mentioned, ASCI-safe wording.</dd>
+      <dt>Success</dt><dd>Saves and shares on tip reels, CTR, cost per purchase, RoAS, WhatsApp reorders.</dd>
+    </dl>
   </div>
 </section>
 
-<section class="sec" id="flow">
+<!-- ================= 03 BBLUNT ================= -->
+<section class="sec" id="bblunt">
   <div class="head">
-    <p class="eyebrow"><i></i>08 · Samples</p>
-    <h2>First order to <em>second order</em></h2>
-    <p class="lede">Four WhatsApp messages over 30 days, for customers who opted in. The first two messages only help. The selling comes later.</p>
+    <p class="eyebrow"><i></i>03 · Brief 2 · BBlunt</p>
+    <h2>Salon Secret relaunch: <em>#ShiningBaby is back</em></h2>
+    <p class="lede">The relaunched Salon Secret High Shine hair colour is pulling BBlunt’s growth. Its own lab test found 6x better colour retention after 3 washes and up to 92% less breakage than another product on the market (tested on hair samples). And in 2017, its #ShiningBaby challenge had 37 celebrities doing Bollywood dialogues. Time to bring the shine back.</p>
   </div>
-  <div class="flow">
-    <div class="chat">
-      <div class="msg reveal"><span class="when">Day 0 · delivered</span>Hi Riya 👋 Your face wash is here! Quick tip: a coin-sized amount is enough. Use it morning and night.</div>
-      <div class="msg reveal"><span class="when">Day 7 · check-in</span>One week in! How’s your skin feeling? Reply with 😍, 🙂 or 😕 and we’ll share a tip that fits.</div>
-      <div class="msg reveal"><span class="when">Day 21 · complete the routine</span>Loving the face wash? People with your skin type pair it with our moisturiser. Here’s why they work together.<br><span class="b">See the routine</span></div>
-      <div class="msg reveal"><span class="when">Day 28 · refill</span>Your face wash is probably running low 🫧 Your routine is saved. Reorder in one tap so you don’t miss a day.<br><span class="b">Reorder now</span></div>
+
+  <div class="idea reveal">
+    <p class="k">The idea</p>
+    <p class="line">Shine that <em>stays.</em></p>
+    <p>Home hair colour comes with one big fear: “What if it looks patchy, or fades in a week?” We answer it with proof people can see, and with a bit of fun from BBlunt’s own past.</p>
+    <div class="shift">
+      <div><small>Today they think</small>“Colouring at home is risky. I’ll go to the salon, or skip it.”</div>
+      <div class="arr" aria-hidden="true">→</div>
+      <div><small>We want them to think</small>“BBlunt at home looks salon-done, and it’s still shining after the third wash.”</div>
     </div>
-    <div class="card reveal brief">
-      <span class="chip blue">Sample · Working with teams</span>
-      <h3>One-page creative brief</h3>
-      <dl>
-        <dt>Objective</dt><dd>Get first-time buyers to reorder on the brand’s site within 30 days.</dd>
-        <dt>Audience</dt><dd>One-Time Buyers, 20–32, ordered once in the last 21–30 days.</dd>
-        <dt>Insight</dt><dd>They forget which variant they bought and reorder wherever is fastest.</dd>
-        <dt>One thing to say</dt><dd>Your routine is saved here. Reorder in one tap.</dd>
-        <dt>Proof</dt><dd>Saved routine screen, real reviews, a one-tap reorder demo.</dd>
-        <dt>Mandatories</dt><dd>ASCI-safe claims, brand logo in the first 3 seconds, captions on.</dd>
-        <dt>Success</dt><dd>Repeat rate, site orders, items per order, RoAS.</dd>
-      </dl>
+    <p class="co">“I want to convince first-time home colourers, 22–40, that salon-level colour at home is easy, gentle on hair, and still shiny weeks later.”</p>
+    <div class="ideacheck">
+      <div><b>Triggers</b>First grey hairs, a wedding or festival, wanting a new look.</div>
+      <div><b>Barriers</b>Fear of patchy or brassy colour, damage, fading fast.</div>
+      <div><b>Built-in repeat</b>Roots show again in 4–6 weeks. That’s a natural reorder moment.</div>
     </div>
+  </div>
+
+  <h3 class="sub-h">Four content territories</h3>
+  <div class="grid">
+    <div class="card reveal"><span class="chip red">Fun</span><h3>#ShiningBaby is back</h3><p>The 2017 challenge, back with today’s creators: a Bollywood dialogue with a twist, then the hair flip.</p></div>
+    <div class="card reveal"><span class="chip blue">Proof</span><h3>The 3-wash test</h3><p>Same light, same camera. Day 1, then after wash 1, 2 and 3.</p></div>
+    <div class="card reveal"><span class="chip mint">Reassurance</span><h3>First grey, no fear</h3><p>Calm, funny content for people in their late 20s and 30s spotting their first greys.</p></div>
+    <div class="card reveal"><span class="chip pink">Gifting</span><h3>Papa’s 5-minute makeover</h3><p>The 5-minute shampoo hair colour, pitched for dads. Good for festive and Father’s Day moments.</p></div>
+  </div>
+
+  <h3 class="sub-h">Core copy</h3>
+  <div class="grid">
+    <div class="card reveal"><span class="chip">Main line</span><h3>Shine that stays.</h3></div>
+    <div class="card reveal"><span class="chip mint">Proof line</span><h3>Wash 1. Wash 2. Wash 3. Still shining.</h3></div>
+    <div class="card reveal"><span class="chip pink">Home line</span><h3>Salon colour. Sofa comfort.</h3></div>
+    <div class="card reveal"><span class="chip blue">Hinglish</span><h3>Pehla grey baal? Panic mat karo.</h3></div>
+  </div>
+
+  <h3 class="sub-h">Who gets what</h3>
+  <div class="tablewrap reveal">
+    <table>
+      <tr><th>Who</th><th>What they see</th><th>Where</th></tr>
+      <tr><td><b>Never coloured at home</b></td><td>A 30-second shade finder and a “first time at home” tutorial.</td><td>Reels, Meta ads, bblunt.com</td></tr>
+      <tr><td><b>Bought once</b></td><td>Colour care tips at day 7. A root touch-up reminder at week 4 with their exact shade, one tap.</td><td>WhatsApp (opted in), email</td></tr>
+      <tr><td><b>Regulars</b></td><td>New shades first, and a care kit to keep the shine.</td><td>Site, app</td></tr>
+      <tr><td><b>Fans</b></td><td>#ShiningBaby duets and reposts on the brand page.</td><td>Instagram</td></tr>
+    </table>
+  </div>
+
+  <h3 class="sub-h">Two reels, ready to shoot</h3>
+  <div class="scripts">
+    <article class="script reveal">
+      <header><h3>“#ShiningBaby is back”</h3><p>Creator challenge · 20 sec · Hinglish</p></header>
+      <div class="beat"><span class="t">0–3s</span><div><p class="say">“2017 mein 37 celebs ne yeh challenge kiya tha. Ab meri baari.”</p><p class="shot">Creator in a towel turban, looking straight at the camera.</p></div></div>
+      <div class="beat"><span class="t">3–9s</span><div><p class="say">“Mere paas gaadi hai, bangla hai… tumhare paas kya hai?” “Mere paas… shine hai.”</p><p class="shot">Dramatic Bollywood setup with a friend. Towel comes off.</p></div></div>
+      <div class="beat"><span class="t">9–15s</span><div><p class="say">(Music drop)</p><p class="shot">Slow-motion hair flip in sunlight. Close-up on the shine.</p></div></div>
+      <div class="beat"><span class="t">15–20s</span><div><p class="say">“Ab tumhari baari. #ShiningBaby, tag 2 friends.”</p><p class="shot">End card: <i>Shine that stays.</i> BBlunt Salon Secret.</p></div></div>
+      <footer><b>Caption:</b> Apna favourite dialogue + hair flip. Go 💁‍♀️ #ShiningBaby</footer>
+    </article>
+    <article class="script reveal">
+      <header><h3>“The 3-wash test”</h3><p>Proof-led · 25 sec · Hinglish</p></header>
+      <div class="beat"><span class="t">0–3s</span><div><p class="say">“Hair colour ka asli test? Teesra wash.”</p><p class="shot">Creator holds up the box. Same window light used all the way through.</p></div></div>
+      <div class="beat"><span class="t">3–10s</span><div><p class="say">“Day 1. Fresh colour.”</p><p class="shot">Colour reveal, shine close-up.</p></div></div>
+      <div class="beat"><span class="t">10–18s</span><div><p class="say">“Wash 1… wash 2… wash 3.”</p><p class="shot">Quick cuts of each wash, then the same close-up each time.</p></div></div>
+      <div class="beat"><span class="t">18–25s</span><div><p class="say">“Still shining. Aap khud dekh lo.”</p><p class="shot">End card: <i>Wash 1. Wash 2. Wash 3. Still shining.</i></p></div></div>
+      <footer><b>Caption:</b> Would you try the 3-wash test? 👇 Shade finder in bio.</footer>
+    </article>
+  </div>
+  <div class="card reveal" style="margin-top:16px"><span class="chip blue">Long form</span><h3>“Colouring your hair at home for the first time: the full guide”</h3><p>An 8-minute YouTube video and an article: picking a shade, the patch test, sectioning, timing, and aftercare. It answers the searches people make before they buy, like “hair colour without ammonia” and “how to colour hair at home without damage”.</p></div>
+
+  <h3 class="sub-h">Ads</h3>
+  <div class="ads">
+    <div class="ad reveal"><p class="aud">New buyers · 22–40 · beauty interests</p><div class="visual">Wash 1. Wash 2. Wash 3. Still shining.</div><p>Salon Secret High Shine hair colour. No ammonia, 100% grey coverage, made to be gentle on hair.</p><p class="hl">Shine that stays</p><span class="cta">Find your shade</span></div>
+    <div class="ad reveal"><p class="aud">Bought once · week 4</p><div class="visual">Roots showing? Same shade, one tap.</div><p>It’s been about 4 weeks. Reorder your exact shade on bblunt.com.</p><p class="hl">Touch up your roots</p><span class="cta">Reorder</span></div>
+    <div class="ad reveal"><p class="aud">25–35 · first greys</p><div class="visual">First grey hair? Don’t panic.</div><p>Natural-looking colour at home in a few easy steps. Find your shade in 30 seconds.</p><p class="hl">Pehla grey baal? Panic mat karo.</p><span class="cta">Shop now</span></div>
+  </div>
+  <div class="gads reveal">
+    <span class="chip">Google Search</span>
+    <p><b>Searches:</b> hair colour without ammonia · best hair colour at home · grey hair colour for women · BBlunt hair colour shades</p>
+    <p><b>Headlines:</b> Shine That Stays | BBlunt · No Ammonia Hair Colour at Home · 100% Grey Coverage, No Ammonia</p>
+  </div>
+  <div class="card reveal brief" style="margin-top:16px">
+    <span class="chip blue">For the design and video team</span>
+    <h3>One-page brief: Shine that stays</h3>
+    <dl>
+      <dt>Objective</dt><dd>Win first-time home colourers for Salon Secret, and bring them back for their root touch-up on bblunt.com.</dd>
+      <dt>Audience</dt><dd>22–40, curious about home colour, or spotting their first greys.</dd>
+      <dt>Insight</dt><dd>The fear isn’t the price. It’s colour that looks patchy or fades in a week.</dd>
+      <dt>One thing to say</dt><dd>Shine that stays.</dd>
+      <dt>Proof</dt><dd>The lab test (with its fine print), real 3-wash videos, no ammonia, 100% grey coverage.</dd>
+      <dt>Mandatories</dt><dd>Patch test shown, lab claim worded exactly as tested, creator posts marked #ad.</dd>
+      <dt>Success</dt><dd>Shade finder completions, CTR, cost per purchase, RoAS, week 4–6 reorders.</dd>
+    </dl>
   </div>
 </section>
+
+<!-- ================= 04 HOW I'D RUN IT ================= -->
+<section class="sec" id="run">
+  <div class="head">
+    <p class="eyebrow"><i></i>04 · How I’d run it</p>
+    <h2>Same playbook for <em>both briefs</em></h2>
+    <p class="lede">Ideas are the easy part. This is how I’d make them pay off, week after week.</p>
+  </div>
+  <div class="grid">
+    <div class="card reveal"><span class="chip red">Test</span><h3>3 hooks, one offer</h3><p>Humour, a question, a creator. Same budget. Cut the weakest once there’s enough data, scale the winner, refresh every 2–3 weeks.</p></div>
+    <div class="card reveal"><span class="chip">Watch</span><h3>Past the clicks</h3><p>Hook rate and CTR for the creative. Cost per purchase and RoAS for the money. Reorders on the brand’s site to see if people come back.</p></div>
+    <div class="card reveal"><span class="chip mint">Team</span><h3>A simple weekly rhythm</h3><p>Monday: briefs out. Wednesday: first cuts reviewed with design and video. Friday: last week’s numbers decide next week’s work.</p></div>
+    <div class="card reveal"><span class="chip blue">Safe</span><h3>ASCI from draft one</h3><p>Every claim checked against its source, lab results worded as tested, every creator post disclosed.</p></div>
+  </div>
+</section>
+
+<!-- ================= 05 WHERE IT FITS ================= -->
+<section class="sec" id="fit">
+  <div class="head">
+    <p class="eyebrow"><i></i>05 · Where it fits</p>
+    <h2>What the role needs, <em>and where it is on this page</em></h2>
+  </div>
+  <div class="tablewrap reveal">
+    <table>
+      <tr><th>The role needs</th><th>On this page</th><th>Where I’ve done it</th></tr>
+      <tr><td><b>Brand copy, content plans, cohorts</b></td><td>Core copy and “who gets what” in both briefs</td><td>Kept 4+ brand voices separate at Times Internet. Content pillars and calendars at Signal.</td></tr>
+      <tr><td><b>Campaign ideas and brand stories</b></td><td>Routine by AQI. #ShiningBaby is back, plus 4 territories</td><td>Recurring series at Signal, like Guess the Player and a three-part Ballon d’Or series.</td></tr>
+      <tr><td><b>Consumer behaviour into content that sells</b></td><td>The AQI-level plan. Root touch-up reminders at week 4</td><td>Tracked 81 creator links down to installs and sign-ups.</td></tr>
+      <tr><td><b>Scripts and ads, short and long</b></td><td>4 reel scripts, 2 long-form outlines, 6 Meta ads</td><td>Reel scripts with 3.87M Instagram views. Long-form that grew TechGig to 300K+ monthly visits.</td></tr>
+      <tr><td><b>RoAS on Meta and Google</b></td><td>Ad sets, Google searches and headlines, what I’d watch</td><td>Daily reporting on installs and cost per install at Signal.</td></tr>
+      <tr><td><b>Working with design, video and other teams</b></td><td>Two one-page briefs and a weekly rhythm</td><td>Briefed designers and editors daily at Signal. Took agency clients from brief to sign-off at OutSpark.</td></tr>
+    </table>
+  </div>
+  <p class="fine">These are spec ideas made for a job application. All claims would be checked with Honasa’s product and legal teams before anything goes live.</p>
+</section>
+
 
 <footer class="end" id="contact">
   <p class="eyebrow"><i></i>Thanks for reading</p>
@@ -666,7 +630,7 @@ tr.core td{background:rgba(255,210,63,.22)}
     <a class="key" href="https://aaniketk32-png.github.io/akp/">My portfolio<small>↗</small></a>
     <a class="key" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/">LinkedIn<small>in</small></a>
   </div>
-  <p class="fine">Unofficial spec work made for a job application. Not affiliated with or endorsed by Honasa Consumer or its brands. Figures come from public reports up to October 2026: <a href="https://inc42.com/buzz/honasa-eyes-₹5500-cr-revenue-for-fy31/">Inc42 (FY31 plan)</a>, <a href="https://www.businesstoday.in/markets/trending-stocks/story/honasa-consumer-shares-rise-8-mamaearth-growth-seen-in-high-teens-in-q2-559733-2026-10-06">Business Today (Q2 FY27)</a>, <a href="https://inc42.com/features/honasas-2025-becoming-more-than-mamaearth">Inc42 (brands)</a>, <a href="https://www.medianama.com/2025/12/223-mamaearth-q2-earnings-premium-skincare-oral-care/">MediaNama (Fang, Luminéve)</a>, <a href="https://www.medianews4u.com/aqualogica-appoints-apoorva-mukhija-as-sunscreen-ambassador-launches-new-brand-film/">MediaNews4U (Aqualogica)</a>, <a href="https://www.exchange4media.com/industry-briefing-news/mamaearth-onboards-sreeleela-as-hair-care-category-brand-ambassador-151748.html">exchange4media (Sreeleela)</a>, <a href="https://www.storyboard18.com/how-it-works/unearthing-mamaearth-negative-feedback-positive-growth-42299.htm">Storyboard18 (ASCI, ad spend)</a>, <a href="https://www.storyboard18.com/amp/advertising/mamaearth-parent-ups-marketing-spend-to-rs-744-crore-in-fy25-eyes-rs-5000-crore-arr-milestone-80137.htm">Storyboard18 (FY25 spend)</a>, <a href="https://www.storyboard18.com/amp/brand-marketing/honasa-spends-rs-206-crore-on-ads-in-q1-fy26-utilises-rs-127-crore-of-ipo-funds-for-brand-building-78779.htm">Storyboard18 (Q1 FY26 ads)</a>, <a href="https://www.impactonnet.com/more-from-impact/mamaearth-launches-hai-proof-tabhi-mama-approved-campaign-with-shilpa-shetty-10052.html">Impact (Mamaearth)</a>, <a href="https://www.medianews4u.com/the-derma-co-ropes-in-sania-mirza-as-suncare-brand-ambassador-launches-new-campaign-film/">MediaNews4U (The Derma Co)</a>, <a href="https://www.impactonnet.com/more-from-impact/honasa-opens-south-specific-influencer-marketing-mandate-13522.html">Impact (south mandate)</a>, <a href="https://www.afaqs.com/news/mktg/colour-coded-recall-quirky-collabs-and-digital-first-marketing-foxtales-playbook-for-scale-10521398">afaqs (Foxtale)</a>, <a href="https://www.medianews4u.com/foxtale-brings-shah-rukh-khan-on-board-as-brand-ambassador-for-key-skincare-categories/">MediaNews4U (Foxtale SRK)</a>, <a href="https://www.socialsamosa.com/marketing-shorts/founder-led-education-driving-plum-marketing-consumer-communication-10796769">Social Samosa (Plum)</a>, <a href="https://rahulmalodia.com/blog/minimalist-high-trust-d2c-skincare-brand-india">Rahul Malodia (Minimalist)</a>. Brand names belong to their owners.</p>
+  <p class="fine">Unofficial spec work made for a job application. Not affiliated with or endorsed by Honasa Consumer or its brands. Figures and examples come from public reports and Instagram activity up to November 2026: <a href="https://inc42.com/buzz/honasa-eyes-₹5500-cr-revenue-for-fy31/">Inc42 (FY31 plan)</a>, <a href="https://www.businesstoday.in/markets/trending-stocks/story/honasa-consumer-shares-rise-8-mamaearth-growth-seen-in-high-teens-in-q2-559733-2026-10-06">Business Today (Q2 FY27)</a>, <a href="https://www.multibagg.ai/market-pulse/articles/honasa-younger-brands-growth-q2fy27-ppt-cmw4obn8l001ou02rl2esct1b">Multibagg (Q2 FY27 brands)</a>, <a href="https://www.socialsamosa.com/tags/mamaearth">Social Samosa (ChatGPT ads)</a>, <a href="https://www.medianama.com/2025/12/223-mamaearth-q2-earnings-premium-skincare-oral-care/">MediaNama (Fang)</a>, <a href="https://www.storyboard18.com/amp/brand-marketing/honasa-forays-into-mens-grooming-with-95-purchase-of-reginald-men-owner-bvpl-for-rs-195-crore-85715.htm">Storyboard18 (Reginald Men)</a>, <a href="https://www.exchange4media.com/industry-briefing-news/mamaearth-onboards-sreeleela-as-hair-care-category-brand-ambassador-151748.html">exchange4media (Sreeleela)</a>, <a href="https://www.modash.io/content-library/brands/mamaearth-examples">Modash (Mamaearth posts)</a>, <a href="https://www.modash.io/content-library/brands/bblunt-examples">Modash (BBlunt posts)</a>, <a href="https://news.webindia123.com/news/Articles/India/20261103/4515058.html">WebIndia123 (Delhi AQI, 3 Nov)</a>, <a href="https://www.impactonnet.com/more-from-impact/mamaearth-marks-ninth-anniversary-with-clean-air-initiative-across-delhi-ncr-12801.html">Impact (anti-smog guns)</a>, <a href="https://bblunt.com/pages/bblunt-high-shine-conditioning-hair-colour-natural-black-clinical-efficacy-report">BBlunt (lab report)</a>, <a href="https://www.mediainfoline.com/brand/bblunt-launches-salon-secret-mini-pack-shiningbaby-challenge">Mediainfoline (#ShiningBaby, 2017)</a>. Brand names belong to their owners.</p>
 </footer>
 
 <script>
@@ -685,32 +649,25 @@ tr.core td{background:rgba(255,210,63,.22)}
   /* slip data */
   var SLIPS=[
     {id:'me',cat:'contact',w:'Aaniket',s:'Content strategist',k:'Who’s pitching',t:'Hi, I’m Aaniket',p:'Content strategist and copywriter, nearly 4 years across Times Internet, OutSpark and Signal. I plan content, write scripts and ads, and track them to sales.',a:'#contact',al:'Get in touch'},
-    {id:'goal',cat:'homework',w:'₹5,500 Cr',s:'The FY31 goal',k:'Homework · Brand objective',t:'More than double by FY31',p:'FY26 revenue was ₹2,392 Cr. The goal is ₹5,500 Cr, with Mamaearth past ₹2,000 Cr and The Derma Co past ₹1,500 Cr.',a:'#homework',al:'Read my brand read'},
-    {id:'trial',cat:'homework',w:'Trial',s:'Strong',k:'Homework · Funnel',t:'Great at the first purchase',p:'₹99 packs, quick commerce, creator reach and a fast-growing offline footprint make trying Honasa easy.',a:'#homework',al:'See the funnel'},
-    {id:'repeat',cat:'homework',w:'Repeat',s:'Weak spot',k:'Homework · Funnel',t:'Getting them back is the gap',p:'Many buyers order once, then reorder wherever is fastest or try a new brand. Like Red Label’s “flirty” users, most aren’t truly loyal.',a:'#homework',al:'See the funnel'},
-    {id:'d2c',cat:'homework',w:'D2C',s:'Smallest channel',k:'Homework · Channels',t:'Room to grow on its own site',p:'In Honasa’s FY31 plan, D2C (₹400–450 Cr) is the smallest of five channels. That’s the D2C team’s opportunity.',a:'#homework',al:'Read more'},
-    {id:'proof',cat:'homework',w:'Proof',s:'Trust gap',k:'Homework · Competition',t:'Challengers win on proof',p:'Minimalist, Foxtale and Plum lead with ingredients and experts. Honasa’s reach is huge, but hype gets questioned.',a:'#homework',al:'See the landscape'},
-    {id:'celebs',cat:'research',w:'Celebs',s:'Today’s ads',k:'Ad research · Honasa today',t:'Big faces, big reach',p:'Shilpa Shetty, Sreeleela, Sania Mirza and Apoorva Mukhija front the films, backed by heavy creator volume and ₹744 Cr in FY25 marketing.',a:'#research',al:'See the research'},
-    {id:'rivals',cat:'research',w:'Rivals',s:'Proof wins',k:'Ad research · Competitors',t:'Minimalist, Foxtale, Plum',p:'Exact percentages, colour-coded recall and founder-led explainers. Each wins trust without a big celebrity budget.',a:'#research',al:'See the snapshot'},
-    {id:'gap',cat:'research',w:'2nd order',s:'Nobody owns it',k:'Ad research · The gap',t:'Everyone fights for the first order',p:'Almost every campaign is built for awareness and first purchase. The reorder goes to whichever app is fastest.',a:'#research',al:'See the gaps'},
-    {id:'loop',cat:'research',w:'3 strategies',s:'One loop',k:'Ad research · Strategy',t:'Proof → Use it right → Second order',p:'Real-buyer proof builds trust, how-to content gets results, and the brand’s site wins the reorder. Happy buyers make the next proof.',a:'#research',al:'See the strategies'},
-    {id:'copy',cat:'jd',w:'Copy',s:'Brand voice',k:'Where I help · Core copy & cohorts',t:'One clear line per brand',p:'Natural (Mamaearth), science (The Derma Co), light and fun (Aqualogica). Then content cohorts by customer stage.',a:'#jd',al:'Now vs better'},
-    {id:'ideas',cat:'jd',w:'Territories',s:'Campaign ideas',k:'Where I help · Campaign ideas',t:'Ideas that run all year',p:'Proof, not promises · Routine rituals · Desi skin truths. Plus the D2C big idea: “Your routine lives here.”',a:'#jd',al:'Now vs better'},
-    {id:'insight',cat:'jd',w:'Insight',s:'Consumer behaviour',k:'Where I help · Consumer behaviour',t:'Content for the drop-off moments',p:'Day 7 doubt, Day 25 refill, the abandoned cart. Each one gets its own piece of content.',a:'#jd',al:'Now vs better'},
-    {id:'scripts',cat:'jd',w:'Scripts',s:'Short + long form',k:'Where I help · Short & long form',t:'Hooks that lead with proof',p:'Wear tests, ingredient explainers and real results, written to stay within ASCI rules from the first draft.',a:'#scripts',al:'Read the scripts'},
-    {id:'roas',cat:'jd',w:'RoAS',s:'Meta + Google',k:'Where I help · Meta & Google',t:'Test, cut, then scale',p:'Test 3 hooks, cut the weakest fast, retarget first-time buyers, and judge RoAS and repeat rate together.',a:'#ads',al:'See the ads'},
-    {id:'team',cat:'jd',w:'Brief',s:'Creative teams',k:'Where I help · Working with teams',t:'A one-page brief for everything',p:'Objective, audience, insight, one thing to say, proof, mandatories. Plus a weekly review against numbers.',a:'#flow',al:'See the brief'},
-    {id:'routine',cat:'idea',w:'Routine',s:'The big idea',k:'My idea',t:'“Your routine lives here.”',p:'Other apps sell you a product. The brand’s site remembers your skin, your routine and when you’ll run out.',a:'#idea',al:'Read the idea'},
-    {id:'persona',cat:'idea',w:'One-timers',s:'Target audience',k:'My idea · Targeting',t:'One-Time Buyers, 20–32',p:'They liked the brand enough to try it once. Triggers: running out, seeing results. Barriers: the fastest app, a new ad.',a:'#homework',al:'See the segments'},
-    {id:'mindset',cat:'idea',w:'Mindset',s:'Today → tomorrow',k:'My idea · Communication challenge',t:'From “wherever” to “right here”',p:'From “I’ll buy it wherever it’s fastest” to “The brand’s site knows my routine. I reorder there.”',a:'#idea',al:'Read more'},
-    {id:'reel1',cat:'samples',w:'Reel 01',s:'11 PM panic',k:'Sample · Reel script',t:'“11 PM restock panic”',p:'A 20-second Hinglish reel I’d shoot myself: empty face wash, 4 confusing apps, a mom joke, then a one-tap reorder.',a:'#scripts',al:'Read the script'},
-    {id:'reel2',cat:'samples',w:'Reel 02',s:'Rate my routine',k:'Sample · Reel script',t:'“Rate my routine”',p:'A creator rates follower routines with zero mercy, then sends everyone to the 60-second quiz.',a:'#scripts',al:'Read the script'},
-    {id:'ads',cat:'samples',w:'Meta ads',s:'3 jobs',k:'Sample · Performance ads',t:'Find, bring back, rescue',p:'New buyers get the quiz. First-time buyers get a refill nudge. Abandoned carts get “your routine is waiting”.',a:'#ads',al:'See the ads'},
-    {id:'wa',cat:'samples',w:'WhatsApp',s:'Day 0 → 28',k:'Sample · Retention flow',t:'First order to second order',p:'Four helpful messages over 30 days: a tip, a check-in, the routine, a one-tap refill.',a:'#flow',al:'See the flow'},
-    {id:'hello',cat:'contact',w:'Hello@',s:'aaniketk32@gmail.com',k:'Contact',t:'Let’s talk',p:'If this is the kind of thinking your D2C team needs, I’d love 15 minutes.',a:'mailto:aaniketk32@gmail.com',al:'Email me'},
+    {id:'goal',cat:'honasa',w:'₹5,500 Cr',s:'The FY31 goal',k:'Honasa today',t:'More than double by FY31',p:'FY26 revenue was ₹2,392 Cr. The goal is ₹5,500 Cr, with Mamaearth past ₹2,000 Cr and The Derma Co past ₹1,500 Cr.',a:'#honasa',al:'Read more'},
+    {id:'young',cat:'honasa',w:'45%+',s:'Younger brands',k:'Honasa today · Momentum',t:'The younger brands are flying',p:'Honasa’s Q2 FY27 update expects its younger brands to grow around the mid-40s%, led by BBlunt’s hair colour relaunch.',a:'#honasa',al:'Read more'},
+    {id:'insta',cat:'honasa',w:'Comment LINK',s:'On Instagram',k:'Honasa today · Instagram',t:'Thousands ask for links',p:'Across Mamaearth, BBlunt and Dr. Sheth’s, creators ask people to comment for a link. That’s a ready-made path to the brand’s own site.',a:'#honasa',al:'See what I saw'},
+    {id:'chatgpt',cat:'honasa',w:'ChatGPT',s:'A first for India',k:'Honasa today · New moves',t:'Mamaearth is advertising on ChatGPT',p:'The first Indian brand to do it, in September 2026. My long-form plans are written to show up in AI answers too.',a:'#honasa',al:'Read more'},
+    {id:'aqi',cat:'smog',w:'AQI 451',s:'Delhi, 3 Nov',k:'Brief 1 · Mamaearth',t:'Smog season is here',p:'Delhi’s AQI hit 451 this week. People want help, not fear. So the plan is useful first and the product comes second.',a:'#smog',al:'Read the brief'},
+    {id:'byaqi',cat:'smog',w:'Routine by AQI',s:'The idea',k:'Brief 1 · The idea',t:'When the air changes, your routine changes',p:'Simple tips for each AQI level, from Delhi creators. At AQI 400+, sales posts pause and only tips go out.',a:'#smog',al:'See the plan'},
+    {id:'ten',cat:'smog',w:'Year 10',s:'December',k:'Brief 1 · Birthday',t:'Year two of clean air',p:'Last December, Mamaearth put anti-smog guns on six Gurugram roads. This year it turns 10. Let people comment their area.',a:'#smog',al:'Read the script'},
+    {id:'pad',cat:'smog',w:'Cotton pad',s:'Reel I’d shoot',k:'Brief 1 · Reel',t:'“Ab dekhte hain chehre pe kitni Delhi aayi hai”',p:'An 18-second Hinglish reel: a cotton pad test after a day out, a proper night cleanse, and a reminder to wear a mask.',a:'#smog',al:'Read the script'},
+    {id:'shine',cat:'bblunt',w:'#ShiningBaby',s:'Is back',k:'Brief 2 · BBlunt',t:'Bring back BBlunt’s own hit',p:'In 2017, 37 celebrities did Bollywood dialogues for #ShiningBaby. Today’s creators can do it again for the relaunch.',a:'#bblunt',al:'Read the brief'},
+    {id:'wash',cat:'bblunt',w:'3 washes',s:'The proof',k:'Brief 2 · Proof',t:'Wash 1. Wash 2. Wash 3. Still shining.',p:'BBlunt’s lab test found 6x better colour retention after 3 washes. We show it on camera, same light every time.',a:'#bblunt',al:'Read the script'},
+    {id:'roots',cat:'bblunt',w:'Week 4',s:'Roots show',k:'Brief 2 · Repeat',t:'A reorder moment built into the product',p:'Roots grow back in 4–6 weeks. A reminder with their exact shade, one tap on bblunt.com.',a:'#bblunt',al:'See who gets what'},
+    {id:'grey',cat:'bblunt',w:'First grey',s:'No panic',k:'Brief 2 · Territory',t:'“Pehla grey baal? Panic mat karo.”',p:'Calm, funny content for people in their late 20s and 30s spotting their first greys.',a:'#bblunt',al:'See the ads'},
+    {id:'test',cat:'run',w:'3 hooks',s:'Test, cut, scale',k:'How I’d run it',t:'One offer, three hooks',p:'Humour, a question, a creator. Same budget. Cut the weakest, scale the winner, refresh every 2–3 weeks.',a:'#run',al:'Read more'},
+    {id:'roas',cat:'run',w:'RoAS',s:'Plus reorders',k:'How I’d run it · Numbers',t:'Past the clicks',p:'Hook rate and CTR for creative. Cost per purchase and RoAS for money. Site reorders to see if people come back.',a:'#run',al:'Read more'},
+    {id:'brief',cat:'run',w:'Brief',s:'One page',k:'How I’d run it · Team',t:'A one-page brief for every piece',p:'Objective, audience, insight, one thing to say, proof, mandatories, success. Two samples are on this page.',a:'#smog',al:'See a brief'},
+    {id:'hello',cat:'contact',w:'Hello@',s:'aaniketk32@gmail.com',k:'Contact',t:'Let’s talk',p:'If any of this is useful to your D2C team, I’d like 15 minutes to talk it through.',a:'mailto:aaniketk32@gmail.com',al:'Email me'},
     {id:'pf',cat:'contact',w:'Portfolio',s:'See my work',k:'Contact',t:'My full portfolio',p:'Reels, scripts, creator campaigns, SEO articles and podcast episodes I worked on.',a:'https://aaniketk32-png.github.io/akp/',al:'Open portfolio'}
   ];
-  var TAGTXT={STP:'Segment by need, target the One-Time Buyers, and position the brand’s site as the home of your routine.',RTB:'Reasons to believe: reviews, ingredients, expert brands and real results.',Funnel:'Awareness, consideration, trial, repeat, loyalty, advocacy. I plan content for each stage.',Meta:'Reels and partnership ads, tested by hook and judged on RoAS.',Google:'Search ads for high-intent queries like “sunscreen for oily skin”.',Hinglish:'The language most of India scrolls in, and the one I write best.',D2C:'Direct to consumer: the brand’s own site and app, where loyalty is built.',ASCI:'Every claim checked, every creator post disclosed.'};
+  var TAGTXT={AQI:'Content that changes with the air. Useful on bad days, quiet when people need quiet.',Hinglish:'The language most of India scrolls in, and the one I write best.',Meta:'Reels and partnership ads, tested by hook and judged on RoAS.',Google:'Search ads for what people actually type, like “face wash for pollution”.',WhatsApp:'Helpful messages for people who opted in, with one-tap reorders.',D2C:'The brand’s own site and app, where people come back to.',ASCI:'Every claim checked, every creator post disclosed.',Reels:'Short, hook-first, and something I can shoot myself.'};
   var TAGS=Object.keys(TAGTXT).map(function(x){return {id:'tag-'+x,tag:1,w:x,k:'In my toolkit',t:x,p:TAGTXT[x]}});
   var BYID={};SLIPS.concat(TAGS).forEach(function(d){BYID[d.id]=d});
   var PAL=['#ff5fa8','#ffd23f','#3f6bff','#3fe0a8','#ff8a2a','#8b5cff','#c8f03c','#5cc8ff','#1c1c22','#ffffff'];
