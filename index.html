@@ -292,6 +292,16 @@ details.more[open] summary{margin-bottom:8px}
 .aud-both b{color:var(--accent)}
 .hero .intro:not(.intro-2){font-size:clamp(1.2rem,2.2vw,1.45rem);line-height:1.35;max-width:36ch}
 .hero .intro-2{font-size:1rem;color:var(--muted);margin-top:-6px}
+.bsteps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.bstep{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:6px;align-content:start;transition:transform .25s ease,box-shadow .25s ease}
+.bstep:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.bnum{font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--accent);line-height:1}
+.bstep h3{font-size:1.15rem}
+.bq{color:var(--teal);font-weight:600;font-size:.95rem}
+@media (max-width:900px){.bsteps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.bsteps{grid-template-columns:minmax(0,1fr)}}
+#brand .aud-both{margin-top:18px}
+
 @media (max-width:760px){.aud-grid{grid-template-columns:minmax(0,1fr)}}
 .yts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
 .yt{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
@@ -325,7 +335,7 @@ details.more[open] summary{margin-bottom:8px}
   <h1>Aaniket Kumar Pandey</h1>
   <p class="role">Content Strategist <span>· Social Media · Content Marketing · Copywriter</span></p>
   <p class="intro">Hi, I’m Aaniket. I make content that people <b>notice, understand and act on</b>.</p>
-  <p class="intro intro-2">For nearly 4 years I’ve done this for <b>B2B and B2C brands</b>: tech articles and LinkedIn content at Times Internet and for agency clients, and reels, scripts and creator campaigns for consumer apps like Signal. I plan it, write it, and check the numbers to see what worked.</p>
+  <p class="intro intro-2">For nearly 4 years I’ve done this for <b>B2B and B2C brands</b>: tech articles and LinkedIn content at Times Internet and for agency clients, and reels, scripts and creator campaigns for consumer apps like Signal. Before I write anything, I get clear on the brand: what it needs right now, who it’s for, and what’s stopping them from acting. Then I plan it, write it, and check the numbers.</p>
   <div class="links">
     <a class="btn primary" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">Resume</a>
@@ -344,6 +354,7 @@ details.more[open] summary{margin-bottom:8px}
   <nav class="jump" aria-label="Jump to section">
     <a href="#about">Who I am</a>
     <a href="#what">Problems I solve</a>
+    <a href="#brand">Brand thinking</a>
     <a href="#process">How I work</a>
     <a href="#audiences">B2B &amp; B2C</a>
     <a href="#strategies">Strategies</a>
@@ -372,6 +383,7 @@ details.more[open] summary{margin-bottom:8px}
         <li>Content for 4+ brands at the same time</li>
         <li>Blog, website, email, social and video</li>
         <li>English and Hinglish</li>
+        <li>Currently in Kraftshala’s Marketing Launchpad</li>
       </ul>
     </div>
   </div>
@@ -393,6 +405,24 @@ details.more[open] summary{margin-bottom:8px}
     <div class="method prob"><p class="prob-q">“Our audience doesn’t connect with us.”</p><p>I change the voice, channel and proof for who’s reading: decision-makers on LinkedIn, everyday users on reels.</p><p class="prob-proof">B2B and B2C work across 10+ clients</p><a class="fit-link" href="#audiences">See how I adapt →</a></div>
   </div>
   <p class="aside">Off the clock, I’m also good at having my best ideas in the shower, losing them by the time I find my phone, and writing 15 headlines just to pick the first one.</p>
+</section>
+
+<!-- ================= BRAND THINKING ================= -->
+<section id="brand">
+  <div class="sec-head">
+    <p class="eyebrow">Brand thinking</p>
+    <h2>How I understand a <span class="mark">brand</span></h2>
+    <p class="lede">Good content starts before the first word. This is how I work out what a brand should say, to whom, and where.</p>
+  </div>
+  <ol class="bsteps">
+    <li class="bstep"><span class="bnum">01</span><h3>Start with the objective</h3><p class="bq">What does the brand need right now?</p><p>New people to the category, people switching from a competitor, or existing users coming back more often. Every other choice follows from this.</p></li>
+    <li class="bstep"><span class="bnum">02</span><h3>Know the person</h3><p class="bq">Who are we talking to, and what’s stopping them?</p><p>I define the audience by need and moment, not just age, then list what pushes them to act (triggers) and what holds them back (barriers).</p></li>
+    <li class="bstep"><span class="bnum">03</span><h3>Find the one thing to say</h3><p class="bq">What should they believe after seeing this?</p><p>I write it as one line: “I want to convince this audience that…”. It moves them from what they think today to what we want them to think.</p></li>
+    <li class="bstep"><span class="bnum">04</span><h3>Go from features to feelings</h3><p class="bq">Why should they care?</p><p>Product features lead to practical benefits, and those lead to how it makes people feel. I back every claim with a reason to believe: proof, data or a trusted voice.</p></li>
+    <li class="bstep"><span class="bnum">05</span><h3>Match the stage and channel</h3><p class="bq">Where are they in the journey?</p><p>Awareness, consideration, first try, repeat and recommendation each need different content, spread across paid, owned and earned media.</p></li>
+    <li class="bstep"><span class="bnum">06</span><h3>Measure what matters</h3><p class="bq">Did it move the objective?</p><p>If the goal is installs, I track installs, not just views. The numbers decide what we make next.</p></li>
+  </ol>
+  <p class="aud-both"><b>In practice:</b> at Signal the goal was app installs, so every creator got a tracked link and we judged them on installs and sign-ups, not just views. At TechGig, articles built awareness while webinars and newsletters moved readers closer to signing up.</p>
 </section>
 
 <!-- ================= PROCESS ================= -->
@@ -1289,7 +1319,7 @@ document.querySelectorAll('video').forEach(function(v){
 (function(){
   document.documentElement.classList.add('js');
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var els=document.querySelectorAll('.sec-head,.method,.flow li,.reel,.yt,.b2b-row,.panel,.shot,.adcase,.row');
+  var els=document.querySelectorAll('.sec-head,.method,.flow li,.bstep,.reel,.yt,.b2b-row,.panel,.shot,.adcase,.row');
   els.forEach(function(e){e.classList.add('reveal')});
   if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});}
   else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});var seen=false;var io2=new IntersectionObserver(function(){seen=true;io2.disconnect()});io2.observe(document.body);setTimeout(function(){if(!seen)els.forEach(function(e){e.classList.add('in')})},2500);}
