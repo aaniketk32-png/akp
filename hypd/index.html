@@ -332,6 +332,43 @@ details.more[open] summary{margin-bottom:8px}
 #hypd .hy-grid ul{padding-left:18px;margin:8px 0 0}
 #hypd .hy-grid li{margin-bottom:12px;line-height:1.45}
 .beg{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:rgba(0,0,0,.03);font-size:.95em}
+#hypd .hy-sub{margin:26px 0 12px}
+
+#hypd .hy-note{color:var(--muted,#666);margin:-4px 0 14px}
+#hypd .mg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+#hypd .mm{margin:0;border-radius:16px;overflow:hidden;background:#fff;border:1px solid rgba(0,0,0,.1);display:flex;flex-direction:column;font-family:inherit}
+#hypd .mm figcaption{margin-top:auto;padding:8px 14px;font-size:.78rem;color:#777;border-top:1px solid rgba(0,0,0,.06);background:#fafafa}
+#hypd .mm-dk .dk-row{display:grid;grid-template-columns:72px minmax(0,1fr);align-items:center;border-bottom:2px solid #111}
+#hypd .mm-dk .dk-e{font-size:2.6rem;text-align:center;background:#ffe9e6;padding:18px 0}
+#hypd .mm-dk .ok .dk-e{background:#e6f7ea}
+#hypd .mm-dk .dk-row.ok{flex:1;border-bottom:0}
+#hypd .mm-dk p{margin:0;padding:14px;font-weight:700;line-height:1.3}
+#hypd .mm-ev .ev{padding:18px;background:#fff6d6}
+#hypd .mm-ev .rl{background:#111;color:#fff;flex:1}
+#hypd .ev-k{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;opacity:.7}
+#hypd .mm-ev p{margin:6px 0 0;font-size:1.2rem;font-weight:800;line-height:1.25}
+#hypd .mm-chat{background:#ece5dd;padding-top:0}
+#hypd .ch-h{margin:0 0 10px;padding:10px 14px;background:#075e54;color:#fff;font-weight:700}
+#hypd .mm-chat .b{margin:0 14px 8px;padding:8px 12px;border-radius:12px;max-width:80%;font-size:.95rem;line-height:1.3}
+#hypd .mm-chat .l{background:#fff;align-self:flex-start}
+#hypd .mm-chat .r{background:#dcf8c6;align-self:flex-end}
+#hypd .mm-chat figcaption{margin-top:auto}
+#hypd .mm-tw{padding-top:16px}
+#hypd .tw-h{display:flex;gap:10px;align-items:center;padding:0 16px 10px}
+#hypd .tw-h .av{width:40px;height:40px;border-radius:50%;background:#f5c518;display:grid;place-items:center;font-size:1.2rem}
+#hypd .tw-h b{display:block}#hypd .tw-h span{color:#777;font-size:.88rem}
+#hypd .mm-tw>p{margin:0 16px 10px;font-size:1.05rem;line-height:1.35}
+#hypd .mm-sp{background:#fff}
+#hypd .sp-t{margin:0;padding:12px 16px;background:#111;color:#f5c518;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+#hypd .mm-sp ul{list-style:none;padding:12px 16px;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#hypd .mm-sp li{background:#f4f4f4;border-radius:10px;padding:10px;font-size:.9rem;font-weight:600;line-height:1.3}
+#hypd .mm-pov{background:linear-gradient(160deg,#2b1055,#7597de);color:#fff;padding:18px}
+#hypd .mm-pov .pov{margin:0;font-weight:900;font-size:1.6rem}
+#hypd .mm-pov p{margin:8px 0 0;font-size:1.2rem;font-weight:700;line-height:1.3}
+#hypd .mm-pov .pov-e{font-size:2rem}
+#hypd .mm-pov figcaption{margin:14px -18px -18px;background:rgba(255,255,255,.12);color:#eee;border-top:0}
+@media (max-width:980px){#hypd .mg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){#hypd .mg{grid-template-columns:minmax(0,1fr)}}
 #hypd .hy-ps{margin-top:16px;font-style:italic}
 @media (max-width:860px){#hypd .hy-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
@@ -394,6 +431,45 @@ details.more[open] summary{margin-bottom:8px}
     <div class="panel"><h3>Comment replies</h3><ul>
       <li><b>“where is this top from??”</b><br>Right here, bestie 👉 it’s in the creator’s HYPD store. Your cart’s been waiting.</li>
       <li><b>“my order is taking forever 😤”</b><br>Not the vibe we want either. DM us your order ID and we’ll chase it right now.</li></ul></div>
+  </div>
+  <h3 class="hy-sub">Memes I’d post for HYPD</h3>
+  <p class="hy-note">Made in the HYPD style: relatable shopping chaos, with the store as the punchline. Spec, built for this application.</p>
+  <div class="mg">
+    <figure class="mm mm-dk">
+      <div class="dk-row"><span class="dk-e">🙅</span><p>Asking “link pls?” and waiting 3 days for a reply</p></div>
+      <div class="dk-row ok"><span class="dk-e">😌</span><p>Shopping the look straight from the creator’s HYPD store</p></div>
+      <figcaption>Format: approve / reject</figcaption>
+    </figure>
+    <figure class="mm mm-ev">
+      <div class="ev"><span class="ev-k">Expectation</span><p>“I’ll just buy one top.”</p></div>
+      <div class="ev rl"><span class="ev-k">Reality</span><p>The creator’s whole wardrobe is in my cart 🛒</p></div>
+      <figcaption>Format: expectation vs reality</figcaption>
+    </figure>
+    <figure class="mm mm-chat">
+      <p class="ch-h">bestie 💅</p>
+      <p class="b l">where did you get that jacket??</p>
+      <p class="b r">from a creator’s store on HYPD</p>
+      <p class="b l">send link</p>
+      <p class="b r">*sends 14 links*</p>
+      <figcaption>Format: group chat</figcaption>
+    </figure>
+    <figure class="mm mm-tw">
+      <div class="tw-h"><span class="av">🛍️</span><div><b>me, every night</b><span>@justbrowsing</span></div></div>
+      <p>me at 1 AM: I’m just looking</p>
+      <p>also me at 1:07 AM: “your order has been placed” 🙂</p>
+      <figcaption>Format: tweet-style</figcaption>
+    </figure>
+    <figure class="mm mm-sp">
+      <p class="sp-t">The online shopper starter pack</p>
+      <ul><li>📁 A “saved outfits” folder with 312 reels</li><li>💬 “link pls?” under every post</li><li>🛒 12 items in cart, “just in case”</li><li>🙈 “I’m only browsing”</li></ul>
+      <figcaption>Format: starter pack</figcaption>
+    </figure>
+    <figure class="mm mm-pov">
+      <p class="pov">POV:</p>
+      <p>Your favourite creator just dropped a store, and your salary hasn’t.</p>
+      <p class="pov-e">😭💸</p>
+      <figcaption>Format: POV</figcaption>
+    </figure>
   </div>
   <p class="hy-ps">P.S. I’m in for every spontaneous party. And yes, I’ll share my lunch.</p>
 </section>
