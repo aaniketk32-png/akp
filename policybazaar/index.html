@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aaniket for Policybazaar.ae</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="A spec by Aaniket Kumar Pandey for Policybazaar.ae: brand read, Instagram audit, four reworked posts and a two-week content calendar.">
+<meta property="og:title" content="Aaniket × Policybazaar.ae: four reworks and a content plan">
+<meta property="og:description" content="Brand read, an honest look at 36 reels, four reworked posts and a two-week UAE content calendar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aaniketk32-png.github.io/akp/policybazaar/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@600&f[]=cabinet-grotesk@400,500,700,800,900&display=swap">
+<style>
+:root{
+  --bg:#FAFAFA;--ink:#111;--muted:#55555c;--line:#E3E3E6;--card:#FFFFFF;--soft:#F1F1F3;
+  --red:#0a5cf5;--yellow:#ffd23f;--mint:#3fe0a8;--blue:#3f6bff;--pink:#ff5fa8;
+  --display:"Clash Display","Cabinet Grotesk","Arial Black",system-ui,sans-serif;
+  --body:"Cabinet Grotesk","Segoe UI",system-ui,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --pad:48px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121214;--ink:#F3F3F5;--muted:#A3A3AB;--line:#2A2A30;--card:#1B1B1F;--soft:#202026;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121214;--ink:#F3F3F5;--muted:#A3A3AB;--line:#2A2A30;--card:#1B1B1F;--soft:#202026;color-scheme:dark}
+@media (max-width:1024px){:root{--pad:24px}}
+@media (max-width:600px){:root{--pad:14px}}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{margin:0;font-family:var(--display);font-weight:600;line-height:1.02;text-wrap:balance}
+
+/* ---------- NAV ---------- */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px var(--pad);position:relative;z-index:30}
+.logo{font-family:var(--serif);font-style:italic;font-size:2.1rem;line-height:1;text-decoration:none;width:112px}
+.logo span{font-family:var(--display);font-style:normal;font-size:.62rem;letter-spacing:.14em;display:block;color:var(--muted);margin-top:2px}
+.links{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.links button{font:600 .95rem var(--display);background:none;border:0;color:var(--ink);padding:8px 12px;border-radius:999px;cursor:pointer}
+.links button:hover,.links button:focus-visible{background:var(--soft)}
+
+/* ---------- KEYCAP BUTTONS ---------- */
+.key{--top:#fff;--side:#cfcfd4;--txt:#111;position:relative;height:54px;padding:0 22px 0 20px;border-radius:14px;border:1.5px solid #111;
+  background:var(--top);color:var(--txt);font:600 1rem var(--display);cursor:pointer;display:inline-flex;align-items:center;gap:10px;
+  box-shadow:0 7px 0 var(--side),0 7px 0 1.5px #111;transform:translateY(0);transition:transform .08s ease,box-shadow .08s ease;text-decoration:none;user-select:none;-webkit-user-select:none;touch-action:manipulation;white-space:nowrap}
+.key small{position:absolute;top:5px;right:8px;font-size:.66rem;opacity:.65;font-family:var(--body)}
+.key:active,.key.down{transform:translateY(6px);box-shadow:0 1px 0 var(--side),0 1px 0 1.5px #111}
+.key.dark{--top:#16161a;--side:#000;--txt:#fff}
+.key.release{animation:spring .25s ease}
+@keyframes spring{0%{transform:translateY(6px)}60%{transform:translateY(-2px)}100%{transform:translateY(0)}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:12px var(--pad) 48px;display:grid;grid-template-columns:46% 1fr;grid-template-areas:"text gun" "tray gun";column-gap:24px;overflow:clip;min-height:calc(100vh - 90px);align-content:start}
+.hero-text{grid-area:text;position:relative;z-index:5}
+.label{display:inline-flex;align-items:center;gap:8px;font:700 .75rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.label i{width:9px;height:9px;border-radius:50%;background:var(--red);display:inline-block}
+.hero h1{font-size:clamp(42px,5vw,84px);line-height:.98;margin:16px 0 18px;letter-spacing:-.01em}
+.hero h1 em{font-family:var(--serif);font-weight:400;font-style:italic}
+.hero .sub{color:var(--muted);font-size:1.1rem;max-width:44ch}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 16px;margin-top:26px}
+.count{font:600 .95rem var(--display);color:var(--muted)}
+.count b{color:var(--ink)}
+.scroll-hint{margin-top:18px;font-size:.95rem}
+.scroll-hint a{font-weight:800;text-decoration-thickness:2px;text-underline-offset:3px}
+
+.gun-wrap{grid-area:gun;position:relative;z-index:4;display:flex;align-items:flex-start;justify-content:flex-end;pointer-events:none}
+#gun{width:min(52vw,760px);height:auto;transform:rotate(-16deg);transform-origin:60% 50%;margin-top:70px;margin-right:-1vw;pointer-events:auto;cursor:pointer;overflow:visible;touch-action:none;-webkit-tap-highlight-color:transparent}
+#gun:focus-visible{outline:3px solid var(--blue);outline-offset:6px;border-radius:12px}
+#gun.kick .body{animation:kick .2s cubic-bezier(.2,.9,.3,1.3)}
+@keyframes kick{0%{transform:translateX(0)}25%{transform:translateX(14px)}100%{transform:translateX(0)}}
+#trigger{transform-box:fill-box;transform-origin:50% 0;transition:transform .08s}
+#gun.firing #trigger{transform:rotate(22deg)}
+
+.tray{grid-area:tray;position:relative;margin-top:54px;z-index:3;min-height:120px}
+.tray .label{position:absolute;top:0;left:0}
+.slips{position:absolute;inset:0;pointer-events:none;z-index:20}
+
+/* ---------- SLIPS ---------- */
+.slip{position:absolute;left:0;top:0;border-radius:7px;will-change:transform;pointer-events:none}
+.slip .face{width:100%;height:100%;border-radius:7px;display:flex;flex-direction:column;justify-content:center;padding:0 14px;
+  box-shadow:0 1px 0 rgba(0,0,0,.08),0 8px 18px rgba(0,0,0,.12);transition:transform .2s ease;overflow:hidden;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 2px,transparent 2px 9px)}
+.slip .w{font:900 30px/1 var(--body);text-transform:uppercase;letter-spacing:.01em;white-space:nowrap}
+.slip .s{font:700 10px/1.2 var(--body);letter-spacing:.22em;text-transform:uppercase;opacity:.8;margin-top:6px;white-space:nowrap}
+.slip.tag .face{align-items:center;padding:0 6px;text-align:center}
+.slip.placed{pointer-events:auto;cursor:pointer}
+.slip.placed:hover .face,.slip.placed:focus-visible .face{transform:translateY(-6px)}
+.slip.placed:focus-visible{outline:none}
+.slip.placed:focus-visible .face{outline:3px solid var(--ink);outline-offset:2px}
+.slip.hop .face{animation:hop .35s ease}
+@keyframes hop{40%{transform:translateY(-8px)}}
+.slip.gone{transition:opacity .35s;opacity:0}
+
+/* ---------- DETAIL CARD ---------- */
+.detail{position:fixed;right:var(--pad);bottom:24px;width:min(380px,calc(100vw - 2*var(--pad)));z-index:60;
+  background:rgba(255,255,255,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:#111;
+  border:1px solid rgba(0,0,0,.08);border-radius:16px;padding:18px 20px;box-shadow:0 18px 50px rgba(0,0,0,.18);
+  transform:translateY(20px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.detail.on{opacity:1;transform:none;pointer-events:auto}
+.detail .k{font:800 .7rem var(--body);letter-spacing:.16em;text-transform:uppercase;color:#55555c;display:flex;align-items:center;gap:8px;padding-right:20px}
+.detail .k i{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+.detail h4{font-size:1.5rem;margin:8px 0 6px}
+.detail p{color:#2b2b30;font-size:.98rem}
+.detail a.more{display:inline-block;margin-top:10px;font-weight:800;font-size:.92rem}
+.detail .x{position:absolute;top:10px;right:12px;border:0;background:none;font-size:1.3rem;cursor:pointer;color:#55555c}
+
+/* ---------- CONTENT SECTIONS ---------- */
+.sec{padding:72px var(--pad);border-top:1px solid var(--line);max-width:1280px;margin:0 auto}
+.eyebrow{font:800 .75rem var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.eyebrow i{width:9px;height:9px;border-radius:50%;background:var(--red);display:inline-block}
+.sec h2{font-size:clamp(34px,4.4vw,62px);margin:12px 0 0;letter-spacing:-.01em}
+.sec h2 em,.end h2 em{font-family:var(--serif);font-weight:400}
+.lede{color:var(--muted);max-width:64ch;margin-top:14px;font-size:1.05rem}
+.head{margin-bottom:30px}
+.sub-h{font-size:1.6rem;margin:44px 0 12px}
+.chip{display:inline-block;font:800 .72rem var(--body);letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:6px;background:var(--yellow);color:#111}
+.chip.mint{background:var(--mint)}.chip.pink{background:var(--pink)}.chip.blue{background:var(--blue);color:#fff}.chip.red{background:var(--red);color:#fff}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+.card h3{font-size:1.35rem;margin:8px 0 6px}
+.card.hi{border:2px solid var(--yellow)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+
+.aqi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.aqi div{border-radius:12px;padding:14px;background:var(--card);border:1px solid var(--line);font-size:.93rem}
+.aqi div>b{display:block;font:600 1.08rem var(--display);margin-bottom:4px}
+.aqi .a1{border-top:6px solid #3fbf6f}.aqi .a2{border-top:6px solid var(--yellow)}.aqi .a3{border-top:6px solid #ff8a3d}.aqi .a4{border-top:6px solid var(--red)}
+.aqi b.in{display:inline;font:inherit;font-weight:800;margin:0}
+.gads{margin-top:16px;padding:16px 18px;border:1px dashed var(--line);border-radius:14px;background:var(--card);font-size:.95rem}
+.gads p{margin-top:8px}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+@media (max-width:760px){.aqi{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.aqi{grid-template-columns:minmax(0,1fr)}}
+
+.stepn{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font:700 .9rem var(--body);margin-right:10px;vertical-align:3px}
+.segs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.seg{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--card);font-size:.93rem;color:var(--muted)}
+.seg b{display:block;color:var(--ink);font:600 1.08rem var(--display);margin-bottom:4px}
+.seg.pick{border:2px solid var(--red)}
+.seg em{display:table;margin-top:10px;font:800 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--red);padding:3px 8px;border-radius:5px;font-style:normal}
+.persona{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.persona .who{display:flex;gap:14px;align-items:center}
+.persona .ava{width:52px;height:52px;border-radius:50%;background:var(--yellow);color:#111;display:grid;place-items:center;font:600 1.4rem var(--display);flex:none}
+.persona .who b{display:block;font:600 1.3rem var(--display)}
+.persona .who span{color:var(--muted);font-size:.93rem}
+.persona .quote{font-family:var(--serif);font-style:italic;font-size:1.35rem;margin:14px 0 4px}
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:14px}
+.pgrid div{border-top:2px solid var(--line);padding-top:8px;font-size:.93rem}
+.pgrid small{display:block;font:800 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.pos{border-left:5px solid var(--red);background:var(--card);border-radius:0 16px 16px 0;padding:18px 22px;font-size:1.12rem;line-height:1.5}
+.pos .rtb{margin-top:10px;font-size:.98rem;color:var(--muted)}
+.pos .rtb b{color:var(--ink)}
+.funnelt td:first-child{border-left:6px solid var(--line);white-space:nowrap}
+.funnelt tr.st1 td:first-child{border-left-color:#3f6bff}.funnelt tr.st2 td:first-child{border-left-color:#7a5cff}
+.funnelt tr.st3 td:first-child{border-left-color:#ff5fa8}.funnelt tr.st4 td:first-child{border-left-color:#2a72ff}
+.funnelt tr.st5 td:first-child{border-left-color:#ff8a3d}.funnelt tr.st6 td:first-child{border-left-color:#3fbf6f}
+@media (max-width:900px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.segs{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:480px){.pgrid{grid-template-columns:minmax(0,1fr)}.persona{padding:18px}}
+
+.note{margin:22px 0 6px;max-width:66ch;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--yellow);border-radius:0 16px 16px 0;padding:18px 22px;font-size:1.02rem;line-height:1.6}
+.note p+p{margin-top:10px}
+.note .sign{font-family:var(--serif);font-style:italic;font-size:1.3rem;margin-top:12px}
+
+.take{margin-top:14px;max-width:66ch;font-size:1.08rem;padding:12px 16px;background:var(--yellow);color:#111;border-radius:12px}
+.take b{font-weight:700}
+.quick{max-width:70ch;font-size:1.05rem;padding:14px 18px;border-left:4px solid var(--ink);background:var(--card);border-radius:0 12px 12px 0}
+.d2c{margin-top:16px;padding:18px 20px;border:2px solid var(--red);border-radius:16px;background:var(--card)}
+.d2c ul{margin:10px 0 0;padding-left:20px}
+.d2c li+li{margin-top:6px}
+
+/* reworks */
+.stat b{display:block;font:600 1.5rem/1.1 var(--display);margin-bottom:8px}
+.rw{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-top:22px}
+.rw-top{padding:20px 22px;background:var(--soft);border-bottom:1px solid var(--line)}
+.rw-top h3{font-size:1.45rem;margin:10px 0 4px}
+.rw-top .was{color:var(--muted);font-size:.95rem}
+.rw-top .was b{color:var(--ink)}
+.rw-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) minmax(0,1fr)}
+.rw-grid>div{padding:18px 20px}
+.rw-grid>div+div{border-left:1px solid var(--line)}
+.rw h4{font:800 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.rw-new h4{color:var(--red)}
+.rw ul{margin:0;padding-left:18px}.rw li+li{margin-top:8px}
+.rw-why{background:color-mix(in srgb,var(--soft) 60%,transparent)}
+.rw-new .beat{padding:10px 0;grid-template-columns:52px 1fr}
+.rw-new .beat:first-of-type{border-top:0}
+.rw .cap{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:.94rem}
+.rw .msr{margin-top:14px;font-size:.92rem;padding:10px 12px;background:var(--soft);border-radius:10px}
+.slides{margin:0;padding-left:22px}.slides li{padding:6px 0;border-bottom:1px dashed var(--line)}.slides li:last-child{border-bottom:0}
+.pg{margin-top:10px;font-size:.92rem;color:var(--muted)}.pg b{color:var(--ink)}
+.cal td:first-child{white-space:nowrap}
+@media (max-width:980px){.rw-grid{grid-template-columns:minmax(0,1fr)}.rw-grid>div+div{border-left:0;border-top:1px solid var(--line)}}
+
+/* read this first */
+.first h2{max-width:20ch}
+.map{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.map a{display:block;height:100%;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--muted);text-decoration:none;font-size:.92rem;transition:transform .2s,border-color .2s}
+.map a:hover{transform:translateY(-3px);border-color:var(--red)}
+.map span{display:block;font:600 1.6rem var(--display);color:var(--red);line-height:1}
+.map b{display:block;color:var(--ink);font:600 1.15rem var(--display);margin:6px 0 4px}
+.fine-note{margin-top:18px;font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.05rem}
+
+/* research */
+.takeaway{margin-top:14px;padding:14px 18px;border-left:4px solid var(--red);background:var(--card);border-radius:0 12px 12px 0;font-size:1.02rem}
+.strat{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.strat dl{margin:10px 0 0;display:grid;grid-template-columns:92px 1fr;gap:8px 10px;font-size:.94rem}
+.strat dt{font:800 .68rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.strat dd{margin:0}
+.loop{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px}
+.loop span{display:flex;flex-direction:column;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);font:600 1rem var(--display)}
+.loop span small{font:500 .78rem var(--body);color:var(--muted);margin-top:2px}
+.loop span.on{background:var(--yellow);border-color:var(--yellow);color:#111}
+.loop span.on small{color:#333}
+.loop i{font-style:normal;color:var(--muted)}
+@media (max-width:560px){.strat dl{grid-template-columns:1fr;gap:2px}.strat dd{margin-bottom:8px}}
+
+/* JD rows */
+.jd{display:grid;gap:14px}
+.jdrow{display:grid;grid-template-columns:1.05fr 1fr 1.25fr;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.jdrow>div{padding:20px 22px}
+.jdrow .ask{background:var(--soft)}
+.jdrow .ask .n{font:600 2.2rem var(--display);line-height:1;color:var(--red)}
+.jdrow .ask q{display:block;quotes:none;font:600 1.15rem/1.25 var(--display);margin-top:8px}
+.jdrow .now,.jdrow .better{border-left:1px solid var(--line)}
+.jdrow .tagline{font:800 .7rem var(--body);letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px;display:block}
+.jdrow .now .tagline{color:var(--muted)}
+.jdrow .better .tagline{color:#0b8a61}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .jdrow .better .tagline{color:var(--mint)}}
+.jdrow .done{margin-top:10px;font-size:.92rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+.jdrow .done b{color:var(--ink)}
+
+/* equation + funnel */
+.eq{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 16px;font:600 1rem var(--display)}
+.eq span{background:var(--card);border:1.5px solid var(--ink);border-radius:10px;padding:8px 14px}
+.eq span.on{background:var(--yellow);color:#111;border-color:#111}
+.eq i{font-style:normal;color:var(--muted)}
+.funnel{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.funnel div{border-radius:12px;padding:12px;background:var(--card);border:1px solid var(--line);font-size:.9rem}
+.funnel b{display:block;font:600 1.02rem var(--display);margin-bottom:4px}
+.funnel .ok{border-bottom:5px solid var(--mint)}
+.funnel .mid{border-bottom:5px solid var(--yellow)}
+.funnel .bad{border-bottom:5px solid var(--red)}
+
+table{width:100%;border-collapse:collapse;font-size:.96rem}
+td,th{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:800 .72rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tablewrap{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow-x:auto}
+tr.core td{background:rgba(255,210,63,.22)}
+
+.idea{background:#111;color:#fff;border-radius:22px;padding:30px;position:relative;overflow:hidden}
+.idea .k{font:800 .75rem var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--yellow)}
+.idea .line{font:600 clamp(40px,6vw,86px)/.98 var(--display);margin:12px 0 16px}
+.idea .line em{font-family:var(--serif);font-weight:400}
+.idea p{color:#d6d6db;max-width:62ch}
+.shift{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin-top:22px}
+.shift div{border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:14px 16px}
+.shift small{display:block;font:800 .68rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:4px}
+.shift .arr{border:0;font-size:2rem;color:var(--yellow);padding:0}
+.idea .co{margin-top:18px;border-left:4px solid var(--yellow);padding:6px 0 6px 16px;font:600 1.2rem/1.3 var(--display);color:#fff}
+.ideacheck{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.ideacheck div{border-top:2px solid var(--yellow);padding-top:8px;color:#d6d6db}
+.ideacheck b{color:var(--yellow);display:block}
+.ladder{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ladder .card:nth-child(1){border-top:5px solid var(--blue)}
+.ladder .card:nth-child(2){border-top:5px solid var(--mint)}
+.ladder .card:nth-child(3){border-top:5px solid var(--pink)}
+.ladder .card:nth-child(4){border-top:5px solid var(--yellow)}
+
+.scripts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.script{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.script header{padding:18px 20px;background:var(--soft)}
+.script header h3{font-size:1.45rem}
+.script header p{color:var(--muted);font-size:.92rem;margin-top:4px}
+.beat{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:12px 20px;border-top:1px solid var(--line)}
+.beat .t{font:800 .82rem var(--body);color:var(--red);padding-top:3px}
+.beat .say{font:600 1.05rem/1.3 var(--display)}
+.beat .shot{color:var(--muted);font-size:.9rem;margin-top:2px}
+.script footer{padding:14px 20px;border-top:1px solid var(--line);font-size:.94rem}
+
+.ads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ad{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:grid;gap:10px;align-content:start}
+.ad .aud{font:800 .72rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.ad .visual{aspect-ratio:1/1;border-radius:12px;display:grid;place-items:center;text-align:center;padding:18px;font:600 1.45rem/1.08 var(--display);color:#111}
+.ad:nth-child(1) .visual{background:var(--yellow)}
+.ad:nth-child(2) .visual{background:var(--mint)}
+.ad:nth-child(3) .visual{background:var(--pink)}
+.ad .hl{font-weight:800}
+.ad .cta{justify-self:start;background:#111;color:#fff;font-weight:800;font-size:.85rem;padding:6px 14px;border-radius:6px}
+
+.flow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.chat{display:grid;gap:12px}
+.msg{background:#DCF8C6;color:#111;border-radius:4px 16px 16px 16px;padding:12px 16px;max-width:520px}
+.msg .when{font:800 .68rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#1f7a4a;display:block;margin-bottom:4px}
+.msg .b{display:inline-block;margin-top:8px;font-weight:800;font-size:.85rem;color:#1f7a4a;border:1.5px solid #1f7a4a;border-radius:999px;padding:2px 12px}
+.brief dl{display:grid;grid-template-columns:150px 1fr;gap:8px 14px;margin:10px 0 0}
+.brief dt{font:800 .72rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.brief dd{margin:0}
+.fine{color:var(--muted);font-size:.86rem;margin-top:16px}
+.end{padding:80px var(--pad);border-top:1px solid var(--line);max-width:1280px;margin:0 auto}
+.end h2{font-size:clamp(34px,4.6vw,66px);margin-top:12px}
+
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1024px){
+  .jdrow{grid-template-columns:minmax(0,1fr)}
+  .jdrow .now,.jdrow .better{border-left:0;border-top:1px solid var(--line)}
+  .ladder{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .funnel{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .scripts,.ads,.flow{grid-template-columns:minmax(0,1fr)}
+  .hero{grid-template-columns:50% 1fr}
+}
+@media (max-width:760px){
+  .nav{flex-wrap:wrap;row-gap:10px}
+  .links{order:3;width:100%}
+  .logo{width:92px;font-size:1.8rem}
+  .hero{grid-template-columns:minmax(0,1fr);grid-template-areas:"text" "gun" "tray";min-height:0}
+  .gun-wrap{justify-content:center}
+  #gun{width:86%;max-width:500px;margin:34px 6% 18px 0}
+  .tray{margin-top:24px}
+  .shift{grid-template-columns:minmax(0,1fr)}.shift .arr{transform:rotate(90deg);justify-self:center}
+  .ideacheck{grid-template-columns:minmax(0,1fr)}
+  .funnel{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ladder{grid-template-columns:minmax(0,1fr)}
+  .brief dl{grid-template-columns:minmax(0,1fr)}
+  .key{height:50px;padding:0 18px 0 16px}
+}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  #gun.kick .body{animation:none}
+  .card:hover{transform:none}
+}
+</style>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <a class="logo" href="#top" aria-label="Aaniket, top of page">aaniket<span>FOR POLICYBAZAAR.AE</span></a>
+  <div class="links" role="group" aria-label="Fire slips by topic">
+    <button type="button" data-fire="brand">Brand read</button>
+    <button type="button" data-fire="audit">What's working</button>
+    <button type="button" data-fire="rework">Reworks</button>
+    <button type="button" data-fire="system">Content plan</button>
+    <button type="button" data-fire="contact">Contact</button>
+  </div>
+  <a class="key" href="mailto:aaniketk32@gmail.com?subject=Copywriter%2C%20Policybazaar.ae">Let’s Talk ↗<small>@</small></a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <span class="label"><i></i>For Policybazaar.ae · Copywriter · 2026</span>
+    <h1>Hi, I’m <em>Aaniket.</em> I reworked four Policybazaar.ae posts before anyone asked.</h1>
+    <p class="sub">A brand read, an honest look at 36 reels, four reworks and a two-week UAE calendar. Pull the trigger to see the ideas fly, or scroll to read them.</p>
+    <div class="row">
+      <button class="key dark" id="sprayBtn" type="button">Spray my ideas<small>⏎</small></button>
+      <button class="key" id="cleanBtn" type="button">Clean up<small>↺</small></button>
+      <span class="count" aria-live="polite"><b id="count">0</b> slips sprayed</span>
+    </div>
+    <p class="scroll-hint">Prefer reading? <a href="#first">Scroll for the full pitch ↓</a> · <a href="https://aaniketk32-png.github.io/akp/policybazaar/Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">My resume (PDF)</a></p>
+  </div>
+
+  <div class="gun-wrap">
+    <svg id="gun" viewBox="0 0 760 440" role="button" tabindex="0" aria-label="Paper gun. Press or hold to spray ideas.">
+      <defs>
+        <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4d8dff"/><stop offset="1" stop-color="#2a72ff"/></linearGradient>
+        <linearGradient id="gSide" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a72ff"/><stop offset=".55" stop-color="#0a5cf5"/><stop offset="1" stop-color="#0640b0"/></linearGradient>
+        <linearGradient id="gBack" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0848c4"/><stop offset="1" stop-color="#042c80"/></linearGradient>
+        <linearGradient id="gGrip" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a72ff"/><stop offset=".5" stop-color="#0a5cf5"/><stop offset="1" stop-color="#0538a0"/></linearGradient>
+        <filter id="blur" x="-20%" y="-80%" width="140%" height="260%"><feGaussianBlur stdDeviation="14"/></filter>
+      </defs>
+      <ellipse cx="420" cy="420" rx="290" ry="16" fill="#000" opacity=".2" filter="url(#blur)"/>
+      <g class="body">
+        <polygon points="612,246 626,240 670,392 656,400" fill="url(#gBack)"/>
+        <polygon points="528,250 612,246 656,400 572,404" fill="url(#gGrip)"/>
+        <line x1="536" y1="258" x2="578" y2="396" stroke="#fff" stroke-opacity=".55" stroke-width="3" stroke-linecap="round"/>
+        <path d="M430 250 C428 318 468 330 520 326 L556 324" fill="none" stroke="#0848c4" stroke-width="12" stroke-linecap="round"/>
+        <path id="trigger" d="M478 250 C474 272 480 292 494 304 L504 298 C494 286 492 270 494 250 Z" fill="#04307f"/>
+        <polygon points="120,118 146,92 724,92 698,118" fill="url(#gTop)"/>
+        <polygon points="698,118 724,92 724,226 698,252" fill="url(#gBack)"/>
+        <rect x="120" y="118" width="578" height="134" rx="4" fill="url(#gSide)"/>
+        <line x1="126" y1="122" x2="694" y2="122" stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+        <line x1="250" y1="130" x2="250" y2="244" stroke="#000" stroke-opacity=".12" stroke-width="2"/>
+        <line x1="600" y1="130" x2="600" y2="244" stroke="#000" stroke-opacity=".12" stroke-width="2"/>
+        <circle cx="270" cy="140" r="5" fill="#021c52"/><circle cx="270" cy="232" r="5" fill="#021c52"/>
+        <circle cx="580" cy="140" r="5" fill="#021c52"/><circle cx="580" cy="232" r="5" fill="#021c52"/>
+        <text x="425" y="208" text-anchor="middle" fill="#fff" font-family="Cabinet Grotesk, Arial Black, sans-serif" font-weight="900" font-size="64" letter-spacing="2">IDEAS</text>
+        <polygon points="104,126 120,118 120,252 104,244" fill="#0538a0"/>
+        <rect id="slot" x="128" y="142" width="16" height="88" rx="5" fill="#010d2a"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="tray" id="tray">
+    <span class="label">What came out · click a slip</span>
+  </div>
+  <div class="slips" id="slips"></div>
+</header>
+
+<aside class="detail" id="detail" aria-live="polite" aria-label="Slip detail">
+  <button class="x" type="button" aria-label="Close">×</button>
+  <p class="k"><i id="dSw"></i><span id="dK"></span></p>
+  <h4 id="dT"></h4>
+  <p id="dP"></p>
+  <a class="more" id="dA" href="#"></a>
+</aside>
+
+<!-- ================= READ THIS FIRST ================= -->
+<section class="sec first" id="first">
+  <p class="eyebrow"><i></i>Before you scroll</p>
+  <h2>Why I made <em>this page</em></h2>
+  <div class="note reveal">
+    <p>When I saw the copywriter opening for Policybazaar.ae and Paisabazaar.ae, I went through the last 36 reels on @policybazaaruae, with the views, likes and comments on each.</p>
+    <p>The topics are smart: the Rule of 72, Takaful, fog driving, term vs whole life. What's missing is the hook, the story and a reason to comment. This page is my try at showing how I'd close that gap from week one. I started with Policybazaar.ae. Paisabazaar.ae is next.</p>
+    <p class="sign">Aaniket</p>
+  </div>
+  <ol class="map">
+    <li><a href="#brand"><span>01</span><b>Brand read</b>What the brand needs from Instagram</a></li>
+    <li><a href="#audit"><span>02</span><b>What's working</b>36 reels, honestly</a></li>
+    <li><a href="#rework"><span>03</span><b>Four reworks</b>Before, after and why</a></li>
+    <li><a href="#system"><span>04</span><b>Content system</b>Pillars, series, voice</a></li>
+    <li><a href="#calendar"><span>05</span><b>Two-week calendar</b>UAE moments and memes</a></li>
+  </ol>
+  <p class="fine-note">No premiums were harmed in the making of this page. A few late nights were.</p>
+</section>
+
+<!-- ================= 01 BRAND READ ================= -->
+<section class="sec" id="brand">
+  <div class="head">
+    <p class="eyebrow"><i></i>01 · Brand read</p>
+    <h2>What Policybazaar.ae <em>needs from Instagram</em></h2>
+    <p class="lede">Before writing a single hook, I wanted to know what the business is trying to do. Everything after this section is built on it.</p>
+  </div>
+  <div class="grid">
+    <div class="card reveal"><span class="chip">Since 2018</span><h3>Licensed, local, growing</h3><p>Launched in the UAE in 2018 and licensed by the Central Bank of the UAE. Premiums grew 54% in FY26.</p></div>
+    <div class="card reveal"><span class="chip mint">The product</span><h3>35+ insurers, one place</h3><p>400+ products across health, car, life, travel and business, with help when it's time to claim.</p></div>
+    <div class="card reveal"><span class="chip pink">The mix</span><h3>Health and car pay the bills</h3><p>Life insurance is the fastest-growing line. The customer base started with Indian expats and is widening to Arab and European expats.</p></div>
+    <div class="card reveal"><span class="chip blue">The promise</span><h3>"Where the UAE Gets Insured"</h3><p>The mission: help residents compare, choose and claim with clarity and confidence.</p></div>
+  </div>
+
+  <h3 class="sub-h"><span class="stepn">1</span>Where the growth comes from</h3>
+  <div class="eq reveal"><span>Category penetration</span><i>×</i><span class="on">Brand penetration</span><i>×</i><span>Frequency</span><i>×</i><span class="on">Covers per customer</span><i>=</i><span>Brand size</span></div>
+  <div class="grid">
+    <div class="card hi reveal"><span class="chip red">Brand penetration</span><h3>Be the first place people check</h3><p>Most residents renew wherever is easiest: the car dealer, the bank, the employer's broker. Instagram's job is to be remembered before renewal day comes.</p></div>
+    <div class="card hi reveal"><span class="chip red">Covers per customer</span><h3>One customer, more covers</h3><p>Someone who bought car insurance also needs health, travel and, more and more, life cover. Useful content opens those conversations without a hard sell.</p></div>
+    <div class="card reveal"><span class="chip">Frequency</span><h3>A once-a-year thought</h3><p>People think about insurance at renewal and forget it for the other 364 days. Content has to earn a place in those days.</p></div>
+  </div>
+
+  <h3 class="sub-h"><span class="stepn">2</span>Who we're talking to</h3>
+  <div class="segs">
+    <div class="seg pick reveal"><b>Young expat families, 28–40</b><span>Salaried, with kids or planning them. Covered at work, but not sure for how much.</span><em>Our target</em></div>
+    <div class="seg reveal"><b>New to the UAE</b><span>Arab and European expats in their first two years. A growing segment and the next target.</span></div>
+    <div class="seg reveal"><b>Small business owners</b><span>Valuable, but better reached through LinkedIn and sales teams.</span></div>
+  </div>
+  <div class="persona reveal">
+    <div class="who"><div class="ava">R</div><div><b>Rahul, 32 · Dubai</b><span>Sales manager, married, a two-year-old at home.</span></div></div>
+    <p class="quote">"My company covers me. I think. I've never actually read the policy."</p>
+    <div class="pgrid">
+      <div><small>His day</small>Office by 9, school run on Sundays, reels at night once the baby's asleep.</div>
+      <div><small>Triggers</small>Salary day, visa renewal, car renewal reminder, booking the trip home, a friend's hospital bill.</div>
+      <div><small>Barriers</small>"Insurance is confusing." "Will they actually pay the claim?" "My company already covers me."</div>
+      <div><small>Where he scrolls</small>Instagram reels, YouTube in the evening, expat creators he trusts more than brands.</div>
+    </div>
+  </div>
+
+  <h3 class="sub-h"><span class="stepn">3</span>Positioning</h3>
+  <div class="pos reveal"><p>For <b>UAE residents who find insurance confusing</b>, Policybazaar.ae is <b>the smart friend who makes insurance and money make sense</b>.</p><p class="rtb"><b>Why believe it:</b> 35+ insurers compared side by side, help when it's time to claim, and a licence from the Central Bank of the UAE.</p></div>
+
+  <h3 class="sub-h"><span class="stepn">4</span>The idea</h3>
+  <div class="idea reveal">
+    <p class="k">The idea</p>
+    <p class="line">The smart friend <em>in your feed.</em></p>
+    <p>Every post should leave Rahul a little smarter about money, health or protection. When renewal day comes, he already knows who to ask.</p>
+    <div class="shift">
+      <div><small>Today he thinks</small>"Insurance is a boring form I deal with once a year."</div>
+      <div class="arr" aria-hidden="true">→</div>
+      <div><small>We want him to think</small>"I follow Policybazaar.ae because I always learn something I can use."</div>
+    </div>
+    <div class="ideacheck">
+      <div><b>Useful first</b>Teach something before selling anything.</div>
+      <div><b>Talk like a friend</b>Real AED numbers, real UAE moments, plain words.</div>
+      <div><b>Earn the comment</b>End with a question people actually want to answer.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 AUDIT ================= -->
+<section class="sec" id="audit">
+  <div class="head">
+    <p class="eyebrow"><i></i>02 · What's working</p>
+    <h2>Smart topics. <em>Quiet reels.</em></h2>
+    <p class="lede">I went through 36 reels posted between 1 October and 13 November 2026, with views, likes and comments on each.</p>
+  </div>
+  <div class="grid">
+    <div class="card reveal stat"><b>40K–50K views<br>6–17 likes</b><p>Rule of 72 (40.2K views, 11 likes), Takaful (49.9K, 7), fog tips (49.6K, 6). Promotion brings the reach, but people scroll past.</p></div>
+    <div class="card reveal stat"><b>495 views<br>4 likes</b><p>A brand-only reel without promotion. Most unpromoted reels sit between a few hundred and 3,000 views.</p></div>
+    <div class="card hi reveal stat"><b>115 likes<br>117 likes, 20 comments</b><p>The office-humour reel and @expatamy's travel checklist. The most human posts did best without heavy promotion.</p></div>
+    <div class="card reveal stat"><b>Almost zero comments</b><p>Nearly every caption ends with "Compare on Policybazaar.ae", so nothing invites a reply.</p></div>
+  </div>
+
+  <h3 class="sub-h">What they post</h3>
+  <div class="tablewrap reveal">
+    <table>
+      <tr><th>Type</th><th>Share</th><th>Examples</th><th>What happens</th></tr>
+      <tr><td><b>Product promos</b></td><td>About a third</td><td>Smart Return Term, Premium Lock, Pay As You Drive, travel from AED 22, the app</td><td>Fine for launches, but too many in a row make the feed feel like an ad break.</td></tr>
+      <tr><td><b>Explainers</b></td><td>About a third</td><td>Rule of 72, a 3-part Takaful series, term vs whole life, fog driving, 3 checks before buying car insurance</td><td>The right topics, delivered like slides. No hook, no personal stakes.</td></tr>
+      <tr><td><b>Team and culture</b></td><td>5 reels</td><td>A day at the office, Guess the Employee with the CEO, meet the team</td><td>Strangers don't know the team yet, so most of these barely register.</td></tr>
+      <tr><td><b>Expert interviews</b></td><td>2 episodes</td><td>Fast Track Life rapid-fire with insurer leaders</td><td>Great access, but one long video with many questions and a job title as the hook.</td></tr>
+      <tr><td><b>Creators and customers</b></td><td>The rest</td><td>@expatamy, @channel4dubai, customer claim stories</td><td>The best engagement on the page. Real people beat brand voice.</td></tr>
+    </table>
+  </div>
+  <div class="takeaway reveal"><b>In one line:</b> the topics are right and the packaging is a brochure. The fix is the hook, the story and a reason to comment.</div>
+</section>
+
+<!-- ================= 03 REWORKS ================= -->
+<section class="sec" id="rework">
+  <div class="head">
+    <p class="eyebrow"><i></i>03 · Four reworks</p>
+    <h2>Same topics. <em>Better packaging.</em></h2>
+    <p class="lede">Four real posts from the feed. For each one: what was posted, why it didn't land, my version, and why it should work better. Every reel follows one rule: in the first second, what you see, what you hear and the text on screen all hook at once.</p>
+  </div>
+
+  <!-- rework 1 -->
+  <article class="rw reveal">
+    <div class="rw-top"><span class="chip red">Rework 1 · Travel insurance</span><h3>"Your trip can have a lot of plot twists ✈️"</h3><p class="was">Posted 15 Oct · <b>495 views · 4 likes · 0 comments</b></p></div>
+    <div class="rw-grid">
+      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>It promised plot twists and never showed one.</li><li>The price arrived in the second line, so it read as an ad before it became a story.</li><li>Nothing asked the viewer to join in.</li></ul></div>
+      <div class="rw-new"><h4>My version: "Expat Plot Twists", ep. 1</h4>
+        <div class="beat"><span class="t">0–3s</span><div><p class="say">"Ten days in Europe. Everything booked."</p><p class="shot">Creator at DXB with a suitcase, smiling. On screen: <i>My winter trip, as planned ✈️</i></p></div></div>
+        <div class="beat"><span class="t">3–6s</span><div><p class="say">Record scratch.</p><p class="shot">On screen: <i>Plot twist #1: flight cancelled.</i></p></div></div>
+        <div class="beat"><span class="t">6–10s</span><div><p class="say">"My bag went to Frankfurt. I went to Rome."</p><p class="shot">On screen: <i>Plot twist #2: lost baggage.</i></p></div></div>
+        <div class="beat"><span class="t">10–14s</span><div><p class="say">"Day two. Food poisoning. Doctors abroad aren't cheap."</p><p class="shot">On screen: <i>Plot twist #3: hospital visit.</i></p></div></div>
+        <div class="beat"><span class="t">14–20s</span><div><p class="say">"Best plot twist? I'd bought travel insurance before I flew."</p><p class="shot">Calm cut, creator relaxed at the hotel. End card: <i>Pack the insurance before the sunscreen. Travel cover from AED 22* on Policybazaar.ae</i></p></div></div>
+        <p class="cap"><b>Caption:</b> Which plot twist has happened to you? 👇 Ours was the bag that went on holiday without us. Travel cover from AED 22* on Policybazaar.ae. *T&amp;Cs apply</p>
+      </div>
+      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Story first, product as the happy ending.</b> The insurance solves the problem we just watched.</li><li><b>Winter travel season</b> makes it timely, and every expat has a travel horror story.</li><li><b>The caption asks for stories</b>, so people comment and tag travel buddies.</li><li><b>It's a series.</b> Next episodes: the first car fine, the first visa medical, the first summer DEWA bill.</li></ul><p class="msr"><b>Measure:</b> comments and shares per 1,000 views.</p></div>
+    </div>
+  </article>
+
+  <!-- rework 2 -->
+  <article class="rw reveal">
+    <div class="rw-top"><span class="chip red">Rework 2 · Expert interview</span><h3>Fast Track Life: rapid-fire with an insurer's head of bancassurance</h3><p class="was">Posted 19 Oct · <b>593 views · 5 likes · 0 comments</b></p></div>
+    <div class="rw-grid">
+      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>The hook ("What would you ask a life insurance expert…") makes the viewer do the work.</li><li>The guest's job title leads. Viewers care about their question, not his title.</li><li>Many questions in one video means no single takeaway to remember or share.</li></ul></div>
+      <div class="rw-new"><h4>My version: "One Question. 30 Seconds."</h4>
+        <div class="beat"><span class="t">0–3s</span><div><p class="say">"If nothing happens to me, isn't term insurance a waste of money?"</p><p class="shot">The question appears as a comment screenshot, read out by the host. Big on-screen text.</p></div></div>
+        <div class="beat"><span class="t">3–25s</span><div><p class="say">The expert answers in plain words, one point only.</p><p class="shot">Tight frame, subtitles 3–5 words a line, one key phrase highlighted.</p></div></div>
+        <div class="beat"><span class="t">25–30s</span><div><p class="say">"Got a question? Comment it. It could be next week's."</p><p class="shot">End card: <i>One Question. 30 Seconds. · Policybazaar.ae</i></p></div></div>
+        <p class="cap"><b>Next questions, all from real worries:</b> "My company gives me life cover. Is that enough?" · "Can my family back home claim if I'm in Dubai?" · "How much cover do I actually need?" · "What happens to my policy if I leave the UAE?"</p>
+      </div>
+      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Keeps the best thing they have</b>, real experts, and fixes the packaging.</li><li><b>One idea per clip</b>, so each one is easy to finish, save and send.</li><li><b>The audience writes the next episode.</b> Comments become content, and the feed starts conversations.</li><li><b>One shoot, six reels.</b> The same hour with an expert fills six weeks.</li></ul><p class="msr"><b>Measure:</b> completion rate, saves, and questions left in comments.</p></div>
+    </div>
+  </article>
+
+  <!-- rework 3 -->
+  <article class="rw reveal">
+    <div class="rw-top"><span class="chip red">Rework 3 · Money explainer</span><h3>"One simple rule can change how you think about your money": the Rule of 72</h3><p class="was">Posted 31 Oct · <b>40.2K views · 11 likes</b></p></div>
+    <div class="rw-grid">
+      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>A great topic delivered as a definition.</li><li>No personal stakes. It explains a rule, but never shows what it means for your money.</li><li>It reached 40,000 people and kept almost none of them.</li></ul></div>
+      <div class="rw-new"><h4>My version: a 7-slide carousel</h4>
+        <ol class="slides">
+          <li><b>Your money has a doubling date.</b> Most people never check it.</li>
+          <li>The Rule of 72: divide 72 by your yearly return. That's roughly how many years your money takes to double.</li>
+          <li>Savings growing at 2% a year? 72 ÷ 2 = <b>36 years.</b></li>
+          <li>Growing at 6% a year? 72 ÷ 6 = <b>12 years.</b></li>
+          <li>Now flip it. Prices rising 3% a year? In about <b>24 years</b>, the same money buys half as much.</li>
+          <li>Saving is step one. Knowing how fast it grows, and keeping it protected, is step two.</li>
+          <li><b>Save this. Do the math on your own savings.</b> Tell us your doubling date 👇</li>
+        </ol>
+        <p class="cap"><b>Caption:</b> We did the math so you don't have to. What's your doubling date? Drop your number below. (General information, not financial advice. The rates are examples.)</p>
+      </div>
+      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>"Your money"</b> turns a rule into something personal.</li><li><b>A number to work out</b> gives people something to comment.</li><li><b>Saves are a strong signal</b>, and checklists and math get saved.</li><li><b>No product push.</b> It builds the "smart friend" trust that pays off at renewal.</li></ul><p class="msr"><b>Measure:</b> saves and shares per 1,000 views.</p></div>
+    </div>
+  </article>
+
+  <!-- rework 4 -->
+  <article class="rw reveal">
+    <div class="rw-top"><span class="chip red">Rework 4 · Health insurance</span><h3>"How much health cover is enough? Honestly, our faces have opinions 😂"</h3><p class="was">Posted 20 Oct · <b>1,694 views</b></p></div>
+    <div class="rw-grid">
+      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>The joke depends on knowing the team's faces. Viewers don't.</li><li>It asks the question and never answers it.</li><li>The only advice is "compare your options", which isn't advice.</li></ul></div>
+      <div class="rw-new"><h4>My version: "POV: you finally read your insurance card"</h4>
+        <div class="beat"><span class="t">0–3s</span><div><p class="say">"I've had health insurance for three years. Today I finally read it."</p><p class="shot">Creator pulls the insurance card out of a wallet, squints. On screen: <i>You have health insurance. But how much?</i></p></div></div>
+        <div class="beat"><span class="t">3–9s</span><div><p class="say">"Check one: the annual limit. Some basic plans stop at AED 150,000 a year."</p><p class="shot">On screen: <i>1. Annual limit</i></p></div></div>
+        <div class="beat"><span class="t">9–14s</span><div><p class="say">"Check two: the network. Is your nearest hospital actually in it?"</p><p class="shot">On screen: <i>2. Network</i></p></div></div>
+        <div class="beat"><span class="t">14–19s</span><div><p class="say">"Check three: the co-pay. What do you pay at every visit?"</p><p class="shot">On screen: <i>3. Co-pay</i></p></div></div>
+        <div class="beat"><span class="t">19–25s</span><div><p class="say">"Check four: does it work when you fly home?"</p><p class="shot">On screen: <i>4. Coverage outside the UAE</i>. End card: <i>Not enough? Compare plans on Policybazaar.ae</i></p></div></div>
+        <p class="cap"><b>Caption:</b> Grab your insurance card and check these 4 things. Which one surprised you? 👇</p>
+      </div>
+      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>It answers the question</b> with four checks anyone can do in a minute.</li><li><b>It speaks to Rahul's barrier</b>, "my company already covers me", without arguing with him.</li><li><b>The product shows up only after the value</b>, as the natural next step.</li></ul><p class="msr"><b>Measure:</b> saves, comments, and profile visits.</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= 04 CONTENT SYSTEM ================= -->
+<section class="sec" id="system">
+  <div class="head">
+    <p class="eyebrow"><i></i>04 · Content system</p>
+    <h2>Four pillars. <em>Two series.</em> One voice.</h2>
+    <p class="lede">Reworking single posts helps. A simple system keeps the feed consistent every week.</p>
+  </div>
+  <div class="grid">
+    <div class="card reveal"><span class="chip">About 35%</span><h3>Money, Made Simple</h3><p>Explainers with real AED numbers: the Rule of 72, salary day habits, what a deductible actually costs you.</p><p class="pg"><b>Goal:</b> saves</p></div>
+    <div class="card reveal"><span class="chip mint">About 30%</span><h3>UAE Life, Covered</h3><p>Relatable expat moments: fog season, visa renewals, summer heat, the trip home, the first car fine.</p><p class="pg"><b>Goal:</b> shares</p></div>
+    <div class="card reveal"><span class="chip pink">About 20%</span><h3>Ask the Expert</h3><p>"One Question. 30 Seconds." Real worries from comments, answered by insurers' experts.</p><p class="pg"><b>Goal:</b> comments and trust</p></div>
+    <div class="card reveal"><span class="chip blue">About 15%</span><h3>Real Stories</h3><p>Customers and creators telling claim and travel stories in their own words.</p><p class="pg"><b>Goal:</b> proof</p></div>
+  </div>
+  <p class="lede" style="margin-top:14px">Product launches still happen, but inside these pillars. No more than one post in five is a straight sell.</p>
+
+  <h3 class="sub-h">Two recurring series</h3>
+  <div class="grid two">
+    <div class="card hi reveal"><span class="chip red">Weekly · Reels</span><h3>Expat Plot Twists</h3><p>Short skits about the things nobody tells you when you move to the UAE, each ending with the cover that saves the day. Easy to shoot, easy to relate to, and built for shares.</p></div>
+    <div class="card hi reveal"><span class="chip red">Weekly · Reels</span><h3>One Question. 30 Seconds.</h3><p>Audience questions answered by insurance experts in half a minute. The comments section writes the next episode.</p></div>
+  </div>
+
+  <h3 class="sub-h">Voice in practice</h3>
+  <div class="tablewrap reveal">
+    <table>
+      <tr><th>Do</th><th>Instead of</th></tr>
+      <tr><td>"Some basic plans stop at AED 150,000 a year."</td><td>"Ensure you have adequate coverage."</td></tr>
+      <tr><td>"Which plot twist has happened to you? 👇"</td><td>"Compare plans on Policybazaar.ae."</td></tr>
+      <tr><td>"Your money has a doubling date."</td><td>"One simple rule can change how you think about your money."</td></tr>
+      <tr><td>Lead with the viewer's question</td><td>Lead with the guest's job title</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 05 CALENDAR ================= -->
+<section class="sec" id="calendar">
+  <div class="head">
+    <p class="eyebrow"><i></i>05 · Two-week calendar</p>
+    <h2>23 Nov to 6 Dec: <em>UAE moments, memes and money</em></h2>
+    <p class="lede">Ten posts plus Stories, built around what people in the UAE are actually doing these two weeks: fog mornings, the Dubai Fitness Challenge, salary day, National Day and the start of winter travel and DSF season.</p>
+  </div>
+  <div class="tablewrap reveal">
+    <table class="cal">
+      <tr><th>Date</th><th>Moment</th><th>Pillar · Format</th><th>The post</th><th>Goal</th></tr>
+      <tr><td><b>Mon 23 Nov</b></td><td>Fog season</td><td>UAE Life · Reel</td><td>Meme format "Tell me you drive in the UAE without telling me": fog edition, with 4 real safety tips.</td><td>Shares</td></tr>
+      <tr><td><b>Wed 25 Nov</b></td><td>Mid-month</td><td>Money · Carousel</td><td>"Your money has a doubling date" (Rework 3).</td><td>Saves</td></tr>
+      <tr><td><b>Fri 27 Nov</b></td><td>Weekend scroll</td><td>Ask the Expert · Reel</td><td>"One Question. 30 Seconds." ep. 1: "My company gives me life cover. Is that enough?"</td><td>Comments</td></tr>
+      <tr><td><b>Sat 28 Nov</b></td><td>Story</td><td>UAE Life · Poll</td><td>"Have you ever read your health insurance card?" Yes / What card? Sets up Tuesday's reel.</td><td>Replies</td></tr>
+      <tr><td><b>Sun 29 Nov</b></td><td>Dubai Fitness Challenge</td><td>Money · Reel</td><td>"30 days of 30 minutes, done. Now the boring flex: is your health cover as fit as you are?"</td><td>Reach</td></tr>
+      <tr><td><b>Mon 30 Nov</b></td><td>Salary day</td><td>Money · Carousel</td><td>"Salary just landed. 5 things to do before it disappears", including checking which renewals are due.</td><td>Saves</td></tr>
+      <tr><td><b>Tue 1 Dec</b></td><td>After the poll</td><td>Money · Reel</td><td>"POV: you finally read your insurance card" (Rework 4).</td><td>Saves</td></tr>
+      <tr><td><b>Wed 2 Dec</b></td><td>UAE National Day</td><td>UAE Life · Community post</td><td>"55 years of the UAE. Tell us the moment it started feeling like home 👇" No product, just pride and stories.</td><td>Comments</td></tr>
+      <tr><td><b>Thu 3 Dec</b></td><td>Winter travel</td><td>UAE Life · Reel</td><td>"Expat Plot Twists" ep. 1: the trip (Rework 1).</td><td>Shares</td></tr>
+      <tr><td><b>Sat 5 Dec</b></td><td>DSF season</td><td>Money · Carousel</td><td>"Bought a new car this DSF? 3 things to check before you insure it."</td><td>Saves</td></tr>
+      <tr><td><b>Sun 6 Dec</b></td><td>Real Stories</td><td>Stories · Reel</td><td>A customer's car claim told as "The 7 days after my accident", in their own words.</td><td>Trust</td></tr>
+    </table>
+  </div>
+  <p class="fine">UAE National Day is 2 December, and the Dubai Fitness Challenge runs from 31 October to 29 November 2026. DSF dates would be confirmed with the official calendar before posting.</p>
+</section>
+
+<!-- ================= 06 MEASURE ================= -->
+<section class="sec" id="run">
+  <div class="head">
+    <p class="eyebrow"><i></i>06 · How I'd measure it</p>
+    <h2>Count what people <em>do</em>, not what they see</h2>
+  </div>
+  <div class="grid">
+    <div class="card reveal"><span class="chip red">Main number</span><h3>Engagement per 1,000 views</h3><p>Likes, comments, shares and saves divided by views. A promoted reel with 40K views and 11 likes scores close to zero, and that's the honest picture.</p></div>
+    <div class="card reveal"><span class="chip">Saves and shares</span><h3>The signals that grow reach</h3><p>Explainers should be saved. Skits should be shared. Each post gets one target.</p></div>
+    <div class="card reveal"><span class="chip mint">Comments</span><h3>Questions become content</h3><p>Every week, the best question in the comments becomes next week's expert clip.</p></div>
+    <div class="card reveal"><span class="chip blue">One rule</span><h3>Fix the hook before the budget</h3><p>If a promoted reel gets reach but no engagement, rework the first 3 seconds before spending more on it.</p></div>
+  </div>
+</section>
+
+<!-- ================= 07 WHERE IT FITS ================= -->
+<section class="sec" id="fit">
+  <div class="head">
+    <p class="eyebrow"><i></i>07 · Where it fits</p>
+    <h2>What the role needs, <em>and where it is on this page</em></h2>
+  </div>
+  <div class="tablewrap reveal">
+    <table>
+      <tr><th>The role needs</th><th>On this page</th><th>Where I've done it</th></tr>
+      <tr><td><b>Content strategy and copywriting</b></td><td>Brand read, four pillars, hooks and captions in every rework</td><td>Planned content pillars and calendars at Signal and TechGig.</td></tr>
+      <tr><td><b>Creative ideas and storytelling</b></td><td>Expat Plot Twists, One Question. 30 Seconds.</td><td>Built recurring series at Signal, like Guess the Player and a three-part Ballon d'Or series.</td></tr>
+      <tr><td><b>Making complex topics simple</b></td><td>Rule of 72, the four health insurance checks</td><td>Wrote plain-English explainers at TechGig on topics like Google Veo 3 and India's IT layoffs.</td></tr>
+      <tr><td><b>Trends and culture</b></td><td>The calendar: fog season, salary day, National Day, meme formats</td><td>Planned topical content around match days and records; reels reached 3.87M Instagram views.</td></tr>
+      <tr><td><b>AI tools</b></td><td>Research and first drafts for this page, with every number checked against a source</td><td>Use ChatGPT, Claude and Gemini for research and ideas.</td></tr>
+      <tr><td><b>Performance</b></td><td>Engagement per 1,000 views, saves, shares and comments</td><td>Tracked 81 creator links to installs and sign-ups at Signal.</td></tr>
+    </table>
+  </div>
+  <p class="fine">These are spec ideas made for a job application. Product details and claims would be checked with Policybazaar.ae's product and compliance teams before anything goes live.</p>
+</section>
+
+<footer class="end" id="contact">
+  <p class="eyebrow"><i></i>Thanks for reading</p>
+  <h2>You made it to the end. <em>That's the retention I'm after.</em></h2>
+  <p class="lede">This page was my try at showing how I'd be useful to your team. I'm a copywriter and content strategist with nearly 4 years across Times Internet, OutSpark and Signal. If even one idea here makes you think "we could test that", I'd love 15 minutes to talk it through.</p>
+  <div class="row">
+    <a class="key dark" href="mailto:aaniketk32@gmail.com?subject=Copywriter%2C%20Policybazaar.ae">aaniketk32@gmail.com<small>@</small></a>
+    <a class="key" href="https://aaniketk32-png.github.io/akp/policybazaar/Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">My resume<small>PDF</small></a>
+    <a class="key" href="https://aaniketk32-png.github.io/akp/">My portfolio<small>↗</small></a>
+    <a class="key" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/">LinkedIn<small>in</small></a>
+  </div>
+  <p class="fine">Unofficial spec work made for a job application. Not affiliated with or endorsed by Policybazaar.ae or PB Fintech. Figures come from public pages and Instagram activity up to 13 November 2026: <a href="https://www.policybazaar.ae/about-us/">Policybazaar.ae (about us)</a>, <a href="https://enterpriseam.com/mena-india/2026/05/04/insurtech-firm-policybazaar-scales-uae-foothold/">Enterprise AM (UAE growth)</a>, <a href="https://www.khaleejtimes.com/business/uae-insurance-premiums-jump-15-to-dh748-billion-as-health-and-property-cover-grow">Khaleej Times (UAE premiums)</a>, <a href="https://www.instagram.com/policybazaaruae/reels/">@policybazaaruae reels</a>. Brand names belong to their owners.</p>
+</footer>
+
+<script>
+(function(){
+  var doc=document.documentElement; doc.classList.add('js');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal on scroll */
+  var rev=document.querySelectorAll('.reveal');
+  if(reduce||!('IntersectionObserver' in window)){rev.forEach(function(e){e.classList.add('in')})}
+  else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    rev.forEach(function(e){io.observe(e)});
+    var seen=false,io2=new IntersectionObserver(function(){seen=true;io2.disconnect()});io2.observe(document.body);
+    setTimeout(function(){if(!seen)rev.forEach(function(e){e.classList.add('in')})},2500);}
+
+  /* slip data */
+  var SLIPS=[
+    {id:'me',cat:'contact',w:'Aaniket',s:'Copywriter',k:'Who’s pitching',t:'Hi, I’m Aaniket',p:'Copywriter and content strategist, nearly 4 years across Times Internet, OutSpark and Signal. Hooks, scripts, series and the numbers behind them.',a:'#contact',al:'Get in touch'},
+    {id:'goal',cat:'brand',w:'+54%',s:'Premiums, FY26',k:'Brand read',t:'Growing fast, and profitable',p:'Policybazaar.ae grew premiums 54% in FY26. Health and car bring most revenue; life is growing fastest.',a:'#brand',al:'Read the brand read'},
+    {id:'job',cat:'brand',w:'364 days',s:'The real job',k:'Brand read · The job',t:'Insurance is a once-a-year thought',p:'Instagram’s job is to keep Policybazaar.ae useful for the other 364 days, so it’s the first place people check at renewal.',a:'#brand',al:'See the growth levers'},
+    {id:'rahul',cat:'brand',w:'Rahul, 32',s:'Persona',k:'Brand read · Who we’re talking to',t:'“My company covers me. I think.”',p:'An expat dad in Dubai who has never read his policy. Trigger: renewal reminders. Barrier: “insurance is confusing.”',a:'#brand',al:'Meet Rahul'},
+    {id:'friend',cat:'brand',w:'Smart friend',s:'The idea',k:'Brand read · Positioning',t:'The smart friend in your feed',p:'Every post leaves people a little smarter about money, health or protection. Useful first, sell second.',a:'#brand',al:'Read the idea'},
+    {id:'bought',cat:'audit',w:'40K · 11',s:'Views · likes',k:'What’s working',t:'Reach is bought, attention isn’t',p:'Promoted explainers reach 40K–50K people and get 6–17 likes. The topics are right; the packaging isn’t.',a:'#audit',al:'See the audit'},
+    {id:'human',cat:'audit',w:'20 comments',s:'Best organic',k:'What’s working · The bright spot',t:'Human beats brochure',p:'The office-humour reel and @expatamy’s travel checklist did best without heavy promotion.',a:'#audit',al:'See the audit'},
+    {id:'zero',cat:'audit',w:'0 comments',s:'Most posts',k:'What’s working · The gap',t:'Nothing invites a reply',p:'Almost every caption ends with “Compare on Policybazaar.ae”. Swap it for a real question.',a:'#audit',al:'See the fix'},
+    {id:'twist',cat:'rework',w:'Plot twist',s:'Rework 1',k:'Rework · Travel',t:'Expat Plot Twists, ep. 1',p:'Flight cancelled, bag in Frankfurt, food poisoning on day two. Best plot twist: travel insurance before you flew.',a:'#rework',al:'Read the script'},
+    {id:'q30',cat:'rework',w:'1 Q · 30 sec',s:'Rework 2',k:'Rework · Expert interview',t:'One Question. 30 Seconds.',p:'The same expert access, cut into one question per clip. Comments write the next episode.',a:'#rework',al:'Read the format'},
+    {id:'r72',cat:'rework',w:'Rule of 72',s:'Rework 3',k:'Rework · Money explainer',t:'Your money has a doubling date',p:'A 7-slide carousel that turns a definition into a number you work out for yourself, and comment.',a:'#rework',al:'Read the slides'},
+    {id:'card',cat:'rework',w:'Read your card',s:'Rework 4',k:'Rework · Health insurance',t:'POV: you finally read your insurance card',p:'Four checks in 25 seconds: annual limit, network, co-pay, cover outside the UAE.',a:'#rework',al:'Read the script'},
+    {id:'pillars',cat:'system',w:'4 pillars',s:'Content system',k:'Content plan',t:'Money, UAE Life, Experts, Stories',p:'Four pillars with one goal each: saves, shares, comments and proof. No more than one post in five is a straight sell.',a:'#system',al:'See the system'},
+    {id:'cal',cat:'system',w:'2 weeks',s:'Calendar',k:'Content plan · Calendar',t:'Fog, salary day, National Day, DSF',p:'Ten posts plus Stories from 23 November to 6 December, built around real UAE moments.',a:'#calendar',al:'See the calendar'},
+    {id:'nd',cat:'system',w:'2 Dec',s:'National Day',k:'Content plan · Moment',t:'“When did it start feeling like home?”',p:'No product. Just pride, stories and a comment section full of them.',a:'#calendar',al:'See the calendar'},
+    {id:'measure',cat:'system',w:'Per 1K views',s:'What I’d track',k:'Content plan · Measure',t:'Count what people do',p:'Engagement per 1,000 views, saves, shares and comments. Fix the hook before adding budget.',a:'#run',al:'Read more'},
+    {id:'hello',cat:'contact',w:'Hello@',s:'aaniketk32@gmail.com',k:'Contact',t:'Let’s talk',p:'If any of this is useful to your team, I’d love 15 minutes to talk it through.',a:'mailto:aaniketk32@gmail.com?subject=Copywriter%2C%20Policybazaar.ae',al:'Email me'},
+    {id:'pf',cat:'contact',w:'Portfolio',s:'See my work',k:'Contact',t:'My full portfolio',p:'Reels, scripts, content series, articles and podcast episodes I worked on.',a:'https://aaniketk32-png.github.io/akp/',al:'Open portfolio'}
+  ];
+  var TAGTXT={Hooks:'The first 3 seconds: what you see, hear and read, all at once.',Carousels:'One idea per slide, built to be saved.',Series:'Formats people come back for every week.',UAE:'Fog season, salary day, visa renewals, the trip home.',Memes:'Formats people already share, used with a point.',AI:'ChatGPT, Claude and Gemini for research and ideas. Every number checked.',Comments:'End with a question people actually want to answer.',Saves:'The quiet signal that tells Instagram a post is useful.'};
+  var TAGS=Object.keys(TAGTXT).map(function(x){return {id:'tag-'+x,tag:1,w:x,k:'In my toolkit',t:x,p:TAGTXT[x]}});
+  var BYID={};SLIPS.concat(TAGS).forEach(function(d){BYID[d.id]=d});
+  var PAL=['#ff5fa8','#ffd23f','#3f6bff','#3fe0a8','#ff8a2a','#8b5cff','#c8f03c','#5cc8ff','#1c1c22','#ffffff'];
+  var DARK={'#3f6bff':1,'#8b5cff':1,'#1c1c22':1};
+  var colorOf={},palI=0;
+  function colorFor(id){if(!colorOf[id]){colorOf[id]=PAL[palI%PAL.length];palI++}return colorOf[id]}
+
+  var hero=document.querySelector('.hero'),layer=document.getElementById('slips'),tray=document.getElementById('tray'),
+      gun=document.getElementById('gun'),slot=document.getElementById('slot'),countEl=document.getElementById('count');
+  var count=0,shot=0,bigI=0,tagI=0,order=[],placed={},flying=[],POS={};
+  var GAP=10,LABEL=30;
+  function H(){return tray.getBoundingClientRect().width<420?48:58}
+
+  function heroRect(){return hero.getBoundingClientRect()}
+  function slotPos(){var r=slot.getBoundingClientRect(),h=heroRect();return {x:r.left+r.width/2-h.left,y:r.top+r.height/2-h.top}}
+  function trayBox(){var r=tray.getBoundingClientRect(),h=heroRect();return {x:r.left-h.left,y:r.top-h.top,w:r.width}}
+  function sizeOf(d){return d.tag?{w:88,h:64}:{w:220,h:84}}
+
+  function layout(){
+    var b=trayBox(),h=H(),x=0,y=0,pos={};
+    order.forEach(function(id){var s=sizeOf(BYID[id]),k=h/s.h,w=s.w*k;if(x>0&&x+w>b.w){x=0;y+=h+GAP}pos[id]={cx:b.x+x+w/2,cy:b.y+LABEL+y+h/2,k:k};x+=w+GAP});
+    tray.style.height=(LABEL+(order.length?y+h:0)+24)+'px';
+    return pos;
+  }
+  function relayout(){POS=layout();POS=layout();Object.keys(placed).forEach(function(id){var el=placed[id],p=POS[id];if(!p)return;el._s.cx=p.cx;el._s.cy=p.cy;el._s.sc=p.k;apply(el)})}
+  function apply(el){var s=el._s;el.style.transform='translate('+(s.cx-el._w/2)+'px,'+(s.cy-el._h/2)+'px) perspective(600px) rotate('+s.r+'deg) rotateX('+s.rx+'deg) scale('+s.sc+')'}
+
+  function makeSlip(d){
+    var el=document.createElement('div'),sz=sizeOf(d),bg=colorFor(d.id),dark=DARK[bg]===1;
+    el.className='slip'+(d.tag?' tag':'');el._w=sz.w;el._h=sz.h;el._id=d.id;el.style.width=sz.w+'px';el.style.height=sz.h+'px';
+    var fs=d.tag?Math.round(sz.h*.3):Math.round(sz.h*(d.w.length>9?.3:.36));
+    el.innerHTML='<div class="face" style="background-color:'+bg+';color:'+(dark?'#fff':'#111')+(bg==='#ffffff'?';box-shadow:inset 0 0 0 1px #e3e3e6,0 8px 18px rgba(0,0,0,.12)':'')+'"><div class="w" style="font-size:'+fs+'px">'+d.w+'</div>'+(d.s?'<div class="s">'+d.s+'</div>':'')+'</div>';
+    el.setAttribute('role','button');el.setAttribute('aria-label',d.t||d.w);
+    el.addEventListener('click',function(){if(el.classList.contains('placed'))show(d)});
+    el.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&el.classList.contains('placed')){e.preventDefault();e.stopPropagation();show(d)}});
+    return el;
+  }
+
+  function nextSlip(){shot++;return shot%4===0?TAGS[tagI++%TAGS.length]:SLIPS[bigI++%SLIPS.length]}
+  function fire(d){
+    d=d||nextSlip();
+    if(order.indexOf(d.id)<0){order.push(d.id);POS=layout()}
+    var el=makeSlip(d),sp=slotPos(),a=(150+Math.random()*40)*Math.PI/180,v=(reduce?4:7)+Math.random()*(reduce?2:7);
+    el._s={cx:sp.x,cy:sp.y,r:-16+(Math.random()-.5)*20,rx:0,sc:.5};
+    el._v={x:Math.cos(a)*v,y:Math.sin(a)*v*.6+1,spin:(Math.random()-.5)*14,ph:Math.random()*6};
+    el._t0=performance.now();el._fly=reduce?250:700+Math.random()*400;el._mode='fly';
+    layer.appendChild(el);apply(el);flying.push(el);
+    countEl.textContent=++count;
+    gun.classList.remove('kick');void gun.getBoundingClientRect();gun.classList.add('kick');
+    if(!raf)raf=requestAnimationFrame(tick);
+  }
+  var raf=0;
+  function ease(t){return 1-Math.pow(1-t,3)}
+  function tick(now){
+    raf=0;
+    for(var i=flying.length-1;i>=0;i--){var el=flying[i],s=el._s,v=el._v;
+      if(el._mode==='fly'){
+        var t=now-el._t0;
+        v.y=Math.min(v.y+.28,5);v.x*=.975;
+        s.cx+=v.x+Math.sin(t/90+v.ph)*1.4;s.cy+=v.y;s.r+=v.spin*.6;s.rx=Math.sin(t/110+v.ph)*55;s.sc=Math.min(1,s.sc+.06);
+        if(t>el._fly){el._mode='glide';el._g0=now;el._from={cx:s.cx,cy:s.cy,r:((s.r%360)+540)%360-180,rx:s.rx,sc:s.sc}}
+      }else{
+        var p=POS[el._id]||{cx:s.cx,cy:s.cy,k:.6},g=Math.min(1,(now-el._g0)/(reduce?250:700)),e=ease(g),f=el._from;
+        s.cx=f.cx+(p.cx-f.cx)*e;s.cy=f.cy+(p.cy-f.cy)*e;s.r=f.r*(1-e);s.rx=f.rx*(1-e);s.sc=f.sc+(p.k-f.sc)*e;
+        if(g>=1){flying.splice(i,1);land(el)}
+      }
+      apply(el);
+    }
+    if(flying.length)raf=requestAnimationFrame(tick);
+  }
+  function land(el){
+    var id=el._id,twin=placed[id];
+    if(twin){el.classList.add('gone');setTimeout(function(){el.remove()},380);twin.classList.remove('hop');void twin.offsetWidth;twin.classList.add('hop')}
+    else{placed[id]=el;el.classList.add('placed');el.tabIndex=0}
+  }
+
+  /* detail card */
+  var card=document.getElementById('detail');
+  function show(d){
+    document.getElementById('dK').textContent=d.k||'';
+    document.getElementById('dT').textContent=d.t||d.w;
+    document.getElementById('dP').textContent=d.p||'';
+    document.getElementById('dSw').style.background=colorFor(d.id);
+    var a=document.getElementById('dA');
+    if(d.a){a.style.display='';a.href=d.a;a.textContent=(d.al||'Read more')+' →';if(/^https?:/.test(d.a)){a.target='_blank';a.rel='noopener'}else{a.removeAttribute('target')}}else{a.style.display='none'}
+    card.classList.add('on');
+  }
+  card.querySelector('.x').addEventListener('click',function(){card.classList.remove('on')});
+  document.getElementById('dA').addEventListener('click',function(){if(this.getAttribute('href').charAt(0)==='#')card.classList.remove('on')});
+
+  /* hold to spray */
+  var holdT=0;
+  function startHold(){if(holdT)return;gun.classList.add('firing');fire();holdT=setInterval(function(){fire()},reduce?250:85)}
+  function stopHold(){clearInterval(holdT);holdT=0;gun.classList.remove('firing')}
+  [gun,document.getElementById('sprayBtn')].forEach(function(t){
+    t.addEventListener('pointerdown',function(e){if(e.button>0)return;e.preventDefault();if(t.classList.contains('key'))t.classList.add('down');startHold()});
+    ['pointerup','pointerleave','pointercancel'].forEach(function(ev){t.addEventListener(ev,function(){if(t.classList.contains('down')){t.classList.remove('down');t.classList.add('release');setTimeout(function(){t.classList.remove('release')},260)}stopHold()})});
+    t.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.repeat){e.preventDefault();fire()}});
+  });
+  var spaceDown=false;
+  window.addEventListener('keydown',function(e){
+    if(e.code!=='Space'||spaceDown)return;
+    var tg=e.target;if(tg.tagName==='A'||tg.tagName==='BUTTON'||tg.tagName==='INPUT'||(tg.classList&&tg.classList.contains('slip')))return;
+    if(heroRect().bottom<120)return;e.preventDefault();spaceDown=true;startHold()});
+  window.addEventListener('keyup',function(e){if(e.code==='Space'&&spaceDown){spaceDown=false;stopHold()}});
+
+  /* clean up */
+  document.getElementById('cleanBtn').addEventListener('click',function(){
+    layer.querySelectorAll('.slip').forEach(function(el){el.classList.add('gone');setTimeout(function(){el.remove()},380)});
+    flying=[];placed={};order=[];POS=layout();card.classList.remove('on');
+  });
+
+  /* nav bursts */
+  document.querySelectorAll('[data-fire]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var list=SLIPS.filter(function(d){return d.cat===b.dataset.fire});
+      if(heroRect().bottom<200)window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+      list.forEach(function(d,i){setTimeout(function(){gun.classList.add('firing');fire(d);setTimeout(function(){gun.classList.remove('firing')},90)},i*120)});
+      if(list[0])show(list[0]);
+    });
+  });
+
+  var rz=0;window.addEventListener('resize',function(){clearTimeout(rz);rz=setTimeout(relayout,80)});
+
+  /* opening burst */
+  setTimeout(function(){var n=0,iv=setInterval(function(){gun.classList.add('firing');fire();setTimeout(function(){gun.classList.remove('firing')},60);if(++n>=20)clearInterval(iv)},reduce?200:95)},700);
+})();
+</script>
+</body>
+</html>
