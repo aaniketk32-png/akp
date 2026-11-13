@@ -386,32 +386,65 @@ html,body{height:100%;overflow:hidden}
   .panel .pin{padding:24px 16px 110px}
   .dk-label{max-width:170px}
 }
+
+.steps4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:8px}
+.steps4 .stepn{margin-bottom:10px}
+.b3{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:18px}
+.post4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pc{border:1px solid var(--line);border-radius:16px;background:var(--card,#fff);overflow:hidden;display:flex;flex-direction:column}
+.pc-top{padding:16px 18px;background:rgba(10,92,245,.05);border-bottom:1px solid var(--line)}
+.pc-old{font-weight:700;margin:10px 0 4px;line-height:1.3}
+.pc-top .was{margin:0;color:var(--muted);font-size:.9rem}
+.pc-rows{margin:0;padding:14px 18px 6px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px 14px;font-size:.95rem}
+.pc-rows dt{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted);padding-top:3px}
+.pc-rows dd{margin:0}
+.msr-i{display:block;margin-top:6px;font-size:.85rem;color:var(--red)}
+.pc details{margin:auto 18px 16px;border-top:1px dashed var(--line);padding-top:10px}
+.pc summary{cursor:pointer;font-weight:700;color:var(--red);font-size:.92rem}
+.pc details .rw-new{padding:12px 0 0;border:0}
+.pc details .meme{max-width:380px}
+.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.can2{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;margin-top:22px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.pills span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:.9rem;background:var(--card,#fff)}
+.pills b{color:var(--red)}
+.ser{padding-left:18px;margin:0 0 6px}.ser li{margin-bottom:6px}
+.two{list-style:none;padding:0;margin:0}
+.two li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.two span{font-weight:700;color:var(--red)}
+.lede+.grid{margin-top:18px}
+.ytsample{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:22px;align-items:center;margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card,#fff)}
+.thumb{aspect-ratio:16/9;border-radius:10px;background:linear-gradient(135deg,#0a5cf5,#042c80);display:flex;align-items:center;justify-content:center;padding:14px;text-align:center}
+.thumb span{color:#fff;font-weight:900;font-size:1.35rem;line-height:1.1;text-transform:uppercase}
+.ytsample .k{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0}
+.ytsample h3{margin:4px 0 8px}
+.ytsample .say{margin:0;font-style:italic}
+@media (max-width:1000px){.steps4,.grid.four{grid-template-columns:repeat(2,minmax(0,1fr))}.post4,.can2{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:760px){.steps4,.grid.four,.b3{grid-template-columns:minmax(0,1fr)}.ytsample{grid-template-columns:minmax(0,1fr)}.pc-rows{grid-template-columns:minmax(0,1fr)}.pc-rows dt{padding-top:6px}}
 </style>
 <body>
 <nav class="nav" aria-label="Main">
   <a class="logo" href="#top" aria-label="Aaniket, top of page">aaniket<span>FOR POLICYBAZAAR.AE</span></a>
-  <div class="links" role="group" aria-label="Fire slips by topic">
-    <button type="button" data-fire="brand">Policybazaar.ae</button>
-    <button type="button" data-fire="rework">PB reworks</button>
-    <button type="button" data-fire="pz">Paisabazaar.ae</button>
-    <button type="button" data-fire="system">Plans</button>
-    <button type="button" data-fire="contact">Contact</button>
+  <div class="links" role="group" aria-label="Jump to a section">
+    <button type="button" data-fire="brand" data-go="brand">Policybazaar.ae</button>
+    <button type="button" data-fire="pz" data-go="pz">Paisabazaar.ae</button>
+    <button type="button" data-fire="yt" data-go="yt-pb">YouTube</button>
+    <button type="button" data-fire="contact" data-go="contact">Contact</button>
   </div>
   <a class="key" href="mailto:aaniketk32@gmail.com?subject=Copywriter%2C%20Policybazaar.ae">Let’s Talk ↗<small>@</small></a>
 </nav>
 <main class="deck" id="deck">
-<section class="panel p-hero" id="top" data-label="Start"><div class="pin">
-<header class="hero" id="top">
+<section class="panel p-hero" id="top" data-label="Who I am"><div class="pin"><header class="hero" id="top">
   <div class="hero-text">
     <span class="label"><i></i>For Policybazaar.ae &amp; Paisabazaar.ae · Copywriter · 2026</span>
-    <h1>Hi, I’m <em>Aaniket.</em> I reworked nine posts across your two brands before anyone asked.</h1>
-    <p class="sub">Four for Policybazaar.ae, five for Paisabazaar.ae, with a brand read and a two-week UAE calendar for each. Pull the trigger to see the ideas fly, or use the arrows to read them.</p>
+    <h1>Hi, I’m <em>Aaniket.</em> I make content people stop scrolling for.</h1>
+    <p class="sub">Nearly 4 years in content and social media across Times Internet, OutSpark and Signal. Reels that reached 3.87M views, TechGig grown from 80K to 300K+ monthly visits, and copy for partners like GitHub, IBM and Gartner. Pull the trigger to see what I made for you.</p>
     <div class="row">
       <button class="key dark" id="sprayBtn" type="button">Spray my ideas<small>⏎</small></button>
       <button class="key" id="cleanBtn" type="button">Clean up<small>↺</small></button>
       <span class="count" aria-live="polite"><b id="count">0</b> slips sprayed</span>
     </div>
-    <p class="scroll-hint">Prefer reading? <a href="#first">Start with why I made this →</a> · <a href="https://aaniketk32-png.github.io/akp/policybazaar/Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">My resume (PDF)</a></p>
+    <p class="scroll-hint">Prefer reading? <a href="#why">Start with why I made this →</a> · <a href="https://aaniketk32-png.github.io/akp/policybazaar/Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">My resume (PDF)</a></p>
   </div>
 
   <div class="gun-wrap">
@@ -450,60 +483,24 @@ html,body{height:100%;overflow:hidden}
   </div>
   <div class="slips" id="slips"></div>
 </header></div></section>
-<section class="panel " id="first" data-label="Why this page"><div class="pin"><p class="eyebrow"><i></i>Why this page exists</p>
+<section class="panel " id="why" data-label="Why I made this"><div class="pin"><p class="eyebrow"><i></i>02 · Why I made this</p>
 <h2>It started with a reel <em>about plot twists.</em></h2>
 <div class="story reveal">
-  <p>I opened @policybazaaruae to see how the brand talks. One of the first reels I saw was a travel post: "Your trip can have a lot of plot twists." Great line. It never showed a single plot twist, and it had 495 views and 4 likes.</p>
-  <p>So I kept going: 52 reels across Policybazaar.ae and Paisabazaar.ae, with views, likes and comments noted for each. The pattern showed up fast. Explainers reached 40,000 people and got 11 likes. One rewards message ran in 12 of 16 Paisabazaar.ae posts. The topics are good. The packaging lets them down.</p>
-  <p>That's a problem I know how to work on. This page is a sample of how I'd start: a read of each brand, the problem in numbers, nine reworked posts and two weeks of content for each. It's spec work built from public posts. Once I see the real data, I'd expect to change half of it.</p>
+  <p>I opened @policybazaaruae to see how the brand talks. One of the first reels was a travel post: "Your trip can have a lot of plot twists." Great line. The reel never showed a single plot twist. 495 views, 4 likes.</p>
+  <p>So I kept going. 52 reels across Policybazaar.ae and Paisabazaar.ae. Explainers reached 40,000 people and got 11 likes. One rewards message ran in about 12 of 16 Paisabazaar.ae posts. The topics are good. The packaging lets them down.</p>
+  <p>Packaging is what I do. So I made this: a sample of how I'd start if I joined. It's spec work built from public posts, and once I see your real data I'd expect to change half of it.</p>
   <p class="sign">Aaniket</p>
+</div></div></section>
+<section class="panel " id="how" data-label="How I did it"><div class="pin"><p class="eyebrow"><i></i>03 · How I did it</p>
+<h2>Four steps, <em>in this order</em></h2>
+<div class="steps4">
+  <div class="card reveal"><span class="stepn">1</span><h3>Read the business</h3><p>Results, news and about pages. What's growing, what each brand wants, and where Instagram fits in that.</p></div>
+  <div class="card reveal"><span class="stepn">2</span><h3>Picked one person</h3><p>A persona for each brand, with the moments that make them think about insurance or cards, and the doubts that stop them.</p></div>
+  <div class="card reveal"><span class="stepn">3</span><h3>Audited 52 reels</h3><p>Views, likes and comments for every reel from October to 13 November. What works, what doesn't, and why.</p></div>
+  <div class="card reveal"><span class="stepn">4</span><h3>Reworked the weakest</h3><p>Four posts per brand. Same topic, new hook, a story and a reason to comment. Then a plan, and ideas for YouTube.</p></div>
 </div>
-<ol class="map">
-  <li><a href="#brand"><span>01</span><b>Policybazaar.ae</b>Brand read, audit, 4 reworks, plan</a></li>
-  <li><a href="#pz"><span>02</span><b>Paisabazaar.ae</b>Brand read, audit, 5 reworks, a meme, plan</a></li>
-  <li><a href="#run"><span>03</span><b>Measure and fit</b>What I'd track, and where I fit</a></li>
-</ol>
-<p class="hint">Use the arrows, your keyboard or a swipe to move through the slides →</p></div></section>
-<section class="panel " id="brand" data-label="Policybazaar.ae · Brand"><div class="pin">
-  <div class="head">
-    <p class="eyebrow"><i></i>Policybazaar.ae · Brand read</p>
-    <h2>What Policybazaar.ae <em>needs from Instagram</em></h2>
-    
-  </div>
-  <div class="grid">
-    <div class="card reveal"><span class="chip">Since 2018</span><h3>Licensed, local, growing</h3><p>Launched in the UAE in 2018 and licensed by the Central Bank of the UAE. Premiums grew 54% in FY26.</p></div>
-    <div class="card reveal"><span class="chip mint">The product</span><h3>35+ insurers, one place</h3><p>400+ products across health, car, life, travel and business, with help when it's time to claim.</p></div>
-    <div class="card reveal"><span class="chip pink">The mix</span><h3>Health and car pay the bills</h3><p>Life insurance is the fastest-growing line. The customer base started with Indian expats and is widening to Arab and European expats.</p></div>
-    <div class="card reveal"><span class="chip blue">The promise</span><h3>"Where the UAE Gets Insured"</h3><p>The mission: help residents compare, choose and claim with clarity and confidence.</p></div>
-  </div>
-
-  <h3 class="sub-h"><span class="stepn">1</span>Where the growth comes from</h3>
-  <div class="eq reveal"><span>Category penetration</span><i>×</i><span class="on">Brand penetration</span><i>×</i><span>Frequency</span><i>×</i><span class="on">Covers per customer</span><i>=</i><span>Brand size</span></div>
-  <div class="grid">
-    <div class="card hi reveal"><span class="chip red">Brand penetration</span><h3>Be the first place people check</h3><p>Most residents renew wherever is easiest: the car dealer, the bank, the employer's broker. Instagram's job is to be remembered before renewal day comes.</p></div>
-    <div class="card hi reveal"><span class="chip red">Covers per customer</span><h3>One customer, more covers</h3><p>Someone who bought car insurance also needs health, travel and, more and more, life cover. Useful content opens those conversations without a hard sell.</p></div>
-    <div class="card reveal"><span class="chip">Frequency</span><h3>A once-a-year thought</h3><p>People think about insurance at renewal and forget it for the other 364 days. Content has to earn a place in those days.</p></div>
-  </div>
-
-  <h3 class="sub-h"><span class="stepn">2</span>Who we're talking to</h3>
-  <div class="segs">
-    <div class="seg pick reveal"><b>Young expat families, 28–40</b><span>Salaried, with kids or planning them. Covered at work, but not sure for how much.</span><em>Our target</em></div>
-    <div class="seg reveal"><b>New to the UAE</b><span>Arab and European expats in their first two years. A growing segment and the next target.</span></div>
-    <div class="seg reveal"><b>Small business owners</b><span>Valuable, but better reached through LinkedIn and sales teams.</span></div>
-  </div>
-  <div class="persona reveal">
-    <div class="who"><div class="ava">R</div><div><b>Rahul, 32 · Dubai</b><span>Sales manager, married, a two-year-old at home.</span></div></div>
-    <p class="quote">"My company covers me. I think. I've never actually read the policy."</p>
-    <div class="pgrid">
-      <div><small>His day</small>Office by 9, school run on Sundays, reels at night once the baby's asleep.</div>
-      <div><small>Triggers</small>Salary day, visa renewal, car renewal reminder, booking the trip home, a friend's hospital bill.</div>
-      <div><small>Barriers</small>"Insurance is confusing." "Will they actually pay the claim?" "My company already covers me."</div>
-      <div><small>Where he scrolls</small>Instagram reels, YouTube in the evening, expat creators he trusts more than brands.</div>
-    </div>
-  </div>
-
-  </div></section>
-<section class="panel " data-label="Policybazaar.ae · Idea"><div class="pin"><p class="eyebrow"><i></i>Policybazaar.ae · Positioning and idea</p><h2>The smart friend <em>in your feed</em></h2>
+<p class="hint">Tools: Instagram, public reports, and AI for research and first drafts. Every number here was checked against its source.</p></div></section>
+<section class="panel " id="brand" data-label="Policybazaar.ae · Brand"><div class="pin"><p class="eyebrow"><i></i>04 · Policybazaar.ae · The brand</p><h2>What Policybazaar.ae <em>needs from Instagram</em></h2><div class="grid three b3"><div class="card reveal"><span class="chip blue">The business</span><h3>35+ insurers, 400+ products</h3><p>In the UAE since 2018 and licensed by the Central Bank of the UAE. Premiums grew 54% in FY26.</p></div><div class="card reveal"><span class="chip pink">The problem to solve</span><h3>A once-a-year thought</h3><p>Most people renew wherever is easiest. Instagram's job is to be remembered before renewal day comes.</p></div><div class="card reveal"><span class="chip mint">Who we talk to</span><h3>Rahul, 32, Dubai</h3><p>Sales manager, a two-year-old at home. "My company covers me. I think." Triggers: renewal reminders, the trip home, a friend's hospital bill.</p></div></div>
   <div class="pos reveal"><p>For <b>UAE residents who find insurance confusing</b>, Policybazaar.ae is <b>the smart friend who makes insurance and money make sense</b>.</p><p class="rtb"><b>Why believe it:</b> 35+ insurers compared side by side, help when it's time to claim, and a licence from the Central Bank of the UAE.</p></div>
 
   
@@ -523,9 +520,9 @@ html,body{height:100%;overflow:hidden}
     </div>
   </div>
 </div></section>
-<section class="panel " id="audit" data-label="Policybazaar.ae · Audit"><div class="pin">
+<section class="panel " id="audit" data-label="Policybazaar.ae · Problem"><div class="pin">
   <div class="head">
-    <p class="eyebrow"><i></i>Policybazaar.ae · What's working</p>
+    <p class="eyebrow"><i></i>05 · Policybazaar.ae · Where the problem is</p>
     <h2>Smart topics. <em>Quiet reels.</em></h2>
     <p class="lede">I went through 36 reels posted between 1 October and 13 November 2026, with views, likes and comments on each.</p>
   </div>
@@ -536,52 +533,45 @@ html,body{height:100%;overflow:hidden}
     <div class="card reveal stat"><b>Almost zero comments</b><p>Nearly every caption ends with "Compare on Policybazaar.ae", so nothing invites a reply.</p></div>
   </div>
 
-  <h3 class="sub-h">What they post</h3>
-  <div class="tablewrap reveal">
-    <table>
-      <tr><th>Type</th><th>Share</th><th>Examples</th><th>What happens</th></tr>
-      <tr><td><b>Product promos</b></td><td>About a third</td><td>Smart Return Term, Premium Lock, Pay As You Drive, travel from AED 22, the app</td><td>Fine for launches, but too many in a row make the feed feel like an ad break.</td></tr>
-      <tr><td><b>Explainers</b></td><td>About a third</td><td>Rule of 72, a 3-part Takaful series, term vs whole life, fog driving, 3 checks before buying car insurance</td><td>The right topics, delivered like slides. No hook, no personal stakes.</td></tr>
-      <tr><td><b>Team and culture</b></td><td>5 reels</td><td>A day at the office, Guess the Employee with the CEO, meet the team</td><td>Strangers don't know the team yet, so most of these barely register.</td></tr>
-      <tr><td><b>Expert interviews</b></td><td>2 episodes</td><td>Fast Track Life rapid-fire with insurer leaders</td><td>Great access, but one long video with many questions and a job title as the hook.</td></tr>
-      <tr><td><b>Creators and customers</b></td><td>The rest</td><td>@expatamy, @channel4dubai, customer claim stories</td><td>The best engagement on the page. Real people beat brand voice.</td></tr>
-    </table>
-  </div>
+  
   <div class="takeaway reveal"><b>In one line:</b> the topics are right and the packaging is a brochure. The fix is the hook, the story and a reason to comment.</div>
 </div></section>
-<section class="panel " id="rework" data-label="Policybazaar.ae · Rework 1"><div class="pin"><p class="eyebrow"><i></i>Policybazaar.ae · Rework 1 of 4</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 1 · Travel insurance</span><h3>"Your trip can have a lot of plot twists ✈️"</h3><p class="was">Posted 15 Oct · <b>495 views · 4 likes · 0 comments</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>It promised plot twists and never showed one.</li><li>The price arrived in the second line, so it read as an ad before it became a story.</li><li>Nothing asked the viewer to join in.</li></ul></div>
-      <div class="rw-new"><h4>My version: "Expat Plot Twists", ep. 1</h4>
+<section class="panel " id="rework" data-label="Policybazaar.ae · 4 posts"><div class="pin"><p class="eyebrow"><i></i>06 · Policybazaar.ae · 4 posts, reworked</p><h2>The old post, <em>and what I'd post instead</em></h2><div class="post4"><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 1 · Travel insurance</span><p class="pc-old">"Your trip can have a lot of plot twists ✈️"</p><p class="was">15 Oct · 495 views · 4 likes · 0 comments</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>It promised plot twists and never showed one. The price came in line two, so it read as an ad.</dd>
+    <dt>What I did</dt><dd><b>"Expat Plot Twists", ep. 1.</b> A 20-second skit: cancelled flight, a bag in Frankfurt, food poisoning on day two. The best plot twist is the insurance bought before the trip.</dd>
+    <dt>Reason and logic</dt><dd>Story first, product as the happy ending. Every expat has a travel horror story, so the caption asks for theirs. And it's a series. <span class="msr-i">Measure: comments and shares per 1,000 views</span></dd>
+  </dl>
+  <details><summary>See the full script</summary><div class="rw-new"><h4>My version: "Expat Plot Twists", ep. 1</h4>
         <div class="beat"><span class="t">0–3s</span><div><p class="say">"Ten days in Europe. Everything booked."</p><p class="shot">Creator at DXB with a suitcase, smiling. On screen: <i>My winter trip, as planned ✈️</i></p></div></div>
         <div class="beat"><span class="t">3–6s</span><div><p class="say">Record scratch.</p><p class="shot">On screen: <i>Plot twist #1: flight cancelled.</i></p></div></div>
         <div class="beat"><span class="t">6–10s</span><div><p class="say">"My bag went to Frankfurt. I went to Rome."</p><p class="shot">On screen: <i>Plot twist #2: lost baggage.</i></p></div></div>
         <div class="beat"><span class="t">10–14s</span><div><p class="say">"Day two. Food poisoning. Doctors abroad aren't cheap."</p><p class="shot">On screen: <i>Plot twist #3: hospital visit.</i></p></div></div>
         <div class="beat"><span class="t">14–20s</span><div><p class="say">"Best plot twist? I'd bought travel insurance before I flew."</p><p class="shot">Calm cut, creator relaxed at the hotel. End card: <i>Pack the insurance before the sunscreen. Travel cover from AED 22* on Policybazaar.ae</i></p></div></div>
         <p class="cap"><b>Caption:</b> Which plot twist has happened to you? 👇 Ours was the bag that went on holiday without us. Travel cover from AED 22* on Policybazaar.ae. *T&amp;Cs apply</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Story first, product as the happy ending.</b> The insurance solves the problem we just watched.</li><li><b>Winter travel season</b> makes it timely, and every expat has a travel horror story.</li><li><b>The caption asks for stories</b>, so people comment and tag travel buddies.</li><li><b>It's a series.</b> Next episodes: the first car fine, the first visa medical, the first summer DEWA bill.</li></ul><p class="msr"><b>Measure:</b> comments and shares per 1,000 views.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Policybazaar.ae · Rework 2"><div class="pin"><p class="eyebrow"><i></i>Policybazaar.ae · Rework 2 of 4</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 2 · Expert interview</span><h3>Fast Track Life: rapid-fire with an insurer's head of bancassurance</h3><p class="was">Posted 19 Oct · <b>593 views · 5 likes · 0 comments</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>The hook ("What would you ask a life insurance expert…") makes the viewer do the work.</li><li>The guest's job title leads. Viewers care about their question, not his title.</li><li>Many questions in one video means no single takeaway to remember or share.</li></ul></div>
-      <div class="rw-new"><h4>My version: "One Question. 30 Seconds."</h4>
+      </div></details>
+</article><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 2 · Expert interview</span><p class="pc-old">"Fast Track Life: rapid-fire with an insurer's head of bancassurance"</p><p class="was">19 Oct · 593 views · 5 likes · 0 comments</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>The hook makes viewers do the work, the guest's job title leads, and ten questions leave nothing to remember.</dd>
+    <dt>What I did</dt><dd><b>"One Question. 30 Seconds."</b> One real worry per clip, read from a comment, answered in plain words.</dd>
+    <dt>Reason and logic</dt><dd>Keeps their best asset, real experts, and fixes the packaging. One idea per clip is easy to finish and send. One shoot fills six weeks. <span class="msr-i">Measure: completion rate, saves, questions in comments</span></dd>
+  </dl>
+  <details><summary>See the full script</summary><div class="rw-new"><h4>My version: "One Question. 30 Seconds."</h4>
         <div class="beat"><span class="t">0–3s</span><div><p class="say">"If nothing happens to me, isn't term insurance a waste of money?"</p><p class="shot">The question appears as a comment screenshot, read out by the host. Big on-screen text.</p></div></div>
         <div class="beat"><span class="t">3–25s</span><div><p class="say">The expert answers in plain words, one point only.</p><p class="shot">Tight frame, subtitles 3–5 words a line, one key phrase highlighted.</p></div></div>
         <div class="beat"><span class="t">25–30s</span><div><p class="say">"Got a question? Comment it. It could be next week's."</p><p class="shot">End card: <i>One Question. 30 Seconds. · Policybazaar.ae</i></p></div></div>
         <p class="cap"><b>Next questions, all from real worries:</b> "My company gives me life cover. Is that enough?" · "Can my family back home claim if I'm in Dubai?" · "How much cover do I actually need?" · "What happens to my policy if I leave the UAE?"</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Keeps the best thing they have</b>, real experts, and fixes the packaging.</li><li><b>One idea per clip</b>, so each one is easy to finish, save and send.</li><li><b>The audience writes the next episode.</b> Comments become content, and the feed starts conversations.</li><li><b>One shoot, six reels.</b> The same hour with an expert fills six weeks.</li></ul><p class="msr"><b>Measure:</b> completion rate, saves, and questions left in comments.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Policybazaar.ae · Rework 3"><div class="pin"><p class="eyebrow"><i></i>Policybazaar.ae · Rework 3 of 4</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 3 · Money explainer</span><h3>"One simple rule can change how you think about your money": the Rule of 72</h3><p class="was">Posted 31 Oct · <b>40.2K views · 11 likes</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>A great topic delivered as a definition.</li><li>No personal stakes. It explains a rule, but never shows what it means for your money.</li><li>It reached 40,000 people and kept almost none of them.</li></ul></div>
-      <div class="rw-new"><h4>My version: a 7-slide carousel</h4>
+      </div></details>
+</article><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 3 · Money explainer</span><p class="pc-old">"One simple rule can change how you think about your money"</p><p class="was">31 Oct · 40.2K views · 11 likes</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>A great topic told as a definition. It reached 40,000 people and kept almost none of them.</dd>
+    <dt>What I did</dt><dd><b>"Your money has a doubling date."</b> A 7-slide carousel with real numbers at 2% and 6%, then inflation flipped the other way.</dd>
+    <dt>Reason and logic</dt><dd>"Your money" makes it personal, and a number to work out gives people something to comment. Math and checklists get saved. <span class="msr-i">Measure: saves and shares per 1,000 views</span></dd>
+  </dl>
+  <details><summary>See all 7 slides</summary><div class="rw-new"><h4>My version: a 7-slide carousel</h4>
         <ol class="slides">
           <li><b>Your money has a doubling date.</b> Most people never check it.</li>
           <li>The Rule of 72: divide 72 by your yearly return. That's roughly how many years your money takes to double.</li>
@@ -592,116 +582,29 @@ html,body{height:100%;overflow:hidden}
           <li><b>Save this. Do the math on your own savings.</b> Tell us your doubling date 👇</li>
         </ol>
         <p class="cap"><b>Caption:</b> We did the math so you don't have to. What's your doubling date? Drop your number below. (General information, not financial advice. The rates are examples.)</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>"Your money"</b> turns a rule into something personal.</li><li><b>A number to work out</b> gives people something to comment.</li><li><b>Saves are a strong signal</b>, and checklists and math get saved.</li><li><b>No product push.</b> It builds the "smart friend" trust that pays off at renewal.</li></ul><p class="msr"><b>Measure:</b> saves and shares per 1,000 views.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Policybazaar.ae · Rework 4"><div class="pin"><p class="eyebrow"><i></i>Policybazaar.ae · Rework 4 of 4</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 4 · Health insurance</span><h3>"How much health cover is enough? Honestly, our faces have opinions 😂"</h3><p class="was">Posted 20 Oct · <b>1,694 views</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>The joke depends on knowing the team's faces. Viewers don't.</li><li>It asks the question and never answers it.</li><li>The only advice is "compare your options", which isn't advice.</li></ul></div>
-      <div class="rw-new"><h4>My version: "POV: you finally read your insurance card"</h4>
+      </div></details>
+</article><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 4 · Health insurance</span><p class="pc-old">"How much health cover is enough? Honestly, our faces have opinions 😂"</p><p class="was">20 Oct · 1,694 views</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>The joke needs you to know the team. It asks the question and never answers it.</dd>
+    <dt>What I did</dt><dd><b>"POV: you finally read your insurance card."</b> Four checks in 25 seconds: annual limit, network, co-pay, cover outside the UAE.</dd>
+    <dt>Reason and logic</dt><dd>It answers the question and speaks to "my company covers me" without arguing. The product shows up after the value. <span class="msr-i">Measure: saves, comments, profile visits</span></dd>
+  </dl>
+  <details><summary>See the full script</summary><div class="rw-new"><h4>My version: "POV: you finally read your insurance card"</h4>
         <div class="beat"><span class="t">0–3s</span><div><p class="say">"I've had health insurance for three years. Today I finally read it."</p><p class="shot">Creator pulls the insurance card out of a wallet, squints. On screen: <i>You have health insurance. But how much?</i></p></div></div>
         <div class="beat"><span class="t">3–9s</span><div><p class="say">"Check one: the annual limit. Some basic plans stop at AED 150,000 a year."</p><p class="shot">On screen: <i>1. Annual limit</i></p></div></div>
         <div class="beat"><span class="t">9–14s</span><div><p class="say">"Check two: the network. Is your nearest hospital actually in it?"</p><p class="shot">On screen: <i>2. Network</i></p></div></div>
         <div class="beat"><span class="t">14–19s</span><div><p class="say">"Check three: the co-pay. What do you pay at every visit?"</p><p class="shot">On screen: <i>3. Co-pay</i></p></div></div>
         <div class="beat"><span class="t">19–25s</span><div><p class="say">"Check four: does it work when you fly home?"</p><p class="shot">On screen: <i>4. Coverage outside the UAE</i>. End card: <i>Not enough? Compare plans on Policybazaar.ae</i></p></div></div>
         <p class="cap"><b>Caption:</b> Grab your insurance card and check these 4 things. Which one surprised you? 👇</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>It answers the question</b> with four checks anyone can do in a minute.</li><li><b>It speaks to Rahul's barrier</b>, "my company already covers me", without arguing with him.</li><li><b>The product shows up only after the value</b>, as the natural next step.</li></ul><p class="msr"><b>Measure:</b> saves, comments, and profile visits.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " id="system" data-label="Policybazaar.ae · System"><div class="pin">
-  <div class="head">
-    <p class="eyebrow"><i></i>Policybazaar.ae · Content system</p>
-    <h2>Four pillars. <em>Two series.</em> One voice.</h2>
-    <p class="lede">Reworking single posts helps. A simple system keeps the feed consistent every week.</p>
-  </div>
-  <div class="grid">
-    <div class="card reveal"><span class="chip">About 35%</span><h3>Money, Made Simple</h3><p>Explainers with real AED numbers: the Rule of 72, salary day habits, what a deductible actually costs you.</p><p class="pg"><b>Goal:</b> saves</p></div>
-    <div class="card reveal"><span class="chip mint">About 30%</span><h3>UAE Life, Covered</h3><p>Relatable expat moments: fog season, visa renewals, summer heat, the trip home, the first car fine.</p><p class="pg"><b>Goal:</b> shares</p></div>
-    <div class="card reveal"><span class="chip pink">About 20%</span><h3>Ask the Expert</h3><p>"One Question. 30 Seconds." Real worries from comments, answered by insurers' experts.</p><p class="pg"><b>Goal:</b> comments and trust</p></div>
-    <div class="card reveal"><span class="chip blue">About 15%</span><h3>Real Stories</h3><p>Customers and creators telling claim and travel stories in their own words.</p><p class="pg"><b>Goal:</b> proof</p></div>
-  </div>
-  <p class="lede" style="margin-top:14px">Product launches still happen, but inside these pillars. No more than one post in five is a straight sell.</p>
-
-  <h3 class="sub-h">Two recurring series</h3>
-  <div class="grid two">
-    <div class="card hi reveal"><span class="chip red">Weekly · Reels</span><h3>Expat Plot Twists</h3><p>Short skits about the things nobody tells you when you move to the UAE, each ending with the cover that saves the day. Easy to shoot, easy to relate to, and built for shares.</p></div>
-    <div class="card hi reveal"><span class="chip red">Weekly · Reels</span><h3>One Question. 30 Seconds.</h3><p>Audience questions answered by insurance experts in half a minute. The comments section writes the next episode.</p></div>
-  </div>
-
-  <div class="card hi reveal ai"><span class="chip blue">AI-led · Recurring character</span><h3>Mr. Fine Print</h3><p>An AI-generated detective who investigates the small print people never read: exclusions, deductibles, waiting periods. Each case ends with "Case closed. Read before you sign." Scripts written by hand, visuals made with AI, and labelled as AI.</p></div>
-  <h3 class="sub-h">Voice in practice</h3>
-  <div class="tablewrap reveal">
-    <table>
-      <tr><th>Do</th><th>Instead of</th></tr>
-      <tr><td>"Some basic plans stop at AED 150,000 a year."</td><td>"Ensure you have adequate coverage."</td></tr>
-      <tr><td>"Which plot twist has happened to you? 👇"</td><td>"Compare plans on Policybazaar.ae."</td></tr>
-      <tr><td>"Your money has a doubling date."</td><td>"One simple rule can change how you think about your money."</td></tr>
-      <tr><td>Lead with the viewer's question</td><td>Lead with the guest's job title</td></tr>
-    </table>
-  </div>
-</div></section>
-<section class="panel " id="calendar" data-label="Policybazaar.ae · Calendar"><div class="pin">
-  <div class="head">
-    <p class="eyebrow"><i></i>Policybazaar.ae · Two-week calendar</p>
-    <h2>23 Nov to 6 Dec: <em>UAE moments, memes and money</em></h2>
-    <p class="lede">Ten posts plus Stories, built around what people in the UAE are actually doing these two weeks: fog mornings, the Dubai Fitness Challenge, salary day, National Day and the start of winter travel and DSF season.</p>
-  </div>
-  <div class="tablewrap reveal">
-    <table class="cal">
-      <tr><th>Date</th><th>Moment</th><th>Pillar · Format</th><th>The post</th><th>Goal</th></tr>
-      <tr><td><b>Mon 23 Nov</b></td><td>Fog season</td><td>UAE Life · Reel</td><td>Meme format "Tell me you drive in the UAE without telling me": fog edition, with 4 real safety tips.</td><td>Shares</td></tr>
-      <tr><td><b>Wed 25 Nov</b></td><td>Mid-month</td><td>Money · Carousel</td><td>"Your money has a doubling date" (Rework 3).</td><td>Saves</td></tr>
-      <tr><td><b>Fri 27 Nov</b></td><td>Weekend scroll</td><td>Ask the Expert · Reel</td><td>"One Question. 30 Seconds." ep. 1: "My company gives me life cover. Is that enough?"</td><td>Comments</td></tr>
-      <tr><td><b>Sat 28 Nov</b></td><td>Story</td><td>UAE Life · Poll</td><td>"Have you ever read your health insurance card?" Yes / What card? Sets up Tuesday's reel.</td><td>Replies</td></tr>
-      <tr><td><b>Sun 29 Nov</b></td><td>Dubai Fitness Challenge</td><td>Money · Reel</td><td>"30 days of 30 minutes, done. Now the boring flex: is your health cover as fit as you are?"</td><td>Reach</td></tr>
-      <tr><td><b>Mon 30 Nov</b></td><td>Salary day</td><td>Money · Carousel</td><td>"Salary just landed. 5 things to do before it disappears", including checking which renewals are due.</td><td>Saves</td></tr>
-      <tr><td><b>Tue 1 Dec</b></td><td>After the poll</td><td>Money · Reel</td><td>"POV: you finally read your insurance card" (Rework 4).</td><td>Saves</td></tr>
-      <tr><td><b>Wed 2 Dec</b></td><td>UAE National Day</td><td>UAE Life · Community post</td><td>"55 years of the UAE. Tell us the moment it started feeling like home 👇" No product, just pride and stories.</td><td>Comments</td></tr>
-      <tr><td><b>Thu 3 Dec</b></td><td>Winter travel</td><td>UAE Life · Reel</td><td>"Expat Plot Twists" ep. 1: the trip (Rework 1).</td><td>Shares</td></tr>
-      <tr><td><b>Sat 5 Dec</b></td><td>DSF season</td><td>Money · Carousel</td><td>"Bought a new car this DSF? 3 things to check before you insure it."</td><td>Saves</td></tr>
-      <tr><td><b>Sun 6 Dec</b></td><td>Real Stories</td><td>Stories · Reel</td><td>A customer's car claim told as "The 7 days after my accident", in their own words.</td><td>Trust</td></tr>
-    </table>
-  </div>
-  <p class="fine">UAE National Day is 2 December, and the Dubai Fitness Challenge runs from 31 October to 29 November 2026. DSF dates would be confirmed with the official calendar before posting.</p>
-</div></section>
-<section class="panel p-part" id="pz" data-label="Paisabazaar.ae"><div class="pin"><div class="part-card"><p class="eyebrow"><i></i>Part 2</p><h2>Paisabazaar.ae: <em>where money meets lifestyle</em></h2><p class="lede">Same approach, different personality. Paisabazaar.ae is younger, bolder and more playful, so the reworks lean on humour, memes and everyday spending chaos.</p></div></div></section>
-<section class="panel " id="pz-brand" data-label="Paisabazaar.ae · Brand"><div class="pin">
-  <div class="head">
-    <p class="eyebrow"><i></i>Paisabazaar.ae · Brand read</p>
-    <h2>What Paisabazaar.ae <em>needs from Instagram</em></h2>
-  </div>
-  <div class="grid">
-    <div class="card reveal"><span class="chip">New in the UAE</span><h3>Launched in 2025</h3><p>A marketplace for credit cards, personal loans and other credit products from UAE banks. Unsecured lending is the near-term focus.</p></div>
-    <div class="card reveal"><span class="chip mint">The app</span><h3>Rewards for small actions</h3><p>Users earn rewards for completing their profile, checking their AECB score, using the Rewards Calculator and referring friends, redeemable as Amazon vouchers.</p></div>
-    <div class="card reveal"><span class="chip pink">The page</span><h3>2,650 followers</h3><p>Small and early, which is good news: the voice can still be shaped before habits set in.</p></div>
-    <div class="card reveal"><span class="chip blue">The brief</span><h3>Followed for the content</h3><p>The goal is a brand people follow for the content, not just the products.</p></div>
-  </div>
-
-  <h3 class="sub-h"><span class="stepn">1</span>Where the growth comes from</h3>
-  <div class="eq reveal"><span class="on">Category penetration</span><i>×</i><span class="on">Brand penetration</span><i>×</i><span>Frequency</span><i>×</i><span>Products per customer</span><i>=</i><span>Brand size</span></div>
-  <div class="grid">
-    <div class="card hi reveal"><span class="chip red">Category</span><h3>The first "real" card</h3><p>Many young expats use whatever card came with their salary account and have never compared cashback. Getting them to compare is the first win.</p></div>
-    <div class="card hi reveal"><span class="chip red">Brand</span><h3>Compare here, not at the bank</h3><p>People usually apply straight with their bank. Paisabazaar.ae has to become the place they check first, and the app rewards give them a reason to.</p></div>
-    <div class="card reveal"><span class="chip">Frequency</span><h3>A reason to open the app</h3><p>Monthly credit score checks and rewards bring people back between applications.</p></div>
-  </div>
-
-  <h3 class="sub-h"><span class="stepn">2</span>Who we're talking to</h3>
-  <div class="persona reveal">
-    <div class="who"><div class="ava">P</div><div><b>Priya, 26 · Dubai Marina</b><span>Two years into her first UAE job. Brunches, sales, trips home and the odd weekend in Georgia.</span></div></div>
-    <p class="quote">"I use the card my bank gave me. Cashback? Never checked."</p>
-    <div class="pgrid">
-      <div><small>Her month</small>Salary week feels rich. Month-end is shawarma and vibes.</div>
-      <div><small>Triggers</small>White Friday, DSF, booking flights, a friend bragging about lounge access.</div>
-      <div><small>Barriers</small>"Credit cards are a debt trap." "All cards are basically the same." "Applying is a headache."</div>
-      <div><small>Where she scrolls</small>Reels and TikTok, Dubai lifestyle creators, meme pages.</div>
-    </div>
-  </div>
-
-  </div></section>
-<section class="panel " data-label="Paisabazaar.ae · Idea"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Positioning and idea</p><h2>Spend smart. <em>Brag a little.</em></h2>
+      </div></details>
+</article></div></div></section>
+<section class="panel " id="pb-can" data-label="Policybazaar.ae · What it can do"><div class="pin"><p class="eyebrow"><i></i>07 · Policybazaar.ae · What it can do</p><h2>From a brochure <em>to the smart friend</em></h2><div class="grid four outs"><div class="card reveal"><h3>People stop</h3><p>Hooks with stakes in the first 3 seconds, so promoted reels earn likes and saves, not just views.</p></div><div class="card reveal"><h3>People save and share</h3><p>Explainers built as checklists and real AED math. Saves and shares tell Instagram a post is useful.</p></div><div class="card reveal"><h3>People talk back</h3><p>Every caption ends on a question. The best comment becomes next week's expert clip.</p></div><div class="card reveal"><h3>Remembered at renewal</h3><p>The real goal. When the car or health renewal comes, Rahul already knows who to ask.</p></div></div>
+<div class="can2">
+  <div><h3 class="sub-h">How it runs every week</h3><div class="pills"><span><b>35%</b> Money, Made Simple</span><span><b>30%</b> UAE Life, Covered</span><span><b>20%</b> Ask the Expert</span><span><b>15%</b> Real Stories</span></div><ul class="ser"><li><b>Expat Plot Twists</b> weekly skits about UAE life, each ending with the cover that saves the day.</li><li><b>One Question. 30 Seconds.</b> weekly expert answers to questions from the comments.</li></ul><div class="card hi ai"><span class="chip blue">AI-led character</span><h3>Mr. Fine Print</h3><p>An AI-made detective who investigates exclusions, deductibles and waiting periods. Every case ends with "Case closed. Read before you sign." Scripts by hand, visuals by AI, labelled as AI.</p></div></div>
+  <div><h3 class="sub-h">The first two weeks</h3><ul class="two"><li><span>23 Nov</span>Fog season meme: "Tell me you drive in the UAE without telling me"</li><li><span>25 Nov</span>"Your money has a doubling date" carousel</li><li><span>30 Nov</span>Salary day: 5 things to do before it disappears</li><li><span>1 Dec</span>"POV: you finally read your insurance card"</li><li><span>2 Dec</span>National Day: "When did the UAE start feeling like home?"</li><li><span>3 Dec</span>Expat Plot Twists, ep. 1</li></ul></div>
+</div></div></section>
+<section class="panel " id="pz" data-label="Paisabazaar.ae · Brand"><div class="pin"><p class="eyebrow"><i></i>08 · Paisabazaar.ae · The brand</p><h2>What Paisabazaar.ae <em>needs from Instagram</em></h2><div class="grid three b3"><div class="card reveal"><span class="chip blue">The business</span><h3>Cards and loans, one place</h3><p>Launched in the UAE in 2025. Credit cards and personal loans from UAE banks, plus app rewards paid out as Amazon vouchers.</p></div><div class="card reveal"><span class="chip pink">The problem to solve</span><h3>Compare here, not at the bank</h3><p>People apply straight with their bank and never compare. The page has 2,650 followers, so the voice can still be shaped.</p></div><div class="card reveal"><span class="chip mint">Who we talk to</span><h3>Priya, 26, Dubai Marina</h3><p>Two years into her first UAE job. "I use the card my bank gave me. Cashback? Never checked." Triggers: White Friday, DSF, booking flights.</p></div></div>
   <div class="pos reveal"><p>For <b>young UAE professionals who want their money to work as hard as they do</b>, Paisabazaar.ae is <b>the friend who always knows which card gets the better deal</b>.</p><p class="rtb"><b>Why believe it:</b> cards and loans from leading UAE banks in one place, personalised recommendations, a Rewards Calculator, and free AECB score checks.</p></div>
   <div class="idea reveal" style="margin-top:18px">
     <p class="k">The idea</p>
@@ -714,9 +617,9 @@ html,body{height:100%;overflow:hidden}
     </div>
   </div>
 </div></section>
-<section class="panel " id="pz-audit" data-label="Paisabazaar.ae · Audit"><div class="pin">
+<section class="panel " id="pz-audit" data-label="Paisabazaar.ae · Problem"><div class="pin">
   <div class="head">
-    <p class="eyebrow"><i></i>Paisabazaar.ae · What's working</p>
+    <p class="eyebrow"><i></i>09 · Paisabazaar.ae · Where the problem is</p>
     <h2>One message, <em>on repeat</em></h2>
     <p class="lede">I went through the last 16 reels, from late October to 13 November 2026.</p>
   </div>
@@ -728,40 +631,42 @@ html,body{height:100%;overflow:hidden}
   </div>
   <div class="takeaway reveal"><b>In one line:</b> the brief says witty, relatable and pop-culture. The feed is mostly app features and festival greetings. The good news: "Comment TREAT" on Halloween shows the team already knows how to start conversations.</div>
 </div></section>
-<section class="panel " id="pz-rework" data-label="Paisabazaar.ae · Rework 1"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Rework 1 of 5</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 1 · Festive season</span><h3>"This Diwali, getting the Paisabazaar.ae app ready was just as rewarding as the celebrations themselves"</h3><p class="was">Posted 7 Nov · <b>103 views · 6 likes · 0 comments</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>Nobody feels that downloading an app is as exciting as Diwali.</li><li>It's an app ad dressed up as a festival post.</li><li>It skips the one festive feeling everyone shares: the shopping bill.</li></ul></div>
-      <div class="rw-new"><h4>My version: "Festive budget vs festive reality"</h4>
+<section class="panel " id="pz-rework" data-label="Paisabazaar.ae · 4 posts"><div class="pin"><p class="eyebrow"><i></i>10 · Paisabazaar.ae · 4 posts, reworked</p><h2>The old post, <em>and what I'd post instead</em></h2><div class="post4"><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 1 · Festive season</span><p class="pc-old">"This Diwali, getting the Paisabazaar.ae app ready was just as rewarding as the celebrations themselves"</p><p class="was">7 Nov · 103 views · 6 likes · 0 comments</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>An app ad dressed as a festival post. Nobody feels an app download is as exciting as Diwali.</dd>
+    <dt>What I did</dt><dd><b>"Festive budget vs festive reality."</b> A strict AED 1,000 budget, then quick cuts as the total climbs. It ends on the Rewards Calculator.</dd>
+    <dt>Reason and logic</dt><dd>Expectation vs reality is a format people already share. It starts with a feeling and ends with a tool, and works again for DSF, White Friday and Eid. <span class="msr-i">Measure: shares and comments</span></dd>
+  </dl>
+  <details><summary>See the full script</summary><div class="rw-new"><h4>My version: "Festive budget vs festive reality"</h4>
         <div class="beat"><span class="t">0–3s</span><div><p class="say">"My festive budget this year: AED 1,000. Strict."</p><p class="shot">Creator writing a neat list. On screen: <i>Festive budget: AED 1,000 ✅</i></p></div></div>
         <div class="beat"><span class="t">3–10s</span><div><p class="say">Quick cuts: new outfit, sweets, gold "just a small one", four gifts "just in case".</p><p class="shot">A running total on screen climbs with each cut.</p></div></div>
         <div class="beat"><span class="t">10–14s</span><div><p class="say">"Festive reality: don't ask."</p><p class="shot">Creator stares at the camera. Trending "it's fine" sound.</p></div></div>
         <div class="beat"><span class="t">14–20s</span><div><p class="say">"If I'm spending anyway, the card should at least pay me back."</p><p class="shot">Phone screen: Rewards Calculator on Paisabazaar.ae. End card: <i>Spend smart. Brag a little.</i></p></div></div>
         <p class="cap"><b>Caption:</b> Be honest. How far over budget did you go? 👇 (Ready for DSF too: same format, new shopping list.)</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Expectation vs reality</b> is a format everyone already shares.</li><li><b>It starts with a feeling</b>, overspending, and ends with a useful tool.</li><li><b>Reusable:</b> the same skit works for DSF, White Friday and Eid.</li></ul><p class="msr"><b>Measure:</b> shares and comments.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Paisabazaar.ae · Rework 2"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Rework 2 of 5</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 2 · App rewards</span><h3>"Who knew the little things could bring big cheers? 🎉" #ExtraRewardinary</h3><p class="was">Posted 10 Nov · <b>551 views · 13 likes</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>"Completing your profile" isn't a big cheer.</li><li>It's a feature list, read in a brand voice.</li><li>No comparison, so no sense of how easy it really is.</li></ul></div>
-      <div class="rw-new"><h4>My version: "Rewards I earned this week, ranked by effort"</h4>
-        <div class="beat"><span class="t">0–3s</span><div><p class="say">"I earned rewards this week for doing almost nothing. Ranked by effort."</p><p class="shot">Tier-list template on screen, a trend people know.</p></div></div>
-        <div class="beat"><span class="t">3–8s</span><div><p class="say">"Checking my credit score: ten seconds. S tier."</p><p class="shot">Drags the icon to the top row.</p></div></div>
-        <div class="beat"><span class="t">8–13s</span><div><p class="say">"Completing my profile: two minutes. Still S tier."</p></div></div>
-        <div class="beat"><span class="t">13–18s</span><div><p class="say">"Referring my flatmate: one WhatsApp. He owes me now."</p></div></div>
-        <div class="beat"><span class="t">18–24s</span><div><p class="say">"Total effort: less than ordering shawarma. And it turns into Amazon vouchers."</p><p class="shot">End card: <i>Download the Paisabazaar.ae app</i></p></div></div>
-        <p class="cap"><b>Caption:</b> What's the laziest way you've ever earned something? Wrong answers only 👇</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Tier lists</b> are a native, shareable format.</li><li><b>"Less than ordering shawarma"</b> makes the effort feel tiny in a local way.</li><li><b>Same app message</b>, finally told like a person, not a feature list.</li></ul><p class="msr"><b>Measure:</b> app downloads from the profile link, and comments.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Paisabazaar.ae · Rework 3"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Rework 3 of 5</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 3 · Credit score</span><h3>"A better credit score doesn't happen overnight"</h3><p class="was">Posted 12 Nov · <b>2,692 views · 19 likes</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>The right topic, but the tips are ones people have heard before.</li><li>Nothing makes them memorable.</li><li>No reason to save or share it.</li></ul></div>
-      <div class="rw-new"><h4>My version: "Your AECB score is basically your gym routine"</h4>
+      </div></details>
+</article><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 2 · Trend meme</span><p class="pc-old">"Who knew the little things could bring big cheers? 🎉 #ExtraRewardinary"</p><p class="was">10 Nov · 551 views · 13 likes</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>A feature list in brand voice, and the same rewards message for about the twelfth time.</dd>
+    <dt>What I did</dt><dd><b>A same-day meme</b> on Jensen Huang's keynote line "The more you buy, the more you save", with a caption about not overspending to chase cashback.</dd>
+    <dt>Reason and logic</dt><dd>Everyone is talking about him right now, and his best-known line fits a cashback brand. No photo, nothing about his personal life. A static meme can go out within hours. <span class="msr-i">Measure: shares and comments</span></dd>
+  </dl>
+  <details><summary>See the meme</summary><div class="rw-new"><div class="meme">
+    <div class="m-row"><span class="m-k">Tech CEO on stage</span><p>"The more you buy, the more you save."</p></div>
+    <div class="m-row"><span class="m-k">Your cashback card</span><p>"Honestly? For once, he's not wrong."</p></div>
+    <div class="m-row"><span class="m-k">Your bank balance</span><p>"Please don't take that personally."</p></div>
+    <div class="m-foot">Paisabazaar.ae</div>
+  </div>
+  <p class="cap"><b>Caption:</b> Cashback is real. Spending more to chase it isn't a strategy. Find a card that pays you back on what you already buy 👇 Which category do you spend the most on?</p></div></details>
+</article><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 3 · Credit score</span><p class="pc-old">"A better credit score doesn't happen overnight"</p><p class="was">12 Nov · 2,692 views · 19 likes</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>The right topic, with tips people have heard before. Nothing to remember, nothing to save.</dd>
+    <dt>What I did</dt><dd><b>"Your AECB score is basically your gym routine."</b> Paying on time is showing up. Maxing out is skipping leg day. Five cards at once is crash dieting.</dd>
+    <dt>Reason and logic</dt><dd>An analogy makes dry advice stick, and it lands right after the Dubai Fitness Challenge. Built to be saved, with a soft path to a free score check. <span class="msr-i">Measure: saves and shares</span></dd>
+  </dl>
+  <details><summary>See all the slides</summary><div class="rw-new"><h4>My version: "Your AECB score is basically your gym routine"</h4>
         <ol class="slides">
           <li><b>Your AECB score is basically your gym routine.</b> Hear us out.</li>
           <li><b>Paying on time = showing up.</b> Miss sessions and the progress goes.</li>
@@ -771,96 +676,35 @@ html,body{height:100%;overflow:hidden}
           <li>Scores in the UAE run from 300 to 900. Check yours free on the Paisabazaar.ae app.</li>
           <li><b>Save this for your next "new year, new me".</b> Which habit are you skipping? 👇</li>
         </ol>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>An analogy</b> makes dry advice stick.</li><li><b>Timely:</b> it lands right after the Dubai Fitness Challenge.</li><li><b>Built to be saved</b>, with a soft path to a free score check.</li></ul><p class="msr"><b>Measure:</b> saves and shares.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Paisabazaar.ae · Rework 4"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Rework 4 of 5</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 4 · Comment mechanic</span><h3>"Our friendly ghost is here to save us from the horrors of missing out!" Comment TREAT</h3><p class="was">Posted 30 Oct · <b>526 views · 16 likes</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>The comment mechanic is smart. The content around it is generic.</li><li>"Horrors of missing out" is vague. Nothing scary is actually shown.</li><li>It only works on Halloween.</li></ul></div>
-      <div class="rw-new"><h4>My version: "Card Horror Stories", a monthly series</h4>
+      </div></details>
+</article><article class="pc reveal">
+  <div class="pc-top"><span class="chip blue">Post 4 · Comment mechanic</span><p class="pc-old">"Our friendly ghost is here to save us from the horrors of missing out! Comment TREAT"</p><p class="was">30 Oct · 526 views · 16 likes</p></div>
+  <dl class="pc-rows">
+    <dt>The problem</dt><dd>The comment trigger is smart. The content around it is vague, and it only works on Halloween.</dd>
+    <dt>What I did</dt><dd><b>"Card Horror Stories"</b>, monthly. The annual fee you forgot, minimum-due interest, the currency fee from that weekend in Baku. Ends with "Comment TREAT".</dd>
+    <dt>Reason and logic</dt><dd>Keeps their best idea and fills it with pain every cardholder knows. "Part two" can come every month. <span class="msr-i">Measure: comments, and how many comment TREAT</span></dd>
+  </dl>
+  <details><summary>See the full script</summary><div class="rw-new"><h4>My version: "Card Horror Stories", a monthly series</h4>
         <div class="beat"><span class="t">0–3s</span><div><p class="say">"The scariest things in your credit card statement. Part one."</p><p class="shot">Creator with a torch under the face, reading a statement. On screen: <i>Card Horror Stories 👻</i></p></div></div>
         <div class="beat"><span class="t">3–8s</span><div><p class="say">"The annual fee you forgot existed."</p></div></div>
         <div class="beat"><span class="t">8–13s</span><div><p class="say">"Interest, because you only paid the minimum."</p></div></div>
         <div class="beat"><span class="t">13–18s</span><div><p class="say">"The foreign currency fee from that one weekend in Baku."</p></div></div>
         <div class="beat"><span class="t">18–24s</span><div><p class="say">"Want a card that's less scary? Comment TREAT."</p><p class="shot">End card: <i>Compare cards on Paisabazaar.ae</i></p></div></div>
         <p class="cap"><b>Caption:</b> What's the scariest thing you've found on your statement? 👻 Comment TREAT for cards that fit how you actually spend.</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>Keeps their best idea</b>, the comment trigger, and gives it real content.</li><li><b>Specific, relatable pain</b> that every cardholder recognises.</li><li><b>Not seasonal:</b> "Part two" can come every month.</li></ul><p class="msr"><b>Measure:</b> comments, and how many people comment TREAT.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " data-label="Paisabazaar.ae · Rework 5"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Rework 5 of 5</p><article class="rw reveal">
-    <div class="rw-top"><span class="chip red">Rework 5 · Promoted reel</span><h3>"60 seconds. Multiple ways to earn rewards"</h3><p class="was">Posted 3 Nov · <b>43.6K views · 15 likes</b></p></div>
-    <div class="rw-grid">
-      <div class="rw-why"><h4>Why it didn't land</h4><ul><li>A good idea, a 60-second promise, with no tension to pay it off.</li><li>"Multiple ways" is vague.</li><li>It reached 43,600 people and got 15 likes.</li></ul></div>
-      <div class="rw-new"><h4>My version: "I gave myself 60 seconds to earn rewards"</h4>
-        <div class="beat"><span class="t">0–3s</span><div><p class="say">"I have 60 seconds to earn rewards on this app. Go."</p><p class="shot">A big countdown timer on screen starts at 0:60.</p></div></div>
-        <div class="beat"><span class="t">3–45s</span><div><p class="say">Creator races through the steps live: sign up, check AECB score, try the Rewards Calculator.</p><p class="shot">Screen recording picture-in-picture, timer always visible.</p></div></div>
-        <div class="beat"><span class="t">45–55s</span><div><p class="say">"Did I make it?"</p><p class="shot">Timer hits 0:00. Rewards screen revealed.</p></div></div>
-        <div class="beat"><span class="t">55–60s</span><div><p class="say">"Your turn. Beat my time."</p><p class="shot">End card: <i>Download the Paisabazaar.ae app</i></p></div></div>
-        <p class="cap"><b>Caption:</b> Can you beat 60 seconds? Tell us your time 👇</p>
-      </div>
-      <div class="rw-wins"><h4>Why this works</h4><ul><li><b>A visible timer</b> keeps people watching to the end.</li><li><b>A creator's face</b>: the page's best reel was a creator's.</li><li><b>"Beat my time"</b> turns an ad into a small challenge.</li></ul><p class="msr"><b>Measure:</b> completion rate, comments and app downloads.</p></div>
-    </div>
-  </article></div></section>
-<section class="panel " id="jensen" data-label="Paisabazaar.ae · Meme"><div class="pin"><p class="eyebrow"><i></i>Paisabazaar.ae · Riding a trend</p>
-<h2>The Jensen Huang meme, <em>made brand-safe</em></h2>
-<p class="lede">Jensen Huang is all over the internet right now. Most of the memes are about his personal life, and a finance brand shouldn't go near that. His best-known keynote line is safe, and it fits a cashback brand perfectly.</p>
-<div class="meme-wrap">
-  <div class="meme reveal">
-    <div class="m-row"><span class="m-k">Tech CEO on stage</span><p>"The more you buy, the more you save."</p></div>
-    <div class="m-row"><span class="m-k">Your cashback card</span><p>"Honestly? For once, he's not wrong."</p></div>
-    <div class="m-row"><span class="m-k">Your bank balance</span><p>"Please don't take that personally."</p></div>
-    <div class="m-foot">Paisabazaar.ae</div>
-  </div>
-  <div class="meme-notes">
-    <p class="cap"><b>Caption:</b> Cashback is real. Spending more to chase it isn't a strategy. Find a card that pays you back on what you already buy 👇 Which category do you spend the most on?</p>
-    <ul>
-      <li><b>Why it works:</b> it rides a name everyone's talking about, using a line people already know from Nvidia keynotes.</li>
-      <li><b>Why it's safe:</b> no photo, no likeness, nothing about his personal life. It quotes a public line and ends on responsible spending.</li>
-      <li><b>Speed:</b> a static meme can go out within hours, while the name is still trending.</li>
-    </ul>
-  </div>
+      </div></details>
+</article></div></div></section>
+<section class="panel " id="pz-can" data-label="Paisabazaar.ae · What it can do"><div class="pin"><p class="eyebrow"><i></i>11 · Paisabazaar.ae · What it can do</p><h2>From an ad on loop <em>to a page people follow</em></h2><div class="grid four outs"><div class="card reveal"><h3>A feed, not an ad</h3><p>App rewards drop to about 1 post in 7. The rest is content people would follow anyway.</p></div><div class="card reveal"><h3>People share it</h3><p>Money Chaos skits and memes about salary week, brunch bills and sale season.</p></div><div class="card reveal"><h3>People come back monthly</h3><p>Free AECB checks and rewards give a reason to open the app between applications.</p></div><div class="card reveal"><h3>Compare here first</h3><p>The real goal. Before Priya applies with her bank, she checks Paisabazaar.ae.</p></div></div>
+<div class="can2">
+  <div><h3 class="sub-h">How it runs every week</h3><div class="pills"><span><b>35%</b> Card Hacks</span><span><b>30%</b> Money Chaos</span><span><b>20%</b> Credit, Simply</span><span><b>15%</b> App Wins</span></div><ul class="ser"><li><b>Card Horror Stories</b> monthly, with "Comment TREAT" kept as the hook.</li><li><b>Salary Week Me vs Month-End Me</b> weekly split-screen skits.</li></ul><div class="card hi ai"><span class="chip blue">AI-led character</span><h3>Month-End Me</h3><p>An AI-made version of you from the 28th, broke and a little wiser, who visits Salary-Week Me with warnings: "Put that brunch on the cashback card." Every episode carries one real money tip.</p></div></div>
+  <div><h3 class="sub-h">The first two weeks</h3><ul class="two"><li><span>23 Nov</span>Card Horror Stories, part one</li><li><span>25 Nov</span>"Your AECB score is basically your gym routine"</li><li><span>27 Nov</span>White Friday: 5 questions to ask before you swipe</li><li><span>30 Nov</span>Salary Week Me vs Month-End Me, ep. 1</li><li><span>2 Dec</span>Long weekend plans by budget: AED 0, 500, 5,000</li><li><span>5 Dec</span>DSF budget vs DSF reality</li></ul></div>
 </div></div></section>
-<section class="panel " id="pz-plan" data-label="Paisabazaar.ae · Plan"><div class="pin">
+<section class="panel " id="yt-pb" data-label="YouTube · Policybazaar.ae"><div class="pin"><p class="eyebrow"><i></i>12 · Policybazaar.ae · YouTube</p><h2>On YouTube, people <em>search before they buy</em></h2><p class="lede">Instagram is for scrolling. YouTube is where someone types "health insurance Dubai explained" the week they need it. Policybazaar.ae already has a podcast, The Policy Project, so some of the raw material exists.</p><div class="grid four yt"><div class="card reveal"><span class="chip blue">Search series</span><h3>Explained in 8 minutes</h3><p>"Health insurance in Dubai, explained", "Car insurance renewal: 5 things to check", "Do I need travel insurance for a Schengen visa?" One question per video, answered properly.</p></div><div class="card reveal"><span class="chip pink">Podcast on video</span><h3>The Policy Project, filmed</h3><p>Film the episodes, add chapters for each question, and cut five Shorts from every episode.</p></div><div class="card reveal"><span class="chip mint">Shorts</span><h3>Reels, reused well</h3><p>Expat Plot Twists and One Question. 30 Seconds. go up as Shorts, each pointing to the long video on the same topic.</p></div><div class="card reveal"><span class="chip blue">Proof</span><h3>Claim stories</h3><p>Five-minute customer stories like "The 7 days after my accident". They answer Rahul's biggest doubt: will they actually pay?</p></div></div>
+<div class="ytsample reveal"><div class="thumb"><span>READ THIS BEFORE YOU NEED IT</span></div><div><p class="k">Sample video</p><h3>Health Insurance in Dubai, Explained (2026): What Your Company Plan Doesn't Tell You</h3><p class="say">"Your company gives you health insurance. Great. Do you know your annual limit? A lot of people find out at the hospital desk. In the next 8 minutes, four things to check on your card, and what to do if it isn't enough."</p></div></div></div></section>
+<section class="panel " id="yt-pz" data-label="YouTube · Paisabazaar.ae"><div class="pin"><p class="eyebrow"><i></i>13 · Paisabazaar.ae · YouTube</p><h2>Card decisions get <em>researched, then watched</em></h2><p class="lede">Before people pick a card they search "best cashback credit card UAE" and watch someone compare. A marketplace is built to answer exactly that.</p><div class="grid four yt"><div class="card reveal"><span class="chip blue">Search series</span><h3>Best cards for…</h3><p>"Best credit card for an AED 5,000 salary", "…for travel", "…for groceries". Refreshed every year, with "check what your card includes" on every perk.</p></div><div class="card reveal"><span class="chip pink">Tutorials</span><h3>Two-minute how-tos</h3><p>"How to check your AECB score for free", "How cashback is actually calculated". Screen recordings, no fluff.</p></div><div class="card reveal"><span class="chip mint">Creator challenge</span><h3>I lived on cashback for a month</h3><p>A creator tracks every dirham earned back for 30 days. Real numbers, a running total, a verdict at the end.</p></div><div class="card reveal"><span class="chip blue">Shorts</span><h3>Salary Week vs Month-End</h3><p>The Instagram skits and Card Horror Stories go up as Shorts, linking to the comparison videos.</p></div></div>
+<div class="ytsample reveal"><div class="thumb"><span>AED 5K SALARY? WATCH THIS</span></div><div><p class="k">Sample video</p><h3>Best Credit Card in the UAE for Your Salary (2026)</h3><p class="say">"If your card came free with your salary account, you've probably never compared it. Let's fix that. Three salary levels, three types of card, and the one question that decides which one is yours."</p></div></div></div></section>
+<section class="panel " id="fit" data-label="Measure and fit"><div class="pin">
   <div class="head">
-    <p class="eyebrow"><i></i>Paisabazaar.ae · Content plan</p>
-    <h2>Four pillars, two series and <em>two weeks of posts</em></h2>
-  </div>
-  <div class="grid">
-    <div class="card reveal"><span class="chip">About 35%</span><h3>Card Hacks</h3><p>Cashback wins, travel perks, lounge access and the features people pay for and never use.</p><p class="pg"><b>Goal:</b> saves</p></div>
-    <div class="card reveal"><span class="chip mint">About 30%</span><h3>Money Chaos</h3><p>Salary week vs month-end, splitting the brunch bill, the friend who never pays back. Memes and skits.</p><p class="pg"><b>Goal:</b> shares</p></div>
-    <div class="card reveal"><span class="chip pink">About 20%</span><h3>Credit, Simply</h3><p>AECB scores, loans and card fees explained with analogies people remember.</p><p class="pg"><b>Goal:</b> saves and trust</p></div>
-    <div class="card reveal"><span class="chip blue">About 15%</span><h3>App Wins</h3><p>Rewards, told through creators and challenges instead of feature lists.</p><p class="pg"><b>Goal:</b> downloads</p></div>
-  </div>
-  <div class="grid two" style="margin-top:14px">
-    <div class="card hi reveal"><span class="chip red">Monthly · Reels</span><h3>Card Horror Stories</h3><p>The scariest things on a statement, with "Comment TREAT" kept as the hook.</p></div>
-    <div class="card hi reveal"><span class="chip red">Weekly · Reels</span><h3>Salary Week Me vs Month-End Me</h3><p>A split-screen skit series about the same person, two very different bank balances.</p></div>
-  </div>
-
-  <div class="card hi reveal ai"><span class="chip blue">AI-led · Recurring character</span><h3>Month-End Me</h3><p>An AI-made version of you from the 28th, broke and a little wiser, who visits Salary-Week Me with warnings: "Put that brunch on the cashback card." Funny, repeatable, and every episode carries one real money tip.</p></div>
-  <h3 class="sub-h">Two-week calendar · 23 Nov to 6 Dec</h3>
-  <div class="tablewrap reveal">
-    <table class="cal">
-      <tr><th>Date</th><th>Moment</th><th>Pillar · Format</th><th>The post</th><th>Goal</th></tr>
-      <tr><td><b>Mon 23 Nov</b></td><td>Monthly series</td><td>Credit, Simply · Reel</td><td>"Card Horror Stories", part one (Rework 4).</td><td>Comments</td></tr>
-      <tr><td><b>Wed 25 Nov</b></td><td>Fitness Challenge week</td><td>Credit, Simply · Carousel</td><td>"Your AECB score is basically your gym routine" (Rework 3).</td><td>Saves</td></tr>
-      <tr><td><b>Fri 27 Nov</b></td><td>White Friday</td><td>Card Hacks · Carousel</td><td>"White Friday: 5 questions to ask before you swipe", from cashback category to foreign currency fees.</td><td>Saves</td></tr>
-      <tr><td><b>Sat 28 Nov</b></td><td>Story</td><td>Card Hacks · Quiz</td><td>"Which card type are you?" Cashback / Travel / Rewards. Results link to the comparison page.</td><td>Taps</td></tr>
-      <tr><td><b>Mon 30 Nov</b></td><td>Salary day</td><td>Money Chaos · Reel</td><td>"Salary Week Me vs Month-End Me", ep. 1.</td><td>Shares</td></tr>
-      <tr><td><b>Tue 1 Dec</b></td><td>App push</td><td>App Wins · Reel</td><td>"I gave myself 60 seconds to earn rewards" (Rework 5).</td><td>Downloads</td></tr>
-      <tr><td><b>Wed 2 Dec</b></td><td>National Day long weekend</td><td>Money Chaos · Carousel</td><td>"Long weekend plans by budget: AED 0, AED 500, AED 5,000."</td><td>Shares</td></tr>
-      <tr><td><b>Thu 3 Dec</b></td><td>Mid-week</td><td>App Wins · Reel</td><td>"Rewards I earned this week, ranked by effort" (Rework 2).</td><td>Downloads</td></tr>
-      <tr><td><b>Sat 5 Dec</b></td><td>DSF season</td><td>Money Chaos · Reel</td><td>"DSF budget vs DSF reality" (Rework 1, DSF edition).</td><td>Shares</td></tr>
-      <tr><td><b>Sun 6 Dec</b></td><td>Winter travel</td><td>Card Hacks · Carousel</td><td>"Card perks you're probably not using": lounge access, travel cover, foreign currency fees. Check what your card includes.</td><td>Saves</td></tr>
-    </table>
-  </div>
-  <p class="fine">White Friday falls on 27 November 2026. Card features vary by bank and card, so every perk post would say "check what your card includes" and be approved by compliance.</p>
-</div></section>
-<section class="panel " id="run" data-label="Measure"><div class="pin">
-  <div class="head">
-    <p class="eyebrow"><i></i>Both brands · How I'd measure it</p>
+    <p class="eyebrow"><i></i>14 · Measure and fit</p>
     <h2>Count what people <em>do</em>, not what they see</h2>
   </div>
   <div class="grid">
@@ -869,36 +713,30 @@ html,body{height:100%;overflow:hidden}
     <div class="card reveal"><span class="chip mint">Comments</span><h3>Questions become content</h3><p>Every week, the best question in the comments becomes next week's expert clip.</p></div>
     <div class="card reveal"><span class="chip blue">One rule</span><h3>Fix the hook before the budget</h3><p>If a promoted reel gets reach but no engagement, rework the first 3 seconds before spending more on it.</p></div>
   </div>
-</div></section>
-<section class="panel " id="fit" data-label="Where I fit"><div class="pin">
-  <div class="head">
-    <p class="eyebrow"><i></i>Where I fit</p>
-    <h2>What the role needs, <em>and where it is on this page</em></h2>
-  </div>
-  <div class="tablewrap reveal">
+<h3 class="sub-h">Where I fit the role</h3><div class="tablewrap reveal">
     <table>
       <tr><th>The role needs</th><th>On this page</th><th>Where I've done it</th></tr>
       <tr><td><b>Content strategy and copywriting</b></td><td>Brand read, four pillars, hooks and captions in every rework</td><td>Planned content pillars and calendars at Signal and TechGig.</td></tr>
-      <tr><td><b>Creative ideas and storytelling</b></td><td>Expat Plot Twists, One Question. 30 Seconds., Card Horror Stories, Salary Week Me vs Month-End Me</td><td>Built recurring series at Signal, like Guess the Player and a three-part Ballon d'Or series.</td></tr>
+      <tr><td><b>Creative ideas and storytelling</b></td><td>Expat Plot Twists, One Question. 30 Seconds., Card Horror Stories, Mr. Fine Print, Month-End Me, YouTube ideas</td><td>Built recurring series at Signal, like Guess the Player and a three-part Ballon d'Or series.</td></tr>
       <tr><td><b>Making complex topics simple</b></td><td>Rule of 72, the four health insurance checks, the AECB score gym analogy</td><td>Wrote plain-English explainers at TechGig on topics like Google Veo 3 and India's IT layoffs.</td></tr>
-      <tr><td><b>Trends and culture</b></td><td>Both calendars: fog season, White Friday, salary day, National Day, DSF, meme formats</td><td>Planned topical content around match days and records; reels reached 3.87M Instagram views.</td></tr>
+      <tr><td><b>Trends and culture</b></td><td>Both plans: fog season, White Friday, salary day, National Day, DSF, and the Jensen Huang meme</td><td>Planned topical content around match days and records; reels reached 3.87M Instagram views.</td></tr>
       <tr><td><b>AI tools</b></td><td>Research and first drafts for this page, with every number checked against a source</td><td>Use ChatGPT, Claude and Gemini for research and ideas.</td></tr>
       <tr><td><b>Performance</b></td><td>Engagement per 1,000 views, saves, shares and comments</td><td>Tracked 81 creator links to installs and sign-ups at Signal.</td></tr>
     </table>
   </div>
   <p class="fine">These are spec ideas made for a job application. Product details and claims would be checked with Policybazaar.ae's product and compliance teams before anything goes live.</p>
 </div></section>
-<section class="panel p-end" id="contact" data-label="Contact"><div class="pin">
-  <p class="eyebrow"><i></i>Thanks for reading</p>
-  <h2>You made it to the end. <em>That's the retention I'm after.</em></h2>
-  <p class="lede">This page was my try at showing how I'd be useful to your team. I'm a copywriter and content strategist with nearly 4 years across Times Internet, OutSpark and Signal. If even one idea here makes you think "we could test that", I'd love 15 minutes to talk it through.</p>
+<section class="panel p-end" id="contact" data-label="Let's talk"><div class="pin">
+  <p class="eyebrow"><i></i>15 · Let's talk</p>
+  <h2>You made it to slide 15. <em>That's the retention I'm after.</em></h2>
+  <p class="lede">This page was my try at showing how I'd be useful to your team. I'm a copywriter and content strategist with nearly 4 years across Times Internet, OutSpark and Signal. If even one idea here makes you think "we could test that", give me 15 minutes. I'll bring the first two weeks of posts, ready to shoot.</p>
   <div class="row">
     <a class="key dark" href="mailto:aaniketk32@gmail.com?subject=Copywriter%2C%20Policybazaar.ae">aaniketk32@gmail.com<small>@</small></a>
     <a class="key" href="https://aaniketk32-png.github.io/akp/policybazaar/Aaniket_Kumar_Pandey_Resume.pdf" target="_blank" rel="noopener">My resume<small>PDF</small></a>
     <a class="key" href="https://aaniketk32-png.github.io/akp/">My portfolio<small>↗</small></a>
     <a class="key" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/">LinkedIn<small>in</small></a>
   </div>
-  <p class="fine">Unofficial spec work made for a job application. Not affiliated with or endorsed by Policybazaar.ae or PB Fintech. Figures come from public pages and Instagram activity up to 13 November 2026: <a href="https://www.policybazaar.ae/about-us/">Policybazaar.ae (about us)</a>, <a href="https://enterpriseam.com/mena-india/2026/05/04/insurtech-firm-policybazaar-scales-uae-foothold/">Enterprise AM (UAE growth)</a>, <a href="https://www.khaleejtimes.com/business/uae-insurance-premiums-jump-15-to-dh748-billion-as-health-and-property-cover-grow">Khaleej Times (UAE premiums)</a>, <a href="https://www.instagram.com/policybazaaruae/reels/">@policybazaaruae reels</a>. Brand names belong to their owners.</p>
+  <p class="fine">Unofficial spec work made for a job application. Not affiliated with or endorsed by Policybazaar.ae or PB Fintech. Figures come from public pages and Instagram activity up to 13 November 2026: <a href="https://www.policybazaar.ae/about-us/">Policybazaar.ae (about us)</a>, <a href="https://enterpriseam.com/mena-india/2026/05/04/insurtech-firm-policybazaar-scales-uae-foothold/">Enterprise AM (UAE growth)</a>, <a href="https://www.khaleejtimes.com/business/uae-insurance-premiums-jump-15-to-dh748-billion-as-health-and-property-cover-grow">Khaleej Times (UAE premiums)</a>, <a href="https://www.instagram.com/policybazaaruae/reels/">@policybazaaruae reels</a>, <a href="https://www.instagram.com/paisabazaar.ae/">@paisabazaar.ae</a>, <a href="https://www.policybazaar.ae/podcast/empower-yourself-with-the-gift-of-health-insurance.md">The Policy Project podcast</a>. Brand names belong to their owners.</p>
 </div></section>
 </main>
 <aside class="detail" id="detail" aria-live="polite" aria-label="Slip detail">
@@ -941,16 +779,20 @@ html,body{height:100%;overflow:hidden}
     {id:'q30',cat:'rework',w:'1 Q · 30 sec',s:'Rework 2',k:'Rework · Expert interview',t:'One Question. 30 Seconds.',p:'The same expert access, cut into one question per clip. Comments write the next episode.',a:'#rework',al:'Read the format'},
     {id:'r72',cat:'rework',w:'Rule of 72',s:'Rework 3',k:'Rework · Money explainer',t:'Your money has a doubling date',p:'A 7-slide carousel that turns a definition into a number you work out for yourself, and comment.',a:'#rework',al:'Read the slides'},
     {id:'card',cat:'rework',w:'Read your card',s:'Rework 4',k:'Rework · Health insurance',t:'POV: you finally read your insurance card',p:'Four checks in 25 seconds: annual limit, network, co-pay, cover outside the UAE.',a:'#rework',al:'Read the script'},
-    {id:'priya',cat:'pz',w:'Priya, 26',s:'Persona',k:'Paisabazaar.ae · Who we’re talking to',t:'“I use the card my bank gave me.”',p:'Two years into her first UAE job. Never compared cashback. Thinks credit cards are boring and a bit scary.',a:'#pz-brand',al:'Meet Priya'},
-    {id:'brag',cat:'pz',w:'Brag a little',s:'The idea',k:'Paisabazaar.ae · Idea',t:'Spend smart. Brag a little.',p:'Money content with main-character energy: cashback wins, travel perks and salary-week chaos.',a:'#pz-brand',al:'Read the idea'},
+    {id:'priya',cat:'pz',w:'Priya, 26',s:'Persona',k:'Paisabazaar.ae · Who we’re talking to',t:'“I use the card my bank gave me.”',p:'Two years into her first UAE job. Never compared cashback. Thinks credit cards are boring and a bit scary.',a:'#pz',al:'Meet Priya'},
+    {id:'brag',cat:'pz',w:'Brag a little',s:'The idea',k:'Paisabazaar.ae · Idea',t:'Spend smart. Brag a little.',p:'Money content with main-character energy: cashback wins, travel perks and salary-week chaos.',a:'#pz',al:'Read the idea'},
+    {id:'monthend',cat:'pz',w:'Month-End Me',s:'AI character',k:'Paisabazaar.ae · Series',t:'Month-End Me',p:'You from the 28th, broke and a little wiser, warning Salary-Week Me.',a:'#pz-can',al:'Meet her'},
     {id:'loop',cat:'pz',w:'12 of 16',s:'Same message',k:'Paisabazaar.ae · Audit',t:'One message, on repeat',p:'About 12 of the last 16 reels push app rewards. The brief says witty and pop-culture; the feed says features.',a:'#pz-audit',al:'See the audit'},
     {id:'horror',cat:'pz',w:'Card horror',s:'Rework',k:'Paisabazaar.ae · Rework',t:'Card Horror Stories',p:'The annual fee you forgot, the minimum-due interest, the foreign currency fee from Baku. Comment TREAT.',a:'#pz-rework',al:'Read the script'},
     {id:'gym',cat:'pz',w:'AECB = gym',s:'Rework',k:'Paisabazaar.ae · Rework',t:'Your credit score is your gym routine',p:'Paying on time is showing up. Maxing out is skipping leg day. Five cards at once is crash dieting.',a:'#pz-rework',al:'Read the slides'},
-    {id:'sixty',cat:'pz',w:'0:60',s:'Rework',k:'Paisabazaar.ae · Rework',t:'I gave myself 60 seconds to earn rewards',p:'A visible timer, a creator racing through the app, and a “beat my time” challenge.',a:'#pz-rework',al:'Read the script'},
-    {id:'pillars',cat:'system',w:'4 pillars',s:'Content system',k:'Content plan',t:'Money, UAE Life, Experts, Stories',p:'Four pillars with one goal each: saves, shares, comments and proof. No more than one post in five is a straight sell.',a:'#system',al:'See the system'},
-    {id:'cal',cat:'system',w:'2 weeks',s:'Calendar',k:'Content plan · Calendar',t:'Fog, salary day, National Day, DSF',p:'Ten posts plus Stories from 23 November to 6 December, built around real UAE moments.',a:'#calendar',al:'See the calendar'},
-    {id:'nd',cat:'system',w:'2 Dec',s:'National Day',k:'Content plan · Moment',t:'“When did it start feeling like home?”',p:'No product. Just pride, stories and a comment section full of them.',a:'#calendar',al:'See the calendar'},
-    {id:'measure',cat:'system',w:'Per 1K views',s:'What I’d track',k:'Content plan · Measure',t:'Count what people do',p:'Engagement per 1,000 views, saves, shares and comments. Fix the hook before adding budget.',a:'#run',al:'Read more'},
+    {id:'meme',cat:'pz',w:'Buy more?',s:'Trend meme',k:'Paisabazaar.ae · Rework',t:'“The more you buy, the more you save”',p:'A same-day meme on Jensen Huang’s keynote line, with a caption about not overspending to chase cashback.',a:'#pz-rework',al:'See the meme'},
+    {id:'ytpb',cat:'yt',w:'8 minutes',s:'YouTube',k:'YouTube · Policybazaar.ae',t:'Explained in 8 minutes',p:'Search-led videos like “Health insurance in Dubai, explained”, plus the podcast on video and claim stories.',a:'#yt-pb',al:'See the ideas'},
+    {id:'ytpz',cat:'yt',w:'Best card for…',s:'YouTube',k:'YouTube · Paisabazaar.ae',t:'Comparisons people search for',p:'“Best credit card for an AED 5,000 salary”, two-minute tutorials and a month living on cashback.',a:'#yt-pz',al:'See the ideas'},
+    {id:'fine',cat:'rework',w:'Fine Print',s:'AI character',k:'Policybazaar.ae · Series',t:'Mr. Fine Print',p:'An AI-made detective who investigates the small print. “Case closed. Read before you sign.”',a:'#pb-can',al:'Meet him'},
+    {id:'pillars',cat:'system',w:'4 pillars',s:'Content system',k:'Content plan',t:'Money, UAE Life, Experts, Stories',p:'Four pillars with one goal each: saves, shares, comments and proof. No more than one post in five is a straight sell.',a:'#pb-can',al:'See the system'},
+    {id:'cal',cat:'system',w:'2 weeks',s:'Calendar',k:'Content plan · Calendar',t:'Fog, salary day, National Day, DSF',p:'Ten posts plus Stories from 23 November to 6 December, built around real UAE moments.',a:'#pb-can',al:'See the calendar'},
+    {id:'nd',cat:'system',w:'2 Dec',s:'National Day',k:'Content plan · Moment',t:'“When did it start feeling like home?”',p:'No product. Just pride, stories and a comment section full of them.',a:'#pb-can',al:'See the calendar'},
+    {id:'measure',cat:'system',w:'Per 1K views',s:'What I’d track',k:'Content plan · Measure',t:'Count what people do',p:'Engagement per 1,000 views, saves, shares and comments. Fix the hook before adding budget.',a:'#fit',al:'Read more'},
     {id:'hello',cat:'contact',w:'Hello@',s:'aaniketk32@gmail.com',k:'Contact',t:'Let’s talk',p:'If any of this is useful to your team, I’d love 15 minutes to talk it through.',a:'mailto:aaniketk32@gmail.com?subject=Copywriter%2C%20Policybazaar.ae',al:'Email me'},
     {id:'pf',cat:'contact',w:'Portfolio',s:'See my work',k:'Contact',t:'My full portfolio',p:'Reels, scripts, content series, articles and podcast episodes I worked on.',a:'https://aaniketk32-png.github.io/akp/',al:'Open portfolio'}
   ];
@@ -1106,7 +948,7 @@ html,body{height:100%;overflow:hidden}
   document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');
     if(a){var id=a.getAttribute('href').slice(1);if(id&&toId(id))e.preventDefault()}},true);
   document.querySelectorAll('[data-fire]').forEach(function(b){b.addEventListener('click',function(e){
-    if(cur()!==0){e.stopImmediatePropagation();toId(b.getAttribute('data-fire'))}},true)});
+    if(cur()!==0){e.stopImmediatePropagation();toId(b.getAttribute('data-go'))}},true)});
   window.addEventListener('resize',function(){deck.style.scrollBehavior='auto';deck.scrollLeft=cur()*deck.clientWidth;deck.style.scrollBehavior=''});
   upd();
 })();
