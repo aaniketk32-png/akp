@@ -74,17 +74,36 @@ footer{padding:54px 0 70px;border-top:1px solid var(--line)}
 footer h2{font-size:clamp(1.6rem,3.6vw,2.4rem);text-transform:uppercase;max-width:22ch}
 .fine{font-size:.82rem;color:var(--muted);margin-top:22px;max-width:76ch}
 @media (max-width:860px){.vs,.how,.strat{grid-template-columns:minmax(0,1fr)}}
+.gl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.gl a{display:flex;flex-direction:column;gap:6px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;transition:border-color .2s}
+.gl a:hover{border-color:var(--acc)}
+.gl span{font-size:.8rem;font-weight:800;letter-spacing:.03em;color:var(--acc)}
+.gl b{font-family:"Archivo Black",Impact,sans-serif;font-weight:400;font-size:1.1rem;line-height:1.15}
+.gl em{font-style:normal;color:var(--muted);font-size:.9rem}
+@media (max-width:860px){.gl{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media (max-width:520px){.gl{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><span class="me">Aaniket · Copywriter</span><div class="links"><a href="#approach">Approach</a><a href="#boat">boAt</a><a href="#mamaearth">Mamaearth</a><a href="#bru">Bru</a><a href="#kimirica">Kimirica</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="wrap"><span class="me">Aaniket · Copywriter</span><div class="links"><a href="#glance">Overview</a><a href="#approach">Approach</a><a href="#boat">boAt</a><a href="#mamaearth">Mamaearth</a><a href="#bru">Bru</a><a href="#kimirica">Kimirica</a><a href="#contact">Contact</a></div></div></nav>
 
 <header><div class="wrap">
 <p class="tag">Spec portfolio · For the Copywriter role at Moksha Media Group</p>
 <h1>Great work deserves <span>words that sell it.</span></h1>
-<p class="lede">Hi, I'm Aaniket. I went through Moksha's case studies. The visuals are strong: shoots, films, brand refreshes and e-commerce content for boAt, Mamaearth, Bru and Kimirica. What most pages don't show yet is the copy: the campaign line, the story and the results. So I picked four projects and wrote what I'd add as your copywriter. Your work is summarised on the left. Mine is on the right.</p>
-<div class="btns"><a class="btn solid" href="#boat">See the four projects</a><a class="btn" href="Aniket_Resume_Moksha_Copywriter.pdf">My resume</a><a class="btn" href="https://aaniketk32-png.github.io/akp/">Portfolio</a></div>
+<p class="lede">Hi, I'm Aaniket. I went through Moksha's case studies. The visuals are strong. What the pages don't show yet is the copy: the line people remember, the story behind the work, and the results. So I picked four projects and wrote what I'd add. Your work is summarised on the left, mine is on the right.</p>
+<div class="btns"><a class="btn solid" href="#glance">See the four projects</a><a class="btn" href="Aniket_Resume_Moksha_Copywriter.pdf">My resume</a><a class="btn" href="https://aaniketk32-png.github.io/akp/">Portfolio</a></div>
 </div></header>
+
+<section id="glance"><div class="wrap">
+<p class="tag">At a glance</p>
+<h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem)">Four projects. Four big ideas.</h2>
+<div class="gl">
+<a href="#boat"><span>boAt</span><b>Shaadi season. Survival mode: on.</b><em>A wedding-season campaign for the boAtheads community</em></a>
+<a href="#mamaearth"><span>Mamaearth</span><b>Washing your hair? Wash your scalp.</b><em>A voice guide people can use, and tutorials that teach in 20 seconds</em></a>
+<a href="#bru"><span>Bru</span><b>Bru. For the first one awake.</b><em>Banners and product pages built around the first cup of the day</em></a>
+<a href="#kimirica"><span>Kimirica</span><b>Gift someone a pause.</b><em>Luxury copy that sells the moment before the product</em></a>
+</div>
+</div></section>
 
 <section id="approach"><div class="wrap">
 <p class="tag">How I worked</p>
@@ -286,7 +305,7 @@ footer h2{font-size:clamp(1.6rem,3.6vw,2.4rem);text-transform:uppercase;max-widt
 
 <footer id="contact"><div class="wrap">
 <h2>Your visuals already stop the scroll. Let me write what makes people stay.</h2>
-<p class="lede">I'm Aaniket, a copywriter from Delhi NCR. I've written for 10+ brands across social, campaigns and e-commerce.</p>
+<p class="lede">I'm Aaniket, a copywriter from Delhi NCR. I've written for 10+ brands across social, campaigns and e-commerce. Give me a brief, and I'll show you what I'd write.</p>
 <div class="btns"><a class="btn solid" href="mailto:aaniketk32@gmail.com?subject=Copywriter%20role%2C%20Moksha">Email me</a><a class="btn" href="Aniket_Resume_Moksha_Copywriter.pdf">My resume</a><a class="btn" href="https://www.linkedin.com/in/aniket-pandey-27b71a134/">LinkedIn</a><a class="btn" href="https://aaniketk32-png.github.io/akp/honasa">My Mamaearth spec</a></div>
 <p class="fine">Spec work by Aaniket Kumar Pandey, made for a job application. Not affiliated with or approved by Moksha Media Group or the brands shown. The left-hand columns summarise Moksha's public case study pages in my own words. All copy in the right-hand columns is original and unpublished. Placeholders mark facts and results only Moksha or the client can supply.</p>
 </div></footer>
