@@ -1371,7 +1371,7 @@ document.querySelectorAll('video').forEach(function(v){
 (function(){
   document.documentElement.classList.add('js');
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var els=document.querySelectorAll('.sec-head,.method,.flow li,.bstep,.reel,.yt,.b2b-row,.panel,.shot,.adcase,.row');
+  var els=document.querySelectorAll('.sec-head,.method,.flow li,.bstep,.reel,.yt,.b2b-row,.panel,.shot,.adcase,.row,.lad');
   els.forEach(function(e){e.classList.add('reveal')});
   if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});}
   else{var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});var seen=false;var io2=new IntersectionObserver(function(){seen=true;io2.disconnect()});io2.observe(document.body);setTimeout(function(){if(!seen)els.forEach(function(e){e.classList.add('in')})},2500);}
